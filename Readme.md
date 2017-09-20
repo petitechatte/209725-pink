@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Наталья Кот](https://up.htmlacademy.ru/adaptive/12/user/209725).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Налимова](https://htmlacademy.ru/profile/tuetfe).
 
 ---
 
