@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк &mdash; яркое приложение</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header class="page-header">
@@ -63,7 +64,7 @@
 
     <main class="page-main">
       <section class="features">
-        <header class="features-header">
+        <header class="features__header">
           <h2 class="visually-hidden">Зачем вам Pink</h2>
           <p class="features__lead">Устали от серости мегаполиса?</p>
           <p class="features__lead">Нам есть, что вам предложить!</p>
@@ -83,16 +84,28 @@
           </li>
         </ul>
         <div class="features__example">
-          <img class="features-image" width="141" height="248" src="http://placehold.it/141x248/c71353/ffffff" alt="Пример использования приложения">
+          <img class="features__image" width="141" height="248" src="http://placehold.it/141x248/c71353/ffffff" alt="Пример использования приложения">
         </div>
       </section>
 
       <section class="review">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <div class="review__wrapper slider">
-          <ul class="review-list">
-            <list class="review-item"></list>
+          <ul class="review__list slider__list">
+            <li class="review__item slider__item">
+              <blockquote>
+                <cite class="review__wrapper">Николай Петров</cite>
+                <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </li>
+            <li class="review__item slider__item">Цыгане украли этот слайд</li>
+            <li class="review__item slider__item">И этот тоже</li>
           </ul>
+          <div class="review__toggles slider__toggles">
+            <button class="slider__toggle">1</button>
+            <button class="slider__toggle">2</button>
+            <button class="slider__toggle">3</button>
+          </div>
         </div>
       </section>
     </main>
