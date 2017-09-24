@@ -112,7 +112,7 @@
         </fieldset>
           <label class="form__question" for="review-field">Опишите свои эмоции</label>
           <textarea class="form__text" name="review" id="review-field" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
-        <button class="form__send button button--submit" type="submit">Отправить форму</button>
+        <button class="form__send button button--confirm" type="submit">Отправить форму</button>
         <p class="form__comment">
           <small class="form__require"><span class="form__asterisk">*</span> — обязательные поля</small>
         </p>
@@ -152,5 +152,7 @@
         </a>
       </div>
     </footer>
+
+    div.error.modal>b.modal__warning+p.modal__message+btn.modal__close.button.button--confirm
   </body>
 </html>
