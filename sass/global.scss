@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+
+  font-family: "Open Sans", "Segoe UI", "Optima", sans-serif;
+
+  background-color: #ffffff;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -7,10 +15,4 @@
   margin: -1px;
   padding: 0;
   border: 0;
-}
-
-body {
-  margin: 0;
-
-  background-color: #ffffff;
 }
