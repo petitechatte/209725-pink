@@ -1,0 +1,15 @@
+.post__author {
+  @include text($small, $large, 700);
+}
+
+.post__time {
+  @include text($x-small, $large, 300, $base-color, uppercase);
+}
+
+.post__text {
+  @include text($small, $large, 400);
+}
+
+.post__popularity {
+  @include text($x-small, $large, 400, $accent-color, uppercase);
+}

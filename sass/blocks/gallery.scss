@@ -1,3 +1,21 @@
+.gallery__intro {
+  @include text($small, $x-large, 400);
+}
+
+.gallery__list {
+  @include list-reset;
+}
+
 .gallery__item {
-  background-color: $shade;
+  background-color: $light-color;
+}
+
+.gallery__link {
+  text-decoration: none;
+}
+
+.gallery__label--panoramic {
+  @include text($x-small, $large, 700, $bg-color, uppercase);
+
+  background-color: $accent-color;
 }

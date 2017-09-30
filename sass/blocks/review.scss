@@ -1,7 +1,3 @@
 .review__author {
-  color: #000000;
-  font-size: $medium;
-  line-height: $x-large;
-  font-weight: 700;
-  font-style: normal;
+  @include text($medium, $x-large, 700, $contrast-color);
 }

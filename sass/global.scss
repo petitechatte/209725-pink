@@ -1,14 +1,14 @@
 body {
   margin: 0;
 
-  color: $basic;
+  color: $base-color;
   font-family: "Open Sans", "Segoe UI", "Optima", sans-serif;
   font-size: $small;
   line-height: $x-large;
   font-weight: 400;
   text-align: center;
 
-  background-color: #ffffff;
+  background-color: $bg-color;
 }
 
 .visually-hidden {
@@ -25,28 +25,41 @@ body {
 .button {
   display: inline-block;
   padding: 16px 38px;
-  border-width: 3px;
-  border-style: solid;
+  border: 3px solid $base-color;
   border-radius: 55px;
 
-  color: inherit;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
+  font-family: inherit;
+  @include text($medium, $medium, 700, inherit);
   text-decoration: none;
 
+  background-color: transparent;
+
+  &:disabled {
+    opacity: 0.1;
+  }
+
   &--invert {
-    color: #ffffff;
+    border-color: $bg-color;
+
+    color: $bg-color;
+  }
+
+  &--submit {
+    border-color: $accent-color;
+
+    color: $accent-color;
   }
 
   &--confirm {
-    color: #ffffff;
+    border: none;
+    border-radius: 0;
 
-    background-color: $green;
+    @include text($medium, $large, 700, $bg-color, uppercase);
+
+    background-color: $btn-color;
   }
 }
 
 .lead {
-  @include heading();
-  font-weight: 300;
+  @include text(24px, 1.2, 300);
 }

@@ -1,24 +1,25 @@
 .price {
-  background-color: $shade;
+  background-color: $light-color;
 }
 
 .price__table {
-  background-color: #ffffff;
+  background-color: $bg-color;
 }
 
 .price__row--header {
-  color: #ffffff;
+  color: $bg-color;
 
-  background-color: $basic;
+  background-color: $base-color;
 }
 
 .price__tariff {
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
+  @include text($medium, $x-large, 700, $bg-color, uppercase);
 }
 
 .price__value {
-  font-size: 24px;
-  font-weight: 300;
+  @include text($large, $x-large, 300, $bg-color);
+}
+
+.price__cell {
+  text-transform: uppercase;
 }

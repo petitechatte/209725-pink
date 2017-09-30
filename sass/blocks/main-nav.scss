@@ -1,11 +1,11 @@
 .main-nav {
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 700;
-  text-transform: uppercase;
+  @include text($medium, 32px, 700, $bg-color, uppercase);
 
-  background-color: $basic;
+  background-color: $base-color;
+}
+
+main-nav__home {
+  text-decoration: none;
 }
 
 .main-nav__list {
@@ -13,6 +13,6 @@
 }
 
 .main-nav__link {
-  color: #ffffff;
+  color: inherit;
   text-decoration: none;
 }

@@ -1,7 +1,7 @@
 .download {
-  color: #ffffff;
+  color: $bg-color;
 
-  background-color: $dark;
+  background-color: $dark-color;
 }
 
 .download__list {
@@ -9,7 +9,5 @@
 }
 
 .download__description {
-  font-size: $small;
-  line-height: $large;
-  font-weight: 300;
+  @include text($small, $large, 300);
 }

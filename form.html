@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CPT+Sans:700" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -44,16 +44,16 @@
         <fieldset class="form__user">
           <legend class="visually-hidden">Представьтесь, пожалуйста</legend>
           <p class="form__field">
-            <label class="form__label form__label--input" for="surname-field">Фамилия</label>
-            <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию *" id="surname-field" required>
+            <label class="form__label form__label--text" for="surname-field">Фамилия</label>
+            <input class="form__input form__input--text" type="text" name="surname" placeholder="Укажите фамилию *" id="surname-field" required>
           </p>
           <p class="form__field">
-            <label class="form__label form__label--input" for="name-field">Имя</label>
-            <input class="form__input" type="text" name="name" placeholder="Введите ваше имя *" id="name-field" required>
+            <label class="form__label form__label--text" for="name-field">Имя</label>
+            <input class="form__input form__input--text" type="text" name="name" placeholder="Введите ваше имя *" id="name-field" required>
           </p>
           <p class="form__field">
-            <label class="form__label form__label--input" for="patronymic-field">Отчество</label>
-            <input class="form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic-field">
+            <label class="form__label form__label--text" for="patronymic-field">Отчество</label>
+            <input class="form__input form__input--text" type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic-field">
           </p>
         </fieldset>
         <fieldset class="form__achievements">
@@ -86,12 +86,12 @@
         <fieldset class="form__contacts">
           <legend class="visually-hidden">Контактные данные</legend>
           <p class="form__field">
-            <label class="form__label form__label--input" for="phone-field">Номер телефона</label>
-            <input class="form__input" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
+            <label class="form__label form__label--text" for="phone-field">Номер телефона</label>
+            <input class="form__input form__input--text" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
           </p>
           <p class="form__field">
-            <label class="form__label form__label--input" for="email-field">Адрес почты</label>
-            <input class="form__input" type="email" name="email" id="email-field" placeholder="Введите почту *" required>
+            <label class="form__label form__label--text" for="email-field">Адрес почты</label>
+            <input class="form__input form__input--text" type="email" name="email" id="email-field" placeholder="Введите почту *" required>
           </p>
         </fieldset>
         <fieldset class="form__application">
@@ -101,11 +101,11 @@
             <label class="form__label form__label--radio" for="ios-radio">Pink для iOS</label>
           </p>
           <p class="form__field">
-            <input class="form__radio" type="radio" name="app" value="android" id="android-radio">
+            <input class="form__input form__input--radio" type="radio" name="app" value="android" id="android-radio">
             <label class="form__label form__label--radio" for="android-radio">Pink на Android</label>
           </p>
           <p class="form__field">
-            <input class="form__radio" type="radio" name="app" value="windows" id="windows-radio">
+            <input class="form__input form__input--radio" type="radio" name="app" value="windows" id="windows-radio">
             <label class="form__label form__label--radio" for="windows-radio">Windows Phone</label>
           </p>
         </fieldset>
@@ -123,7 +123,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <a href="index.html">
+        <a class="page-footer__home" href="index.html">
           <img class="page-footer__pink logo logo--footer" width="147" height="40" src="img/logo-pink-blue-mobile.svg" alt="PINK">
         </a>
       </div>

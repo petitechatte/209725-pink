@@ -1,9 +1,41 @@
 .form__achievements {
-  background-color: $shade;
+  background-color: $light-color;
 }
 
 
 .form__application {
-  background-color: $shade;
+  background-color: $light-color;
 }
 
+.form__question {
+  @include text($small, $medium, 400, $accent-color, uppercase);
+}
+
+.form__label {
+  @include text($medium, $large, 400);
+
+  &--text {
+    @include text($small, $large, 400, $accent-color, uppercase);
+  }
+}
+
+.form__input {
+  &--text {
+    font-family: inherit;
+    @include text($medium, $large, 400, $base-color);
+    @include placeholder;
+  }
+}
+
+.form__text {
+  font-family: inherit;
+  @include text($medium, $large, 400, $base-color);
+}
+
+.form__require {
+  @include text($small, $large, 400, $base-color, uppercase);
+}
+
+.form__asterisk {
+  color: $accent-color;
+}

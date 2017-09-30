@@ -1,7 +1,11 @@
 .upload {
-  background-color: $shade;
+  background-color: $light-color;
 }
 
 .upload__intro {
-  background-color: #ffffff;
+  background-color: $bg-color;
+}
+
+.upload__image {
+  cursor: pointer;
 }

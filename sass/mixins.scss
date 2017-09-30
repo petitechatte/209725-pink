@@ -12,3 +12,18 @@
   text-transform: $text-transform;
   font-style: normal;
 }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @include text($medium, $large, 400, $base-color);
+  }
+  &:-moz-placeholder {
+    @include text($medium, $large, 400, $base-color);
+  }
+  &::-moz-placeholder {
+    @include text($medium, $large, 400, $base-color);
+  }
+  &:-ms-input-placeholder {
+    @include text($medium, $large, 400, $base-color);
+  }
+}

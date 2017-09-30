@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CPT+Sans:700" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -127,11 +127,13 @@
       <section class="upload">
         <h2 class="visually-hidden">Загрузка изображения</h2>
         <p class="upload__intro">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
-        <a class="upload__link" href="#">
-          <img class="upload__image" width="280" height="374" src="img/photo-road-mobile@1x.jpg" alt="Зимняя дорога">
-        </a>
         <form class="upload__form" method="post" action="https://echo.htmlacademy.ru">
-          <input type="hidden" name="src" value="http://placehold.it/280x374/1c25303/ffffff">
+          <fieldset class="upload__preview">
+            <input class="visually-hidden" type="file" name="image" id="image-upload">
+            <label class="upload__wrapper" for="image-upload">
+              <img class="upload__image" width="280" height="374" src="img/photo-road-mobile@1x.jpg" alt="Зимняя дорога">
+            </label>
+          </fieldset>
           <fieldset class="upload__edit tools">
             <label class="tools__button tools__button--crop tools__button--active" for="crop-range">Обрезка</label>
             <input class="tools__range tools__range--active" type="range" min="0" max="100" name="crop" value="80" id="crop-range">
@@ -142,7 +144,7 @@
           </fieldset>
           <fieldset class="upload__submit">
             <button class="upload-button button button--submit" type="submit">Запостить</button>
-            <button class="upload-button button button--reset" type="reset" disabled>Отмена</button>
+            <button class="upload-button button" type="reset" disabled>Отмена</button>
           </fieldset>
         </form>
       </section>
@@ -150,7 +152,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <a href="index.html">
+        <a class="page-footer__home" href="index.html">
           <img class="page-footer__pink logo logo--footer" width="147" height="40" src="img/logo-pink-blue-mobile.svg" alt="PINK">
         </a>
       </div>
