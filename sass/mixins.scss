@@ -4,11 +4,11 @@
   list-style: none;
 }
 
-@mixin text($color: $base-color, $font-size: $small, $line-height: $x-large, $font-weight: 400,  $text-transform: none) {
-  color: $color;
+@mixin text($font-size, $line-height, $font-weight, $color: $base-color,  $text-transform: none) {
   font-size: $font-size;
   line-height: $line-height;
   font-weight: $font-weight;
+  color: $color;
   text-transform: $text-transform;
   font-style: normal;
 }
