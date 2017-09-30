@@ -5,3 +5,19 @@
 .features__header {
   background-color: #ffffff;
 }
+
+.features__list {
+  @include list-reset;
+}
+
+.features__title {
+  color: #000000;
+  font-size: $medium;
+  line-height: $large;
+  font-weight: 700;
+}
+
+.features__description {
+  font-size: $small;
+  line-height: $large;
+}

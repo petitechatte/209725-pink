@@ -3,3 +3,13 @@
 
   background-color: $dark;
 }
+
+.download__list {
+  @include list-reset;
+}
+
+.download__description {
+  font-size: $small;
+  line-height: $large;
+  font-weight: 300;
+}

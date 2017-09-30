@@ -1,7 +1,12 @@
 body {
   margin: 0;
 
+  color: $basic;
   font-family: "Open Sans", "Segoe UI", "Optima", sans-serif;
+  font-size: $small;
+  line-height: $x-large;
+  font-weight: 400;
+  text-align: center;
 
   background-color: #ffffff;
 }
@@ -15,4 +20,33 @@ body {
   margin: -1px;
   padding: 0;
   border: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 16px 38px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 55px;
+
+  color: inherit;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+
+  &--invert {
+    color: #ffffff;
+  }
+
+  &--confirm {
+    color: #ffffff;
+
+    background-color: $green;
+  }
+}
+
+.lead {
+  @include heading();
+  font-weight: 300;
 }

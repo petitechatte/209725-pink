@@ -1,0 +1,23 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin note($font: 12px, $line: 24px) {
+  font-size: $font;
+  line-height: $line;
+  text-transform: uppercase;
+}
+
+@mixin label($font: 14px, $line: 30px) {
+  color: $pink;
+  font-size: $font;
+  line-height: $line;
+  text-transform: uppercase;
+}
+
+@mixin heading($font: 24px, $line: 1.2) {
+  font-size: $font;
+  line-height: $line;
+}
