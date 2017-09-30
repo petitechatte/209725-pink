@@ -9,5 +9,5 @@
 }
 
 .download__description {
-  @include text($small, $large, 300);
+  @include text($small, $large, 300, $bg-color);
 }

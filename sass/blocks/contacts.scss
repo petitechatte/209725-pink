@@ -10,6 +10,23 @@
   @include text($large, 1.2, 300, $accent-color);
 }
 
+.contacts__mail {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $base-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: none;
+
+    opacity: 0.3;
+  }
+}
+
 .contacts__map {
   width: 320px;
   height: 200px;

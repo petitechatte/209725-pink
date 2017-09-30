@@ -33,10 +33,9 @@ body {
   text-decoration: none;
 
   background-color: transparent;
+  cursor: pointer;
 
-  &:disabled {
-    opacity: 0.1;
-  }
+
 
   &--invert {
     border-color: $bg-color;
@@ -44,10 +43,47 @@ body {
     color: $bg-color;
   }
 
+  &--invert:hover,
+  &--invert:focus {
+    color: $accent-color;
+
+    background-color: $bg-color;
+  }
+
+  &--invert:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
   &--submit {
     border-color: $accent-color;
 
     color: $accent-color;
+  }
+
+  &--submit:hover,
+  &--submit:focus {
+    color: $bg-color;
+
+    background-color: $accent-color;
+  }
+
+  &--submit:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--reset {
+    opacity: 0.1;
+  }
+
+  &--reset:hover,
+  &--reset:focus {
+    opacity: 0.3;
+  }
+
+  &--reset:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: $base-color;
   }
 
   &--confirm {
