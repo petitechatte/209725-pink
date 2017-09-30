@@ -4,20 +4,11 @@
   list-style: none;
 }
 
-@mixin note($font: 12px, $line: 24px) {
-  font-size: $font;
-  line-height: $line;
-  text-transform: uppercase;
-}
-
-@mixin label($font: 14px, $line: 30px) {
-  color: $pink;
-  font-size: $font;
-  line-height: $line;
-  text-transform: uppercase;
-}
-
-@mixin heading($font: 24px, $line: 1.2) {
-  font-size: $font;
-  line-height: $line;
+@mixin text($color: $base-color, $font-size: $small, $line-height: $x-large, $font-weight: 400,  $text-transform: none) {
+  color: $color;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  text-transform: $text-transform;
+  font-style: normal;
 }
