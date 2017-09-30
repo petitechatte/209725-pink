@@ -134,63 +134,65 @@
       </section>
 
       <section class="price">
-        <h2 class="visually-hidden">Тарифные планы</h2>
-        <table class="price__table">
-          <thead class="price__header">
-            <tr class="price__row price__row--header">
-              <th class="price__cell price__cell--header">
-                <b class="price__tariff">База</b>
-                <p class="price__value">1,99 USD</p>
-              </th>
-              <th class="price__cell price__cell--header">
-                <b class="price__tariff">Стандарт</b>
-                <p class="price__value">3,99 USD</p>
-                <div class="price__label price__label--hit">
-                  <span class="visually-hidden">Хит</span>
-                </div>
-              </th>
-              <th class="price__cell price__cell--header">
-                <b class="price__tariff">Анлим</b>
-                <p class="price__value">9,99 USD</p>
-              </th>
-          </tr>
-          </thead>
-          <tbody class="price__content">
-            <tr class="price__row">
-              <td class="price__cell price__cell--available">Розовый фильтр
-                <span class="visually-hidden">Да</span>
-              </td>
-              <td class="price__cell price__cell--available">Розовый фильтр
-                <span class="visually-hidden">Да</span>
-              </td>
-              <td class="price__cell price__cell--available">Розовый фильтр
-                <span class="visually-hidden">Да</span>
-              </td>
+        <div class="container">
+          <h2 class="visually-hidden">Тарифные планы</h2>
+          <table class="price__table">
+            <thead class="price__header">
+              <tr class="price__row price__row--header">
+                <th class="price__cell price__cell--header">
+                  <b class="price__tariff">База</b>
+                  <p class="price__value">1,99 USD</p>
+                </th>
+                <th class="price__cell price__cell--header">
+                  <b class="price__tariff">Стандарт</b>
+                  <p class="price__value">3,99 USD</p>
+                  <div class="price__label price__label--hit">
+                    <span class="visually-hidden">Хит</span>
+                  </div>
+                </th>
+                <th class="price__cell price__cell--header">
+                  <b class="price__tariff">Анлим</b>
+                  <p class="price__value">9,99 USD</p>
+                </th>
             </tr>
-            <tr class="price__row">
-              <td class="price__cell price__cell-no">Смайлики
-                <span class="visually-hidden">Нет</span>
-              </td>
-              <td class="price__cell price__cell--available">Смайлики
-                <span class="visually-hidden">Да</span>
-              </td>
-              <td class="price__cell price__cell--available">Смайлики
-                <span class="visually-hidden">Да</span>
-              </td>
-            </tr>
-            <tr class="price__row">
-             <td class="price__cell price__cell-no">Комментарии
-                <span class="visually-hidden">Нет</span>
-              </td>
-              <td class="price__cell price__cell-no">Комментарии
-                <span class="visually-hidden">Нет</span>
-              </td>
-              <td class="price__cell price__cell--available">Комментарии
-                <span class="visually-hidden">Да</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+            </thead>
+            <tbody class="price__content">
+              <tr class="price__row">
+                <td class="price__cell price__cell--available">Розовый фильтр
+                  <span class="visually-hidden">Да</span>
+                </td>
+                <td class="price__cell price__cell--available">Розовый фильтр
+                  <span class="visually-hidden">Да</span>
+                </td>
+                <td class="price__cell price__cell--available">Розовый фильтр
+                  <span class="visually-hidden">Да</span>
+                </td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__cell price__cell-no">Смайлики
+                  <span class="visually-hidden">Нет</span>
+                </td>
+                <td class="price__cell price__cell--available">Смайлики
+                  <span class="visually-hidden">Да</span>
+                </td>
+                <td class="price__cell price__cell--available">Смайлики
+                  <span class="visually-hidden">Да</span>
+                </td>
+              </tr>
+              <tr class="price__row">
+               <td class="price__cell price__cell-no">Комментарии
+                  <span class="visually-hidden">Нет</span>
+                </td>
+                <td class="price__cell price__cell-no">Комментарии
+                  <span class="visually-hidden">Нет</span>
+                </td>
+                <td class="price__cell price__cell--available">Комментарии
+                  <span class="visually-hidden">Да</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <ul class="price__toggles slider__toggles">
           <li class="slider__control">
             <button class="price__toggle slider__toggle">1</button>
@@ -225,9 +227,7 @@
             </li>
           </ul>
         </div>
-        <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3012526864989!2d30.32306184080039!3d59.93873775125669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1506181431049" width="320" height="200" style="border:0" allowfullscreen></iframe>
-        </div>
+        <div class="contacts__map" id="map"></div>
       </section>
     </main>
 
