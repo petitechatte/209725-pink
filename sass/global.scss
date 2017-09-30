@@ -35,24 +35,22 @@ body {
   background-color: transparent;
   cursor: pointer;
 
-
-
   &--invert {
     border-color: $bg-color;
 
     color: $bg-color;
   }
 
-  &--invert:hover,
-  &--invert:focus {
-    color: $accent-color;
+    &--invert:hover,
+    &--invert:focus {
+      color: $accent-color;
 
-    background-color: $bg-color;
-  }
+      background-color: $bg-color;
+    }
 
-  &--invert:active {
-    color: rgba(210, 40, 86, 0.3);
-  }
+    &--invert:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
 
   &--submit {
     border-color: $accent-color;
@@ -60,31 +58,31 @@ body {
     color: $accent-color;
   }
 
-  &--submit:hover,
-  &--submit:focus {
-    color: $bg-color;
+    &--submit:hover,
+    &--submit:focus {
+      color: $bg-color;
 
-    background-color: $accent-color;
-  }
+      background-color: $accent-color;
+    }
 
-  &--submit:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
+    &--submit:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
 
   &--reset {
     opacity: 0.1;
   }
 
-  &--reset:hover,
-  &--reset:focus {
-    opacity: 0.3;
-  }
+    &--reset:hover,
+    &--reset:focus {
+      opacity: 0.3;
+    }
 
-  &--reset:active {
-    color: rgba(255, 255, 255, 0.3);
+    &--reset:active {
+      color: rgba(255, 255, 255, 0.3);
 
-    background-color: $base-color;
-  }
+      background-color: $base-color;
+    }
 
   &--confirm {
     border: none;
@@ -94,6 +92,19 @@ body {
 
     background-color: $btn-color;
   }
+
+    &--confirm:hover,
+    &--confirm:focus {
+      background-color: $btn-hover-color;
+    }
+
+    &--confirm:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &--confirm:disabled {
+      background-color: $border-color;
+    }
 }
 
 .lead {

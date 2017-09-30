@@ -21,15 +21,38 @@
 
 .form__input {
   &--text {
+    border: 2px solid $border-color;
+
     font-family: inherit;
     @include text($medium, $large, 400, $base-color);
     @include placeholder;
   }
+
+    &--text:hover {
+      border-color: $base-color;
+    }
+
+    &--text:focus {
+      border-color: $accent-color;
+      outline: none;
+    }
 }
 
 .form__text {
+  border: 2px solid $border-color;
+  resize: none;
+
   font-family: inherit;
   @include text($medium, $large, 400, $base-color);
+
+  &:hover {
+    border-color: $base-color;
+  }
+
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
 }
 
 .form__require {
