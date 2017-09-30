@@ -1,12 +1,31 @@
+.contacts {
+  @include outline(red);
+}
+
+.contacts__address {
+  @include container;
+  min-height: 415px;
+  padding-bottom: 45px;
+}
+
+.contacts__intro {
+  margin: 0;
+  padding: 45px 0;
+}
+
 .contacts__list {
   @include list-reset;
 }
 
 .contacts__title {
+  display: block;
+
   @include text($medium, 1.2, 700);
 }
 
 .contacts__info {
+  display: block;
+
   @include text($large, 1.2, 300, $accent-color);
 }
 
@@ -30,9 +49,11 @@
 .contacts__map {
   width: 320px;
   height: 200px;
+  margin: 0 auto;
 
   background-color: $light-color;
   background-image: url(../img/bg-map-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: left bottom;
+  @include outline(blue);
 }

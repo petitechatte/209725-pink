@@ -6,7 +6,21 @@
   background-color: $base-color;
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: repeat;
-  background-position: center 0;
+  background-position: center bottom;
+}
+
+.page-intro__demonstration {
+  display: flex;
+  width: 320px;
+  height: 100%;
+  margin: 0 auto;
+
+  @include outline(blue);
+}
+
+.page-intro__image {
+  margin-top: auto;
+  margin-right: auto;
 }
 
 .page-intro__wrapper--inner {

@@ -1,13 +1,22 @@
 .features {
   background-color: $light-color;
+  @include outline(red);
 }
 
 .features__header {
+  min-height: 250px;
+  padding-top: 45px;
+
   background-color: $bg-color;
+  @include outline(blue);
 }
 
 .features__list {
   @include list-reset;
+  @include container;
+  min-height: 475px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
 .features__title {
@@ -16,4 +25,10 @@
 
 .features__description {
   @include text($small, $large, 400);
+}
+
+.features__example {
+  @include container;
+  height: 277px;
+  overflow: hidden;
 }

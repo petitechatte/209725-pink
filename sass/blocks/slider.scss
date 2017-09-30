@@ -2,6 +2,15 @@
   @include list-reset;
 }
 
+.slider__item {
+  display: none;
+}
+
+.slider__item--active {
+  display: block;
+}
+
 .slider__toggles {
   @include list-reset;
+  height: 100px;
 }

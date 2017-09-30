@@ -1,11 +1,20 @@
 .download {
+  min-height: 271px;
+  padding-top: 28px;
+  padding-bottom: 30px;
+
   color: $bg-color;
 
   background-color: $dark-color;
+  @include outline(green);
 }
 
 .download__list {
   @include list-reset;
+}
+
+.download__link {
+  color: inherit;
 }
 
 .download__description {

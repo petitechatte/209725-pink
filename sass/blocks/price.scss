@@ -1,9 +1,19 @@
 .price {
+  padding-top: 70px;
   background-color: $light-color;
+  @include outline(red);
 }
 
 .price__table {
+  width: 280px * 3 - 2 * 4;
+  min-height: 280px;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  text-align: left;
+
   background-color: $bg-color;
+  @include outline(green);
 }
 
 .price__row--header {
@@ -17,9 +27,22 @@
 }
 
 .price__value {
+  margin: 0;
+
   @include text($large, $x-large, 300, $bg-color);
 }
 
 .price__cell {
+  border: 2px solid $border-color;
+
   text-transform: uppercase;
+
+  &--header {
+    text-align: center;
+  }
+}
+
+.price__toggles {
+  height: 100px;
+  @include container;
 }

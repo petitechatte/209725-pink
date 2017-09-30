@@ -27,3 +27,15 @@
     @include text($medium, $large, 400, $base-color);
   }
 }
+
+@mixin outline($color) {
+  outline: 2px solid $color;
+}
+
+@mixin container {
+  width: 320px - 20 * 2;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include outline(orange);
+}
