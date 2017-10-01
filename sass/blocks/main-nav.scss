@@ -6,12 +6,13 @@
   @include text($medium, 32px, 700, $bg-color, uppercase);
 
   background-color: $base-color;
+
   @include outline(green);
 }
 
 .main-nav__wrapper {
-  min-height: 70px;
   @include container;
+  min-height: 70px;
 
   text-align: left;
 }

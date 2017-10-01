@@ -1,8 +1,10 @@
 .review {
-  min-height: 380px;
-  background-color: $bg-color;
   @include container;
+  min-height: 380px;
   padding-top: 45px;
+
+  background-color: $bg-color;
+
   @include outline(green);
 }
 

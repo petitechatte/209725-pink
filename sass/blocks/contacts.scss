@@ -52,8 +52,9 @@
   margin: 0 auto;
 
   background-color: $light-color;
-  background-image: url(../img/bg-map-mobile@1x.png);
+  background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: left bottom;
+
   @include outline(blue);
 }

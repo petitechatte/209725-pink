@@ -1,5 +1,6 @@
 .upload {
   background-color: $light-color;
+
   @include outline(red);
 }
 

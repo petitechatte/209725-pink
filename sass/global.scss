@@ -38,8 +38,8 @@ img {
   border-radius: 55px;
   box-sizing: border-box;
 
-  font-family: inherit;
   @include text($medium, $medium, 700, inherit);
+  font-family: inherit;
   text-decoration: none;
 
   background-color: transparent;

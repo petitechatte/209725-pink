@@ -76,9 +76,9 @@
   &--text {
     border: 2px solid $border-color;
 
-    font-family: inherit;
     @include text($medium, $x-large, 400, $base-color);
     @include placeholder;
+    font-family: inherit;
   }
 
     &--text:hover {
@@ -99,9 +99,9 @@
   box-sizing: border-box;
   resize: none;
 
-  font-family: inherit;
   @include text($medium, $x-large, 400, $base-color);
   @include placeholder;
+  font-family: inherit;
 
   &:hover {
     border-color: $base-color;

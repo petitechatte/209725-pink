@@ -12,6 +12,7 @@
   transform: translateY(-50%);
 
   background-color: $bg-color;
+
   @include outline(red);
 
   &--show {
@@ -20,8 +21,8 @@
 }
 
 .modal__warning {
-  font-family: "PT Sans", "Arial", sans-serif;
   @include text($medium, $large, 700, $contrast-color);
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .modal__message {

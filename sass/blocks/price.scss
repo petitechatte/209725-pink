@@ -1,6 +1,7 @@
 .price {
   padding-top: 70px;
   background-color: $light-color;
+
   @include outline(red);
 }
 
@@ -14,6 +15,7 @@
   text-align: left;
 
   background-color: $bg-color;
+
   @include outline(green);
 }
 
@@ -44,6 +46,6 @@
 }
 
 .price__toggles {
-  height: 100px;
   @include container;
+  height: 100px;
 }

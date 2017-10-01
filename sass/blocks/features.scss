@@ -1,5 +1,6 @@
 .features {
   background-color: $light-color;
+
   @include outline(red);
 }
 
@@ -8,6 +9,7 @@
   padding-top: 45px;
 
   background-color: $bg-color;
+
   @include outline(blue);
 }
 

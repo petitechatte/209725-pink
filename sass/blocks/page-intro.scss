@@ -29,7 +29,6 @@
 }
 
 .page-intro__title {
-  margin-top: 0;
   @include container;
 
   @include text($large, 1.2, 300, $bg-color);

@@ -6,6 +6,7 @@
   color: $bg-color;
 
   background-color: $dark-color;
+
   @include outline(green);
 }
 
