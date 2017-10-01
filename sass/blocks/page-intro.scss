@@ -4,7 +4,7 @@
   color: $bg-color;
 
   background-color: $base-color;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: repeat;
   background-position: center bottom;
 }
@@ -30,6 +30,5 @@
 
 .page-intro__title {
   @include container;
-
   @include text($large, 1.2, 300, $bg-color);
 }

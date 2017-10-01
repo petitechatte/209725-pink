@@ -21,6 +21,7 @@
   text-align: left;
 
   background-color: $light-color;
+
   @include outline(green);
 }
 

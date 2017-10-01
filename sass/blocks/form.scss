@@ -81,14 +81,14 @@
     font-family: inherit;
   }
 
-    &--text:hover {
-      border-color: $base-color;
-    }
+  &--text:hover {
+    border-color: $base-color;
+  }
 
-    &--text:focus {
-      border-color: $accent-color;
-      outline: none;
-    }
+  &--text:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
 }
 
 .form__text {

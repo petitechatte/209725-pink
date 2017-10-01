@@ -20,19 +20,6 @@
 }
 
 @mixin placeholder {
-//  &::-webkit-input-placeholder {
-//    @include text($medium, $x-large, 400, $base-color);
-//  }
-//  &:-moz-placeholder {
-//    @include text($medium, $x-large, 400, $base-color);
-//  }
-//  &::-moz-placeholder {
-//    @include text($medium, $x-large, 400, $base-color);
-//  }
-//  &:-ms-input-placeholder {
-//    @include text($medium, $x-large, 400, $base-color);
-//  }
-
   &::placeholder {
   @include text($medium, $x-large, 400, $base-color);
   }

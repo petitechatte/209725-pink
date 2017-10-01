@@ -1,8 +1,8 @@
 .main-nav {
   display: flex;
   flex-direction: column;
-
   min-height: 325px;
+
   @include text($medium, 32px, 700, $bg-color, uppercase);
 
   background-color: $base-color;
@@ -39,7 +39,7 @@
   &:hover,
   &:focus {
     color: $accent-color;
-    }
+  }
 
   &:active {
     opacity: 0.3;
