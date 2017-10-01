@@ -21,7 +21,7 @@
 
 @mixin placeholder {
   &::placeholder {
-  @include text($medium, $x-large, 400, $base-color);
+    @include text($medium, $x-large, 400, $base-color);
   }
 }
 
