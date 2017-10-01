@@ -1,0 +1,8 @@
+.page-main {
+  @include outline(red);
+}
+
+.page-main__intro {
+  @include container;
+  padding: 46px 20px;
+}

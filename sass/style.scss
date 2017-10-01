@@ -1,6 +1,9 @@
+@import "normalize.scss";
 @import "variables.scss";
 @import "mixins.scss";
+
 @import "global.scss";
+
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/logo.scss";
@@ -16,11 +19,14 @@
 @import "blocks/page-footer.scss";
 @import "blocks/socials.scss";
 @import "blocks/copyright.scss";
+
 @import "blocks/gallery.scss";
 @import "blocks/post.scss";
 @import "blocks/upload.scss";
 @import "blocks/tools.scss";
+
 @import "blocks/form.scss";
+
 @import "blocks/modal.scss";
 @import "blocks/error.scss";
 @import "blocks/success.scss";
