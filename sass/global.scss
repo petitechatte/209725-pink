@@ -11,6 +11,10 @@ body {
   background-color: $bg-color;
 }
 
+img {
+  max-width: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -55,7 +59,7 @@ body {
     }
 
     &--invert:active {
-      color: rgba(210, 40, 86, 0.3);
+      color: transparentize($accent-color, 0.7);
     }
 
   &--submit {
@@ -72,7 +76,7 @@ body {
     }
 
     &--submit:active {
-      color: rgba(255, 255, 255, 0.3);
+      color: transparentize($bg-color, 0.7);
     }
 
   &--reset {
@@ -85,7 +89,7 @@ body {
     }
 
     &--reset:active {
-      color: rgba(255, 255, 255, 0.3);
+      color: transparentize($bg-color, 0.7);
 
       background-color: $base-color;
     }
@@ -105,7 +109,7 @@ body {
     }
 
     &--confirm:active {
-      color: rgba(255, 255, 255, 0.3);
+      color: transparentize($bg-color, 0.7);
     }
 
     &--confirm:disabled {

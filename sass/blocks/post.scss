@@ -1,3 +1,11 @@
+.post {
+  padding: 25px 17px;
+}
+
+.post__comment {
+  margin: 0;
+}
+
 .post__author {
   @include text($small, $large, 700);
 }
@@ -13,3 +21,6 @@
 .post__popularity {
   @include text($x-small, $large, 400, $accent-color, uppercase);
 }
+
+
+

@@ -4,6 +4,12 @@
   list-style: none;
 }
 
+@mixin fieldset-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 @mixin text($font-size, $line-height, $font-weight, $color: $base-color,  $text-transform: none) {
   font-size: $font-size;
   line-height: $line-height;

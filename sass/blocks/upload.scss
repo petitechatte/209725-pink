@@ -1,11 +1,48 @@
 .upload {
   background-color: $light-color;
+  @include outline(red);
 }
 
 .upload__intro {
+  @include container;
+  margin-top: 40px;
+  padding-bottom: 40px;
+
   background-color: $bg-color;
 }
 
+.upload__form {
+  padding-top: 20px;
+}
+
+.upload__preview {
+  @include fieldset-reset;
+  @include container;
+}
+
 .upload__image {
+  display: block;
   cursor: pointer;
 }
+
+.upload__edit {
+  @include fieldset-reset;
+  @include container;
+  min-height: 161px;
+  padding-top: 42px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid transparentize($base-color, 0.9);
+}
+
+.upload__submit {
+  @include fieldset-reset;
+  @include container;
+  padding-top: 38px;
+  padding-bottom: 41px;
+}
+
+.upload-button--submit {
+  margin-bottom: 12px;
+}
+
+
