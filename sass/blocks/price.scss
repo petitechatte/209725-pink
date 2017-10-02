@@ -1,6 +1,7 @@
 .price {
   padding-top: 70px;
   background-color: $light-color;
+  overflow: hidden;
 
   @include outline(red);
 }
