@@ -1,0 +1,51 @@
+.price {
+  padding-top: 70px;
+  background-color: $light-color;
+
+  @include outline(red);
+}
+
+.price__table {
+  width: 280px * 3 - 2 * 4;
+  min-height: 280px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  transform: translateX(-33.33%);
+
+  text-align: left;
+
+  background-color: $bg-color;
+
+  @include outline(green);
+}
+
+.price__row--header {
+  color: $bg-color;
+
+  background-color: $base-color;
+}
+
+.price__tariff {
+  @include text($medium, $x-large, 700, $bg-color, uppercase);
+}
+
+.price__value {
+  margin: 0;
+
+  @include text($large, $x-large, 300, $bg-color);
+}
+
+.price__cell {
+  border: 2px solid $border-color;
+
+  text-transform: uppercase;
+
+  &--header {
+    text-align: center;
+  }
+}
+
+.price__toggles {
+  @include container;
+  height: 100px;
+}

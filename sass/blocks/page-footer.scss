@@ -1,0 +1,12 @@
+.page-footer {
+  @include container;
+  padding: 40px 20px;
+}
+
+.page-footer--index {
+  display: none;
+}
+
+.page-footer__home {
+  text-decoration: none;
+}

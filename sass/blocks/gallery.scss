@@ -1,0 +1,44 @@
+.gallery {
+  @include container;
+}
+
+.gallery__intro {
+  margin: 0;
+  padding: 47px 18px;
+
+  @include text($small, $x-large, 400);
+}
+
+.gallery__list {
+  @include list-reset;
+}
+
+.gallery__item {
+  position: relative;
+  min-height: 300px;
+  margin-bottom: 20px;
+
+  text-align: left;
+
+  background-color: $light-color;
+
+  @include outline(green);
+}
+
+.gallery__link {
+  text-decoration: none;
+}
+
+.gallery__photo--panoramic {
+  margin: 0 -20px;
+}
+
+.gallery__label--panoramic {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @include text($x-small, $large, 700, $bg-color, uppercase);
+
+  background-color: $accent-color;
+}

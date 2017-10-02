@@ -1,0 +1,127 @@
+.form {
+  text-align: left;
+}
+
+.form__user {
+  @include fieldset-reset;
+  @include container;
+  min-height: 318px;
+  margin-bottom: 42px;
+}
+
+.form__achievements {
+  position: relative;
+
+  @include fieldset-reset;
+  @include container;
+  min-height: 603px;
+  padding-top: 110px;
+
+  background-color: $light-color;
+}
+
+.form__contacts {
+  @include fieldset-reset;
+  @include container;
+  min-height: 287px;
+  padding-top: 35px;
+}
+
+.form__application {
+  position: relative;
+
+  @include fieldset-reset;
+  @include container;
+  min-height: 339px;
+  padding-top: 110px;
+
+  background-color: $light-color;
+}
+
+.form__message {
+  @include fieldset-reset;
+  @include container;
+}
+
+.form__question {
+  display: block;
+  padding-top: 35px;
+  padding-bottom: 14px;
+
+  @include text($small, $medium, 400, $accent-color, uppercase);
+  text-align: center;
+
+  &--positioned {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.form__field {
+  margin-top: 0;
+}
+
+.form__label {
+  @include text($medium, $large, 400);
+
+  &--text {
+    display: block;
+
+    @include text($small, $large, 400, $accent-color, uppercase);
+    text-align: left;
+  }
+}
+
+.form__input {
+  &--text {
+    border: 2px solid $border-color;
+
+    @include text($medium, $x-large, 400, $base-color);
+    @include placeholder;
+    font-family: inherit;
+  }
+
+  &--text:hover {
+    border-color: $base-color;
+  }
+
+  &--text:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
+}
+
+.form__text {
+  width: 280px;
+  height: 200px;
+  margin-bottom: 48px;
+  border: 2px solid $border-color;
+  box-sizing: border-box;
+  resize: none;
+
+  @include text($medium, $x-large, 400, $base-color);
+  @include placeholder;
+  font-family: inherit;
+
+  &:hover {
+    border-color: $base-color;
+  }
+
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
+}
+
+.form__comment {
+  margin-top: 36px;
+  margin-bottom: 309px - 284 - 8;
+}
+
+.form__require {
+  @include text($small, $large, 400, $base-color, uppercase);
+}
+
+.form__asterisk {
+  color: $accent-color;
+}

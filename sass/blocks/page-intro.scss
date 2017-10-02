@@ -1,0 +1,34 @@
+.page-intro__wrapper {
+  height: 395px;
+
+  color: $bg-color;
+
+  background-color: $base-color;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: repeat;
+  background-position: center bottom;
+}
+
+.page-intro__demonstration {
+  display: flex;
+  width: 320px;
+  height: 100%;
+  margin: 0 auto;
+
+  @include outline(blue);
+}
+
+.page-intro__image {
+  margin-top: auto;
+  margin-right: auto;
+}
+
+.page-intro__wrapper--inner {
+  height: 170px;
+  padding-top: 35px;
+}
+
+.page-intro__title {
+  @include container;
+  @include text($large, 1.2, 300, $bg-color);
+}

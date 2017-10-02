@@ -1,0 +1,39 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+
+  display: none;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 43px;
+  padding-bottom: 50px;
+  transform: translateY(-50%);
+
+  background-color: $bg-color;
+
+  @include outline(red);
+
+  &--show {
+    display: block;
+  }
+}
+
+.modal__warning {
+  @include text($medium, $large, 700, $contrast-color);
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.modal__message {
+  padding: 0 27px;
+
+  @include text($small, $large, 400);
+}
+
+.modal__wrapper--highlighted {
+  padding-top: 48px;
+  padding-bottom: 52px;
+
+  background-color: $light-color;
+}

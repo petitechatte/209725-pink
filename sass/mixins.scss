@@ -1,0 +1,38 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin fieldset-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@mixin text($font-size, $line-height, $font-weight, $color: $base-color,  $text-transform: none) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+  text-transform: $text-transform;
+  font-style: normal;
+}
+
+@mixin placeholder {
+  &::placeholder {
+    @include text($medium, $x-large, 400, $base-color);
+  }
+}
+
+@mixin outline($color) {
+  outline: 2px solid $color;
+}
+
+@mixin container {
+  width: 320px - 20 * 2;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include outline(orange);
+}

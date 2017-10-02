@@ -4,33 +4,36 @@
     <meta charset="utf-8">
     <title>Пинк &mdash; фотографии пользователей</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
+        <div class="main-nav__wrapper">
           <a class="main-nav__home" href="index.html">
-            <img class="main-nav__pink logo" src="http://placehold.it/75x22/1c2530/ffffff" width="75" height="22" alt="PINK">
+            <img class="main-nav__pink logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
           </a>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-          <button class="main-nav__toggle" type="button" aria-label="toggle"></button>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+        <button class="main-nav__toggle" type="button" aria-label="toggle"></button>
       </nav>
 
       <div class="page-intro">
         <div class="page-intro__wrapper page-intro__wrapper--inner">
-          <h1 class="visually-hidden">Фотографии пользователей</h1>
+          <h1 class="page-intro__title">Фотографии пользователей</h1>
         </div>
       </div>
     </header>
@@ -41,82 +44,138 @@
         <p class="gallery__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="gallery__list">
           <li class="gallery__item">
-            <a href="#">
-              <img class="gallery__photo gallery__photo--panoramic" width="320" height="137" src="http://placehold.it/320x137/1c2530/ffffff" alt="Панорамный снимок перед прыжком">
+            <a class="gallery__link" href="#">
+              <img class="gallery__photo gallery__photo--panoramic" width="320" height="137" src="img/panorama-mobile@1x.jpg" alt="Панорамный снимок перед прыжком">
             </a>
             <b class="gallery__label gallery__label--panoramic">Панорама дня</b>
-            <blockquote class="gallery__comment post">
-              <cite class="post__author">Анна</cite>
-              <span class="post__time">(5 минут назад)</span>
-              <p class="post__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            </blockquote>
-            <p class="post__popularity">Нравится: <span class="post__likes">215</span></p>
+            <div class="post">
+              <blockquote class="post__comment">
+                <cite class="post__author">Анна</cite>
+                <span class="post__time">(5 минут назад)</span>
+                <p class="post__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              </blockquote>
+              <p class="post__popularity">
+                <a class="post__appreciate" href="#">
+                  <span class="visually-hidden">Оценить</span>
+                </a>
+                Нравится:
+                <span class="post__number">215</span>
+              </p>
+            </div>
           </li>
           <li class="gallery__item">
-            <a href="#">
-              <img class="gallery__photo" width="280" height="180" src="http://placehold.it/280x180/1c2530/ffffff" alt="Фотосъемка автомобиля">
+            <a class="gallery__link" href="#">
+              <img class="gallery__photo" width="280" height="180" src="img/photo-car-mobile@1x.jpg" alt="Фотосъемка автомобиля">
             </a>
-            <blockquote class="gallery__comment post">
-              <cite class="post__author">Левон</cite>
-              <span class="post__time">(5 часов назад)</span>
-              <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал</p>
-            </blockquote>
-            <p class="post__popularity">Нравится: <span class="post__likes">356</span></p>
+            <div class="post">
+              <blockquote class="post__comment">
+                <cite class="post__author">Левон</cite>
+                <span class="post__time">(5 часов назад)</span>
+                <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал</p>
+              </blockquote>
+              <p class="post__popularity">
+                <a class="post__appreciate" href="#">
+                  <span class="visually-hidden">Оценить</span>
+                </a>
+                Нравится:
+                <span class="post__number">356</span>
+              </p>
+            </div>
           </li>
           <li class="gallery__item">
-            <a href="#">
-              <img class="gallery__photo" width="280" height="180" src="http://placehold.it/280x180/1c2530/ffffff" alt="Барабанная установка">
+            <a class="gallery__link" href="#">
+              <img class="gallery__photo" width="280" height="180" src="img/photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
             </a>
-            <blockquote class="gallery__comment post">
-              <cite class="post__author">Антон</cite>
-              <span class="post__time">(12 часов назад)</span>
-              <p class="post__text">Соседи будут рады!</p>
-            </blockquote>
-            <p class="post__popularity">Нравится: <span class="post__likes">666</span></p>
+            <div class="post">
+              <blockquote class="post__comment">
+                <cite class="post__author">Антон</cite>
+                <span class="post__time">(12 часов назад)</span>
+                <p class="post__text">Соседи будут рады!</p>
+              </blockquote>
+              <p class="post__popularity">
+                <a class="post__appreciate" href="#">
+                  <span class="visually-hidden">Оценить</span>
+                </a>
+                Нравится:
+                <span class="post__number">666</span>
+              </p>
+            </div>
           </li>
           <li class="gallery__item">
-            <a href="#">
-              <img class="gallery__photo" width="280" height="180" src="http://placehold.it/280x180/1c2530/ffffff" alt="Мансарда с решеткой">
+            <a class="gallery__link" href="#">
+              <img class="gallery__photo" width="280" height="180" src="img/photo-window-mobile@1x.jpg" alt="Мансарда с решеткой">
             </a>
-            <blockquote class="gallery__comment post">
-              <cite class="post__author">Борис</cite>
-              <span class="post__time">(20 часов назад)</span>
-              <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            </blockquote>
-            <p class="post__popularity">Нравится: <span class="post__likes">215</span></p>
+            <div class="post">
+              <blockquote class="post__comment">
+                <cite class="post__author">Борис</cite>
+                <span class="post__time">(20 часов назад)</span>
+                <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              </blockquote>
+              <p class="post__popularity">
+                <a class="post__appreciate" href="#">
+                  <span class="visually-hidden">Оценить</span>
+                </a>
+                Нравится:
+                <span class="post__number">215</span>
+              </p>
+            </div>
           </li>
           <li class="gallery__item">
-            <a href="#">
-              <img class="gallery__photo" width="280" height="180" src="http://placehold.it/280x180/1c2530/ffffff" alt="Рынок на бахче">
+            <a class="gallery__link" href="#">
+              <img class="gallery__photo" width="280" height="180" src="img/photo-fair-mobile@1x.jpg" alt="Рынок на бахче">
             </a>
-            <blockquote class="gallery__comment post">
-              <cite class="post__author">Сергей</cite>
-              <span class="post__time">(25 часов назад)</span>
-              <p class="post__text">Самая кубанская в мире!</p>
-            </blockquote>
-            <p class="post__popularity">Нравится: <span class="post__likes">4</span></p>
+            <div class="post">
+              <blockquote class="post__comment">
+                <cite class="post__author">Сергей</cite>
+                <span class="post__time">(25 часов назад)</span>
+                <p class="post__text">Самая кубанская в мире!</p>
+              </blockquote>
+              <p class="post__popularity">
+                <a class="post__appreciate" href="#">
+                  <span class="visually-hidden">Оценить</span>
+                </a>
+                Нравится:
+                <span class="post__number">4</span>
+              </p>
+            </div>
           </li>
           <li class="gallery__item">
-            <a href="#">
-              <img class="gallery__photo" width="280" height="180" src="http://placehold.it/280x180/1c2530/ffffff" alt="Привал в горах">
+            <a class="gallery__link" href="#">
+              <img class="gallery__photo" width="280" height="180" src="img/photo-pov-mobile@1x.jpg" alt="Привал в горах">
             </a>
-            <blockquote class="gallery__comment post">
-              <cite class="post__author">Максим</cite>
-              <span class="post__time">(40 часов назад)</span>
-              <p class="post__text">Где снег-то?</p>
-            </blockquote>
-            <p class="post__popularity">Нравится: <span class="post__likes">150</span></p>
+            <div class="post">
+              <blockquote class="post__comment">
+                <cite class="post__author">Максим</cite>
+                <span class="post__time">(40 часов назад)</span>
+                <p class="post__text">Где снег-то?</p>
+              </blockquote>
+              <p class="post__popularity">
+                <a class="post__appreciate" href="#">
+                  <span class="visually-hidden">Оценить</span>
+                </a>
+                Нравится:
+                <span class="post__number">150</span>
+              </p>
+            </div>
           </li>
           <li class="gallery__item">
-            <a href="#">
-              <img class="gallery__photo" width="280" height="180" src="http://placehold.it/280x180/1c25303/ffffff" alt="Закат за крылом самолета">
+            <a class="gallery__link" href="#">
+              <img class="gallery__photo" width="280" height="180" src="img/photo-wing-mobile@1x.jpg" alt="Закат за крылом самолета">
             </a>
-            <blockquote class="gallery__comment post">
-              <cite class="post__author">Надежда</cite>
-              <span class="post__time">(45 часов назад)</span>
-              <p class="post__text">Всем GM и взаимные лайки!</p>
-            </blockquote>
-            <p class="post__popularity">Нравится: <span class="post__likes">2560</span></p>
+            <div class="post">
+              <blockquote class="post__comment">
+                <cite class="post__author">Надежда</cite>
+                <span class="post__time">(45 часов назад)</span>
+                <p class="post__text">Всем GM и взаимные лайки!</p>
+              </blockquote>
+              <p class="post__popularity">
+                <a class="post__appreciate" href="#">
+                  <span class="visually-hidden">Оценить</span>
+                </a>
+                Нравится:
+                <span class="post__number">2560</span>
+              </p>
+            </div>
           </li>
         </ul>
       </section>
@@ -124,11 +183,13 @@
       <section class="upload">
         <h2 class="visually-hidden">Загрузка изображения</h2>
         <p class="upload__intro">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
-        <a class="upload__link" href="#">
-          <img class="upload__image" width="280" height="374" src="http://placehold.it/280x374/1c25303/ffffff" alt="Зимняя дорога">
-        </a>
         <form class="upload__form" method="post" action="https://echo.htmlacademy.ru">
-          <input type="hidden" name="src" value="http://placehold.it/280x374/1c25303/ffffff">
+          <fieldset class="upload__preview">
+            <input class="visually-hidden" type="file" name="image" id="image-upload">
+            <label class="upload__wrapper" for="image-upload">
+              <img class="upload__image" width="280" height="374" src="img/photo-road-mobile@1x.jpg" alt="Зимняя дорога">
+            </label>
+          </fieldset>
           <fieldset class="upload__edit tools">
             <label class="tools__button tools__button--crop tools__button--active" for="crop-range">Обрезка</label>
             <input class="tools__range tools__range--active" type="range" min="0" max="100" name="crop" value="80" id="crop-range">
@@ -138,8 +199,8 @@
             <input class="tools__range" type="range" min="0" max="100" name="contrast" id="contrast-range">
           </fieldset>
           <fieldset class="upload__submit">
-            <button class="upload-button button button--submit" type="submit">Запостить</button>
-            <button class="upload-button button button--reset" type="reset" disabled>Отмена</button>
+            <button class="upload-button upload-button--submit button button--submit" type="submit">Запостить</button>
+            <button class="upload-button upload-button--reset button button--reset" type="reset">Отмена</button>
           </fieldset>
         </form>
       </section>
@@ -147,8 +208,8 @@
 
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <a href="index.html">
-          <img class="page-footer__pink logo logo--footer" width="147" height="40" src="http://placehold.it/147x40/1c2530/de6082" alt="PINK">
+        <a class="page-footer__home" href="index.html">
+          <img class="page-footer__pink logo logo--footer" width="147" height="40" src="img/logo-pink-blue-mobile.svg" alt="PINK">
         </a>
       </div>
       <div class="page-footer__socials socials">
@@ -156,17 +217,17 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--twitter">
-              <span class="visually-hidden">Twitter</span>
+              <span>Twitter</span>
             </a>
           </li>
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--facebook">
-              <span class="visually-hidden">Facebook</span>
+              <span>Facebook</span>
             </a>
           </li>
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--youtube">
-              <span class="visually-hidden">YouTube</span>
+              <span>YouTube</span>
             </a>
           </li>
         </ul>
@@ -174,7 +235,7 @@
       <div class="page-footer__copyright copyright">
         <span class="copyright__developer">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" width="27" height="34" src="http://placehold.it/27*34/de6082/ffffff" alt="HTML Academy">
+          <img class="copyright__logo" width="27" height="34" src="img/logo-htmlacademy.svg" alt="HTML Academy">
         </a>
       </div>
     </footer>

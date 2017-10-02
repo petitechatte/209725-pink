@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+
+  color: $base-color;
+  font-family: "Open Sans", "Segoe UI", "Optima", sans-serif;
+  font-size: $small;
+  line-height: $x-large;
+  font-weight: 400;
+  text-align: center;
+
+  background-color: $bg-color;
+}
+
+img {
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.container {
+  @include container;
+}
+
+.button {
+  display: inline-block;
+  width: 280px;
+  padding: 16px 30px;
+  border: 3px solid $base-color;
+  border-radius: 55px;
+  box-sizing: border-box;
+
+  @include text($medium, $medium, 700, inherit);
+  font-family: inherit;
+  text-decoration: none;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  &--invert {
+    border-color: $bg-color;
+
+    color: $bg-color;
+  }
+
+  &--invert:hover,
+  &--invert:focus {
+    color: $accent-color;
+
+    background-color: $bg-color;
+  }
+
+  &--invert:active {
+    color: transparentize($accent-color, 0.7);
+  }
+
+  &--submit {
+    border-color: $accent-color;
+
+    color: $accent-color;
+  }
+
+  &--submit:hover,
+  &--submit:focus {
+    color: $bg-color;
+
+    background-color: $accent-color;
+  }
+
+  &--submit:active {
+    color: transparentize($bg-color, 0.7);
+  }
+
+  &--reset {
+    opacity: 0.1;
+  }
+
+  &--reset:hover,
+  &--reset:focus {
+    opacity: 0.3;
+  }
+
+  &--reset:active {
+    color: transparentize($bg-color, 0.7);
+
+    background-color: $base-color;
+  }
+
+  &--confirm {
+    border: none;
+    border-radius: 0;
+
+    @include text($medium, $large, 700, $bg-color, uppercase);
+
+    background-color: $btn-color;
+  }
+
+  &--confirm:hover,
+  &--confirm:focus {
+    background-color: $btn-hover-color;
+  }
+
+  &--confirm:active {
+    color: transparentize($bg-color, 0.7);
+  }
+
+  &--confirm:disabled {
+    background-color: $border-color;
+  }
+}
+
+.lead {
+  @include text(24px, 1.2, 300);
+}
