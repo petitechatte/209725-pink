@@ -123,6 +123,6 @@ img {
 
 @media (min-width: $desktop) {
   .container {
-    @include container($desktop);
+    @include container($desktop, 0 10px);
   }
 }
