@@ -46,10 +46,11 @@
   outline: 2px solid $color;
 }
 
-@mixin container {
-  width: 320px - 20 * 2;
+@mixin container($width: auto, $padding: 0 20px) {
+  width: $width;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: $padding;
+  box-sizing: border-box;
 
   @include outline(orange);
 }

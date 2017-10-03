@@ -13,14 +13,11 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active) {
   @include visuallyhidden;
-}
-
-.container {
-  @include container;
 }
 
 .button {
@@ -112,4 +109,20 @@ img {
 
 .lead {
   @include text(24px, 1.2, 300);
+}
+
+.container {
+  @include container($phone);
+}
+
+@media (min-width: $tablet) {
+  .container {
+    @include container($tablet);
+  }
+}
+
+@media (min-width: $desktop) {
+  .container {
+    @include container($desktop);
+  }
 }
