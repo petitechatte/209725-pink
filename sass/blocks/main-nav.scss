@@ -1,13 +1,7 @@
 .main-nav {
-  display: flex;
-  flex-direction: column;
-  min-height: 325px;
-
   @include text($medium, 32px, 700, $bg-color, uppercase);
-
-  background-color: $base-color;
-
   @include outline(green);
+  background-color: $overlay;
 }
 
 .main-nav__container {
@@ -26,6 +20,7 @@
 }
 
 .main-nav__list {
+  display: none;
   min-height: 256px;
 
   @include list-reset;
@@ -62,9 +57,27 @@
   margin-left: 50px;
 }
 
+@media (max-width: $tablet-max-width) { // вертикальное меню
+  .main-nav {
+    @include text($medium, 32px, 700, $bg-color, uppercase);
+
+    @include outline(green);
+
+    &--opened {
+      min-height: 325px;
+
+      background-color: $base-color; // по умолчанию
+    }
+  }
+
+  .main-nav--opened .main-nav__list {
+      display: block;
+    }
+}
+
 @media (min-width: $tablet) {
   .main-nav {
-    min-height: 365px;
+
   }
 
   .main-nav__home {

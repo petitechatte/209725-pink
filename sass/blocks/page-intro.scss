@@ -1,18 +1,15 @@
-.page-intro__wrapper {
-  height: 395px;
+.page-intro {
+  position: relative;
+
+  min-height: 170px;
 
   color: $bg-color;
-
-  background-color: $base-color;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: repeat;
-  background-position: center bottom;
 }
 
 .page-intro__demonstration {
   display: flex;
-  width: 320px;
-  height: 100%;
+  width: $mobile;
+  height: 395px;
   margin: 0 auto;
 
   @include outline(blue);
@@ -23,12 +20,92 @@
   margin-right: auto;
 }
 
-.page-intro__wrapper--inner {
-  height: 170px;
-  padding-top: 35px;
-}
+//.page-intro__wrapper--inner {
+//  height: 170px;
+//  padding-top: 35px;
+//}
 
 .page-intro__title {
   @include container;
   @include text($large, 1.2, 300, $bg-color);
+}
+
+.page-intro__content {
+  position: relative;
+  z-index: 1;
+
+  min-height: 271px;
+  padding-top: 28px;
+  padding-bottom: 30px;
+
+  color: $bg-color;
+
+  background-color: $dark-color;
+
+  @include outline(green);
+}
+
+@media (max-width: $mobile-max-width) {
+  .page-intro__demonstration {
+    width: $mobile;
+    margin: 0 auto;
+  }
+
+  .page-intro__content {
+    @include container($mobile);
+
+  }
+}
+
+@media (min-width: $tablet) {
+  .page-intro {
+    @include container($tablet);
+    border-top: 1px solid transparent; // против выпадения отступа
+  }
+
+  .page-intro__demonstration {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: $tablet - 20px * 2;
+    height: 618px;
+    margin: 0 20px;
+  }
+
+  .page-intro__image {
+    width: 470px;  // временно
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .page-intro__content {
+    width: 300px;
+    margin-top: 102px;
+    padding: 0;
+
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-intro {
+    @include container($desktop);
+    min-height: 742px;
+  }
+
+  .page-intro__demonstration {
+    width: $desktop; // !уточнить
+    height: 742px;
+    margin: 0;
+  }
+
+  .page-intro__image {
+    width: 555px; // временно
+    margin: auto;
+  }
+
+  .page-intro-content {
+    margin-top: 125px;
+  }
 }

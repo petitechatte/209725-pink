@@ -1,15 +1,3 @@
-.download {
-  min-height: 271px;
-  padding-top: 28px;
-  padding-bottom: 30px;
-
-  color: $bg-color;
-
-  background-color: $dark-color;
-
-  @include outline(green);
-}
-
 .download__list {
   @include list-reset;
 }
@@ -20,4 +8,16 @@
 
 .download__description {
   @include text($small, $large, 300, $bg-color);
+}
+
+@media (max-width: $mobile-max-width) {
+  .download__slogan {
+    @include visuallyhidden;
+  }
+}
+
+@media (min-width: $tablet) {
+  .download__slogan {
+    @include text(40px, 1.2, 300, $bg-color);
+  }
 }

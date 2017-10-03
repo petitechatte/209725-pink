@@ -1,3 +1,35 @@
 .page-header {
   @include outline(red);
+
+  background-color: $base-color;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: repeat-x;  // временно
+  background-position: center top;  // !уточнить позднее
+}
+
+@media (max-width: $tablet-max-width) { // выпадающее меню
+  .page-header--stretched {
+    background-position: center 256px; // смещение на высоту меню
+  }
+}
+
+@media (min-width: $tablet) {
+  .page-header {
+    min-height: 730px;
+
+    background-repeat: repeat;  // временно
+    background-position: center; // !уточнить позднее
+
+    &--stretched {
+      min-height: 984px;
+
+      background-position: center; // !уточнить позднее
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header {
+    min-height: 853px;
+  }
 }
