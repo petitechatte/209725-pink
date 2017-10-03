@@ -112,7 +112,7 @@ img {
 }
 
 .container {
-  @include container($phone);
+  @include container($mobile);
 }
 
 @media (min-width: $tablet) {
