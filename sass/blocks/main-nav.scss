@@ -54,6 +54,10 @@
   position: absolute;
   top: 0;
   right: 20px;
+
+  display: none;
+  width: 24px; // временно
+  height: 24px; // временно
   margin-left: 50px;
 }
 
@@ -73,13 +77,19 @@
   .main-nav--opened .main-nav__list {
       display: block;
     }
+
+  .main-nav__toggle {
+    &--open {
+      display: block;
+    }
+
+    &--close {
+      display: block;
+    }
+  }
 }
 
 @media (min-width: $tablet) {
-  .main-nav {
-
-  }
-
   .main-nav__home {
     min-height: 110px;
   }
@@ -107,9 +117,5 @@
 
   .main-nav__item {
     margin-left: 80px;
-  }
-
-  .main-nav__toggle {
-    display: none;
   }
 }
