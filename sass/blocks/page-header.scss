@@ -1,6 +1,8 @@
 .page-header {
   @include outline(red);
 
+//  border-bottom: 1px solid transparent;
+
   background-color: $base-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: repeat-x;  // временно

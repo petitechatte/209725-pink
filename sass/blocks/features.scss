@@ -5,7 +5,7 @@
 }
 
 .features__header {
-  min-height: 250px;
+  min-height: 250px - 45;
   padding-top: 45px;
 
   background-color: $bg-color;
@@ -33,4 +33,22 @@
   @include container;
   height: 277px;
   overflow: hidden;
+}
+
+@media (min-width: $tablet) {
+  .features {
+    min-height: 725px;
+  }
+
+  .features__header {
+    min-height: 300px - 60;
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__header {
+    min-height: 420px - 80;
+    padding-top: 80px;
+  }
 }
