@@ -36,6 +36,13 @@
 }
 
 @media (max-width: $mobile-max-width) {
+  .features__image {
+    &--1,
+    &--2 {
+      @include visuallyhidden;
+    }
+  }
+
   .features__duration {
     @include visuallyhidden;
   }
