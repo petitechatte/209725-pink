@@ -1,16 +1,18 @@
 .page-intro {
-  position: relative;
-
   min-height: 170px;
+  padding-top: 35px;
 
-  color: $bg-color;
+  &--main {
+    position: relative;
+
+    padding: 0;
+
+    color: $bg-color;
+  }
 }
 
 .page-intro__demonstration {
   display: flex;
-  width: $mobile;
-  height: 395px;
-  margin: 0 auto;
 
   @include outline(blue);
 }
@@ -19,11 +21,6 @@
   margin-top: auto;
   margin-right: auto;
 }
-
-//.page-intro__wrapper--inner {
-//  height: 170px;
-//  padding-top: 35px;
-//}
 
 .page-intro__title {
   @include container;
@@ -45,19 +42,18 @@
   @include outline(green);
 }
 
-@media (max-width: $mobile-max-width) {
+@media (max-width: $mobile-max-width) { // в потоке
   .page-intro__demonstration {
-    width: $mobile;
-    margin: 0 auto;
+    @include container($mobile, 0 0);
+    height: 395px;
   }
 
   .page-intro__content {
     @include container($mobile);
-
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet) {  // появляется многослойность
   .page-intro {
     @include container($tablet);
     border-top: 1px solid transparent; // против выпадения отступа
@@ -65,12 +61,9 @@
 
   .page-intro__demonstration {
     position: absolute;
-    top: 0;
-    right: 0;
 
     width: $tablet - 20px * 2;
     height: 618px;
-    margin: 0 20px;
   }
 
   .page-intro__image {
@@ -90,22 +83,22 @@
 
 @media (min-width: $desktop) {
   .page-intro {
-    @include container($desktop);
+    @include container($desktop, 0 10px);
     min-height: 742px;
   }
 
   .page-intro__demonstration {
-    width: $desktop; // !уточнить
+    width: $desktop - 10px * 2;
     height: 742px;
     margin: 0;
   }
 
   .page-intro__image {
     width: 555px; // временно
-    margin: auto;
+    margin-right: 43px;
   }
 
-  .page-intro-content {
+  .page-intro__content {
     margin-top: 125px;
   }
 }
