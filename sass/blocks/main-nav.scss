@@ -6,6 +6,8 @@
 
 .main-nav__container {
   position: relative;
+  
+  @include container($mobile, 0);
 
   text-align: left;
 }
@@ -13,6 +15,7 @@
 .main-nav__home {
   display: inline-block;
   min-height: 70px;
+  margin-left: 20px;
 
   text-decoration: none;
 
@@ -90,6 +93,10 @@
 }
 
 @media (min-width: $tablet) {
+  .main-nav__container {
+    @include container($tablet, 0);
+  }
+  
   .main-nav__home {
     min-height: 110px;
   }
@@ -101,11 +108,13 @@
   }
 
   .main-nav__container {
+    @include container($desktop, 0 10px);
     display: flex;
   }
 
   .main-nav__home {
     width: 150px;
+    margin-left: 0;
   }
 
   .main-nav__list {
