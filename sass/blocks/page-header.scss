@@ -1,7 +1,7 @@
 .page-header {
   @include outline(red);
 
-//  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 
   background-color: $base-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -16,22 +16,11 @@
 }
 
 @media (min-width: $tablet) {
-  .page-header {
-    min-height: 730px;
-
-    background-repeat: repeat;  // временно
-    background-position: center; // !уточнить позднее
-
-    &--stretched {
-      min-height: 984px;
-
+  .page-header { 
+    &--index {      
+      background-repeat: repeat;  // временно
       background-position: center; // !уточнить позднее
     }
   }
 }
 
-@media (min-width: $desktop) {
-  .page-header {
-    min-height: 853px;
-  }
-}
