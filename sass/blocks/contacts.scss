@@ -55,7 +55,7 @@
 }
 
 .contacts__map {
-  width: 320px;
+  width: $mobile;
   height: 200px;
   margin: 0 auto;
 
@@ -63,6 +63,7 @@
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: left bottom;
+  background-size: cover; //временно
 
   @include outline(blue);
 }
@@ -88,6 +89,11 @@
     width: 50%;
     margin-top: 55px;
   }
+  
+  .contacts__map {
+    width: $tablet;
+    height: 375px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -109,5 +115,10 @@
   .contacts__item {
     width: 287px;
     margin-top: 0;
+  }
+  
+  .contacts__map {
+    width: $desktop;
+    height: 503px;
   }
 }
