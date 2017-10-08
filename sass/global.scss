@@ -85,7 +85,8 @@ img {
   }
 
   &--confirm {
-    border: none;
+    padding-top: 17px;
+    border-color: $btn-color;
     border-radius: 0;
 
     @include text($medium, $large, 700, $bg-color, uppercase);
@@ -95,6 +96,8 @@ img {
 
   &--confirm:hover,
   &--confirm:focus {
+    border-color: $btn-hover-color;
+    
     background-color: $btn-hover-color;
   }
 
@@ -103,6 +106,8 @@ img {
   }
 
   &--confirm:disabled {
+    border-color: $border-color;
+    
     background-color: $border-color;
   }
 }

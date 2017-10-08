@@ -2,59 +2,9 @@
   text-align: left;
 }
 
-.form__user {
-  @include fieldset-reset;
-  @include container;
-  min-height: 318px;
-  margin-bottom: 42px;
-}
-
-.form__achievements {
-  position: relative;
-
-  @include fieldset-reset;
-  @include container;
-  min-height: 603px;
-  padding-top: 110px;
-
-  background-color: $light-color;
-}
-
-.form__contacts {
-  @include fieldset-reset;
-  @include container;
-  min-height: 287px;
-  padding-top: 35px;
-}
-
-.form__application {
-  position: relative;
-
-  @include fieldset-reset;
-  @include container;
-  min-height: 339px;
-  padding-top: 110px;
-
-  background-color: $light-color;
-}
-
-.form__message {
-  @include fieldset-reset;
-  @include container;
-}
-
 .form__question {
-  display: block;
-  padding-top: 35px;
-  padding-bottom: 14px;
-
   @include text($small, $medium, 400, $accent-color, uppercase);
   text-align: center;
-
-  &--positioned {
-    position: absolute;
-    top: 0;
-  }
 }
 
 .form__field {
@@ -65,8 +15,6 @@
   @include text($medium, $large, 400);
 
   &--text {
-    display: block;
-
     @include text($small, $large, 400, $accent-color, uppercase);
     text-align: left;
   }
@@ -124,4 +72,177 @@
 
 .form__asterisk {
   color: $accent-color;
+}
+
+@media (max-width: $mobile-max-width) {
+  .form__fieldset {
+    position: relative;
+    
+    @include fieldset-reset;
+    @include container($mobile);
+    padding-top: 110px;
+  }
+  
+  .form__user {
+    min-height: 370px;
+    padding-top: 0;
+  }
+
+  .form__achievements {
+    min-height: 603px - 110;
+    
+    background-color: $light-color;
+  }
+
+  .form__contacts {
+    min-height: 287px - 35;
+    padding-top: 35px;
+  }
+  
+  .form__contacts .form__question {
+    @include visuallyhidden;
+  }
+
+  .form__application {
+    min-height: 339px - 110;
+    
+    background-color: $light-color;
+  }
+
+  .form__question {
+    display: block;
+    width: 280px; // выравнивание однострочной легенды
+    padding-top: 35px;
+    padding-bottom: 14px;
+
+    &--positioned {
+      position: absolute;
+      top: 0;
+    }
+  }
+  
+  .form__label--text {
+    display: block;
+  }
+  
+  .form__container {
+    @include container($mobile);
+  }
+}
+
+@media (min-width: $tablet) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form__fieldset {
+    margin-bottom: 65px;
+  }
+  
+  .form__user {
+    @include fieldset-reset;
+    min-height: 291px;
+    margin-bottom: 65px;
+    
+    @include outline(green);
+  }
+  
+  .form__achievements {
+    min-height: 563px;
+    order: 3;
+  }
+  
+  .form__contacts {
+    min-height: 320px;
+    order: 2;
+  }
+  
+  .form__application {
+    min-height: 310px;
+    order: 1;
+  }
+  
+  .form__message {
+    text-align: center;
+    order: 4;
+  }
+  
+  .form__text {
+    width: 500px;
+    height: 190px;
+    margin-top: 45px;
+    margin-bottom: 50px;
+   
+  }
+  
+  .form__container {
+    @include outline(green);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    min-height: 63px;
+    margin-bottom: 178px - 127;
+    order: 5;
+  }
+  
+  .form__comment {
+    margin: 0;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .form__desktop {
+    @include visuallyhidden;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .form__fieldset {
+    width: 100%;
+  }
+  
+  .form__user {
+    width: 434px;
+    min-height: 310px;
+  }
+  
+  .form__application {
+    width: 434px;
+    min-height: 310px;
+  }
+  
+  .form__contacts {
+    min-height: 160px;
+  }
+  
+  .form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .form__achievements {
+    min-height: 230px;
+  }
+  
+  .form__achievements .form__columns {
+    column-count: 3;
+  }
+  
+  .form__text {
+    width: 820px;
+    height: 128px;
+  }
+  
+  .form__container {
+    margin-bottom: 0;
+  }
 }

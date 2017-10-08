@@ -3,6 +3,28 @@
 }
 
 .page-main__intro {
-  @include container;
+  @include container($mobile);
   padding: 46px 20px;
+}
+
+@media (min-width: $tablet) {
+  .page-main__intro {
+    @include container($tablet);
+    min-height: 253px;
+  }
+  
+  .page-main__story {
+    @include container($tablet);
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-main__intro {
+    @include container($desktop, 0 10px);
+    min-height: 220px;
+  }
+  
+  .page-main__story {
+    @include container($desktop, 0 10px);
+  }
 }
