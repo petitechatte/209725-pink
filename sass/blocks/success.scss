@@ -1,3 +1,9 @@
 .success {
-  min-height: 381px;
+  min-height: 380px;
+}
+
+@media (min-width: $tablet) {
+  .success {
+    width: 430px;
+  }
 }

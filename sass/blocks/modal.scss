@@ -5,10 +5,11 @@
   right: 0;
 
   display: none;
-  width: 320px;
+  width: $mobile;
   margin: 0 auto;
   padding-top: 43px;
   padding-bottom: 50px;
+  box-sizing: border-box;
   transform: translateY(-50%);
 
   background-color: $bg-color;
@@ -36,4 +37,12 @@
   padding-bottom: 52px;
 
   background-color: $light-color;
+}
+
+@media (min-width: $tablet) {
+  .modal {
+    width: 460px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
