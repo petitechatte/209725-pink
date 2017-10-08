@@ -22,6 +22,8 @@
 }
 
 .modal__warning {
+  padding: 20px;
+  
   @include text($medium, $large, 700, $contrast-color);
   font-family: "PT Sans", "Arial", sans-serif;
 }
@@ -42,6 +44,14 @@
 @media (min-width: $tablet) {
   .modal {
     width: 460px;
+  }
+  
+  .modal__warning {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  
+  .modal__message {
     padding-left: 70px;
     padding-right: 70px;
   }
