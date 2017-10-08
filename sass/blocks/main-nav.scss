@@ -67,7 +67,6 @@
 @media (max-width: $tablet-max-width) { // вертикальное меню
   .main-nav {
     @include text($medium, 32px, 700, $bg-color, uppercase);
-
     @include outline(green);
 
     &--opened {
@@ -78,9 +77,9 @@
   }
 
   .main-nav--opened .main-nav__list {
-      display: block;
-      margin-top: 4px;
-    }
+    display: block;
+    margin-top: 4px;
+  }
 
   .main-nav__toggle {
     &--open {
