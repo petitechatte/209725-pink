@@ -97,7 +97,7 @@ img {
   &--confirm:hover,
   &--confirm:focus {
     border-color: $btn-hover-color;
-    
+
     background-color: $btn-hover-color;
   }
 
@@ -107,7 +107,7 @@ img {
 
   &--confirm:disabled {
     border-color: $border-color;
-    
+
     background-color: $border-color;
   }
 }

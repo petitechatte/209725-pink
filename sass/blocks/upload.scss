@@ -8,11 +8,11 @@
   background-color: $bg-color;
 }
 
-.upload__intro { 
+.upload__intro {
   @include container($mobile);
   margin-top: 54px;
   padding-top: 0;
-  padding-bottom: 40px;  
+  padding-bottom: 40px;
 }
 
 .upload__form {
@@ -31,12 +31,12 @@
 }
 
 .upload__edit {
-  @include fieldset-reset;  
+  @include fieldset-reset;
   min-height: 161px - 42 -28;
   padding-top: 42px;
   padding-bottom: 28px;
   border-bottom: 1px solid transparentize($base-color, 0.9);
-  
+
   @include outline(green);
 }
 
@@ -44,7 +44,7 @@
   @include fieldset-reset;
   padding-top: 38px;
   padding-bottom: 41px;
-  
+
   @include outline(green);
 }
 
@@ -58,7 +58,7 @@
     min-height: 125px;
     margin-top: 67px - 20;
   }
-  
+
   .upload__form {
     @include container($tablet);
     display: flex;
@@ -67,57 +67,57 @@
     padding-top: 57px;
     padding-bottom: 54px;
   }
-  
+
   .upload__preview {
     width: 300px;
   }
-  
+
   .upload__image {
     width: 300px;
   }
-  
+
   .upload__column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 300px;
   }
-  
+
   .upload__submit {
     padding: 0;
   }
-  
+
   .upload__button--submit {
     margin-bottom: 24px;
   }
 }
 
-@media (min-width: $desktop) {  
+@media (min-width: $desktop) {
   .upload__intro {
     @include container($desktop, 0 10px);
     margin-top: 62px - 54;
   }
-  
+
   .upload__form {
     @include container($desktop, 57px 0);
     padding-left: 90px;
     padding-right: 70px;
   }
-  
+
   .upload__column {
     display: flex;
     justify-content: space-between;
     width: 410px;
   }
-  
+
   .upload__buttons {
     display: flex;
   }
-  
+
   .upload__button {
     width: 183px;
   }
-  
+
   .upload__button--submit {
     margin-bottom: 0;
     margin-right: auto;

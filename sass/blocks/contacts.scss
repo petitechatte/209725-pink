@@ -11,7 +11,7 @@
 .contacts__intro {
   margin: 0;
   padding: 45px 0;
-  
+
   @include outline(green);
 }
 
@@ -72,23 +72,23 @@
     @include container($tablet);
     min-height: 405px;
   }
-  
+
   .contacts__intro {
     min-height: 110px - 45;
     padding-bottom: 0;
   }
-  
+
   .contacts__list {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .contacts__item {
     width: 50%;
     margin-top: 55px;
   }
-  
+
   .contacts__map {
     height: 375px;
   }
@@ -99,22 +99,22 @@
     @include container($desktop, 0 10px);
     min-height: 365px;
   }
-  
+
   .contacts__intro {
     min-height: 245px - 145;
     padding-top: 75px;
     padding-bottom: 70px;
   }
-  
+
   .contacts__list {
     justify-content: space-between;
   }
-  
+
   .contacts__item {
     width: 287px;
     margin-top: 0;
   }
-  
+
   .contacts__map {
     height: 503px;
   }

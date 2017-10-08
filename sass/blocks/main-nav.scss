@@ -6,7 +6,7 @@
 
 .main-nav__container {
   position: relative;
-  
+
   @include container($mobile, 0);
 
   text-align: left;
@@ -97,7 +97,7 @@
   .main-nav__container {
     @include container($tablet, 0);
   }
-  
+
   .main-nav__home {
     min-height: 110px;
   }

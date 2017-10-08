@@ -58,19 +58,19 @@
     @include container($mobile, 0);
     overflow-x: hidden;
   }
-  
+
   .price__table {
     margin-left: -280px - 260px;
   }
-  
+
   .price__slider--no-js .price__table {
     margin-left: -280px;
   }
-  
+
   .price__toggles {
     display: block;
   }
-    
+
   .price__slider--no-js {
     overflow-x: auto;
   }
@@ -86,7 +86,7 @@
     padding-top: 37px;
     padding-bottom: 68px;
   }
-  
+
   .price__table {
     width: $tablet - 20px * 2;
     height: 220px;
@@ -103,7 +103,7 @@
     padding-top: 65px;
     padding-bottom: 95px;
   }
-  
+
   .price__table {
     width: $desktop - 10px * 2;
     height: 280px;

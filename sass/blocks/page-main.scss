@@ -12,7 +12,7 @@
     @include container($tablet);
     min-height: 253px;
   }
-  
+
   .page-main__story {
     @include container($tablet);
   }
@@ -23,7 +23,7 @@
     @include container($desktop, 0 10px);
     min-height: 220px;
   }
-  
+
   .page-main__story {
     @include container($desktop, 0 10px);
   }

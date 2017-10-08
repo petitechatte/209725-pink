@@ -16,11 +16,10 @@
 }
 
 @media (min-width: $tablet) {
-  .page-header { 
-    &--index {      
+  .page-header {
+    &--index {
       background-repeat: repeat;  // временно
       background-position: center; // !уточнить позднее
     }
   }
 }
-

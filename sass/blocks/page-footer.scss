@@ -2,7 +2,7 @@
   @include container($mobile);
   min-height: 284px;
   padding: 40px 20px;
-  
+
   &--index {
     display: none;
   }
@@ -20,27 +20,27 @@
     justify-content: space-between;
     min-height: 128px;
     padding: 36px 20px;
-    
+
     &--index {
       display: flex;
     }
   }
-  
+
   .page-footer__logo {
     width: 150px;
-    
+
     @include outline(green);
   }
-  
+
   .page-footer__socials {
     min-width: 200px;
-    
+
     @include outline(green);
   }
-  
+
   .page-footer__copyright {
     width: 150px;
-    
+
     @include outline(green);
   }
 }

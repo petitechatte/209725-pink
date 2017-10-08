@@ -3,15 +3,15 @@
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .tools--no-js .tools__range {
     display: block;
   }
-  
+
   .tools__range {
     display: none;
     order: 1;
-    
+
     &--active {
       display: block;
     }
