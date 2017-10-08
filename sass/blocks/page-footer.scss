@@ -1,6 +1,6 @@
 .page-footer {
   @include container($mobile);
-  min-height: 284px - 80;
+  min-height: 284px;
   padding: 40px 20px;
   
   &--index {
@@ -18,7 +18,7 @@
     @include container($tablet);
     display: flex;
     justify-content: space-between;
-    min-height: 128px - 72;
+    min-height: 128px;
     padding: 36px 20px;
     
     &--index {
@@ -48,6 +48,7 @@
 @media (min-width: $desktop) {
   .page-footer {
     @include container($desktop, 0 10px);
-    padding: 36px 10px;
+    min-height: 197px;
+    padding: 70px 10px;
   }
 }
