@@ -1,35 +1,35 @@
 .main-nav {
-  display: flex;
-  flex-direction: column;
-  min-height: 325px;
-
   @include text($medium, 32px, 700, $bg-color, uppercase);
-
-  background-color: $base-color;
-
   @include outline(green);
+  background-color: $overlay;
 }
 
-.main-nav__wrapper {
-  @include container;
-  min-height: 70px;
+.main-nav__container {
+  position: relative;
+
+  @include container($mobile, 0);
 
   text-align: left;
 }
 
 .main-nav__home {
+  display: inline-block;
+  min-height: 66px;
+  margin-left: 20px;
+
   text-decoration: none;
+
+  @include outline(purple);
 }
 
 .main-nav__list {
+  display: none;
   min-height: 256px;
 
   @include list-reset;
   @include outline(blue);
-}
 
-.main-nav__item {
-  @include container;
+  text-align: center;
 }
 
 .main-nav__link {
@@ -56,6 +56,75 @@
 .main-nav__toggle {
   position: absolute;
   top: 0;
-  left: 50%;
+  right: 20px;
+
+  display: none;
+  width: 24px; // временно
+  height: 24px; // временно
   margin-left: 50px;
+}
+
+@media (max-width: $tablet-max-width) { // вертикальное меню
+  .main-nav {
+    @include text($medium, 32px, 700, $bg-color, uppercase);
+    @include outline(green);
+
+    &--opened {
+      min-height: 325px;
+
+      background-color: $base-color; // по умолчанию
+    }
+  }
+
+  .main-nav--opened .main-nav__list {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .main-nav__toggle {
+    &--open {
+      display: block;
+    }
+
+    &--close {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .main-nav__container {
+    @include container($tablet, 0);
+  }
+
+  .main-nav__home {
+    min-height: 110px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav {
+    min-height: 110px;
+  }
+
+  .main-nav__container {
+    @include container($desktop, 0 10px);
+    display: flex;
+  }
+
+  .main-nav__home {
+    width: 150px;
+    margin-left: 0;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 790px;
+    min-height: 110px;
+  }
+
+  .main-nav__item {
+    margin-left: 80px;
+  }
 }

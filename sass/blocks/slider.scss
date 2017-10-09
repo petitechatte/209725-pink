@@ -14,3 +14,13 @@
   @include list-reset;
   height: 100px;
 }
+
+.slider__button {
+  display: none;
+}
+
+@media (min-width: $desktop) {
+  .slider__button {
+    display: block;
+  }
+}

@@ -1,3 +1,9 @@
 .error {
   min-height: 289px;
 }
+
+@media (min-width: $tablet) {
+  .error {
+    min-height: 363px;
+  }
+}

@@ -20,4 +20,36 @@
 
 .post__popularity {
   @include text($x-small, $large, 400, $accent-color, uppercase);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet) {
+  .post {
+    min-height: 158px - 25 * 2;
+  }
+
+  .gallery__item--panoramic .post {
+    position: relative;
+
+    min-height: 122px - 25 * 2;
+  }
+
+  .post__popularity {
+    width: 100%;
+  }
+
+  .gallery__item--panoramic .post__popularity {
+    position: absolute;
+    top: 0;
+    right: 25px;
+
+    width: 150px;
+  }
+
+  .post__appreciate {
+    order: 1;
+  }
 }

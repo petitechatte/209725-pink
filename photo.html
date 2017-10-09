@@ -7,34 +7,32 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
+    <header class="page-header page-header--stretched">
+      <nav class="main-nav main-nav--opened">
+        <div class="main-nav__container">
           <a class="main-nav__home" href="index.html">
             <img class="main-nav__pink logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
           </a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+          <button class="main-nav__toggle" type="button" aria-label="toggle"></button>
         </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-        <button class="main-nav__toggle" type="button" aria-label="toggle"></button>
       </nav>
 
       <div class="page-intro">
-        <div class="page-intro__wrapper page-intro__wrapper--inner">
           <h1 class="page-intro__title">Фотографии пользователей</h1>
-        </div>
       </div>
     </header>
 
@@ -43,7 +41,7 @@
         <h2 class="visually-hidden">Галерея</h2>
         <p class="gallery__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="gallery__list">
-          <li class="gallery__item">
+          <li class="gallery__item gallery__item--panoramic">
             <a class="gallery__link" href="#">
               <img class="gallery__photo gallery__photo--panoramic" width="320" height="137" src="img/panorama-mobile@1x.jpg" alt="Панорамный снимок перед прыжком">
             </a>
@@ -56,10 +54,12 @@
               </blockquote>
               <p class="post__popularity">
                 <a class="post__appreciate" href="#">
-                  <span class="visually-hidden">Оценить</span>
+                  <span>Оценить</span>
                 </a>
-                Нравится:
-                <span class="post__number">215</span>
+                <span class="post__likes">
+                  Нравится:
+                  <span class="post__number">215</span>
+                </span>
               </p>
             </div>
           </li>
@@ -75,10 +75,12 @@
               </blockquote>
               <p class="post__popularity">
                 <a class="post__appreciate" href="#">
-                  <span class="visually-hidden">Оценить</span>
+                  <span>Оценить</span>
                 </a>
-                Нравится:
-                <span class="post__number">356</span>
+                <span class="post__likes">
+                  Нравится:
+                  <span class="post__number">356</span>
+                </span>
               </p>
             </div>
           </li>
@@ -94,10 +96,12 @@
               </blockquote>
               <p class="post__popularity">
                 <a class="post__appreciate" href="#">
-                  <span class="visually-hidden">Оценить</span>
+                  <span>Оценить</span>
                 </a>
-                Нравится:
-                <span class="post__number">666</span>
+                <span class="post__likes">
+                  Нравится:
+                  <span class="post__number">666</span>
+                </span>
               </p>
             </div>
           </li>
@@ -113,10 +117,12 @@
               </blockquote>
               <p class="post__popularity">
                 <a class="post__appreciate" href="#">
-                  <span class="visually-hidden">Оценить</span>
+                  <span>Оценить</span>
                 </a>
-                Нравится:
-                <span class="post__number">215</span>
+                <span class="post__likes">
+                  Нравится:
+                  <span class="post__number">215</span>
+                </span>
               </p>
             </div>
           </li>
@@ -132,10 +138,12 @@
               </blockquote>
               <p class="post__popularity">
                 <a class="post__appreciate" href="#">
-                  <span class="visually-hidden">Оценить</span>
+                  <span>Оценить</span>
                 </a>
-                Нравится:
-                <span class="post__number">4</span>
+                <span class="post__likes">
+                  Нравится:
+                  <span class="post__number">4</span>
+                </span>
               </p>
             </div>
           </li>
@@ -151,10 +159,12 @@
               </blockquote>
               <p class="post__popularity">
                 <a class="post__appreciate" href="#">
-                  <span class="visually-hidden">Оценить</span>
+                  <span>Оценить</span>
                 </a>
-                Нравится:
-                <span class="post__number">150</span>
+                <span class="post__likes">
+                  Нравится:
+                  <span class="post__number">150</span>
+                </span>
               </p>
             </div>
           </li>
@@ -170,10 +180,12 @@
               </blockquote>
               <p class="post__popularity">
                 <a class="post__appreciate" href="#">
-                  <span class="visually-hidden">Оценить</span>
+                  <span>Оценить</span>
                 </a>
-                Нравится:
-                <span class="post__number">2560</span>
+                <span class="post__likes">
+                  Нравится:
+                  <span class="post__number">2560</span>
+                </span>
               </p>
             </div>
           </li>
@@ -181,8 +193,10 @@
       </section>
 
       <section class="upload">
-        <h2 class="visually-hidden">Загрузка изображения</h2>
-        <p class="upload__intro">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+        <header class="upload__header">
+          <h2 class="visually-hidden">Загрузка изображения</h2>
+          <p class="upload__intro">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+        </header>
         <form class="upload__form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="upload__preview">
             <input class="visually-hidden" type="file" name="image" id="image-upload">
@@ -190,18 +204,24 @@
               <img class="upload__image" width="280" height="374" src="img/photo-road-mobile@1x.jpg" alt="Зимняя дорога">
             </label>
           </fieldset>
-          <fieldset class="upload__edit tools">
-            <label class="tools__button tools__button--crop tools__button--active" for="crop-range">Обрезка</label>
-            <input class="tools__range tools__range--active" type="range" min="0" max="100" name="crop" value="80" id="crop-range">
-            <label class="tools__button tools__button--fill" for="fill-range">Заливка</label>
-            <input class="tools__range" type="range" min="0" max="100" name="fill" id="fill-range">
-            <label class="tools__button tools__button--contrast" for="contrast-range">Контрастность</label>
-            <input class="tools__range" type="range" min="0" max="100" name="contrast" id="contrast-range">
-          </fieldset>
-          <fieldset class="upload__submit">
-            <button class="upload-button upload-button--submit button button--submit" type="submit">Запостить</button>
-            <button class="upload-button upload-button--reset button button--reset" type="reset">Отмена</button>
-          </fieldset>
+          <div class="upload__column">
+            <fieldset class="upload__edit tools tools__no-js">
+              <div class="tools__wrapper"><!-- против флексбага филдсета -->
+                <label class="tools__button tools__button--crop tools__button--active" for="crop-range">Обрезка</label>
+                <input class="tools__range tools__range--active" type="range" min="0" max="100" name="crop" value="80" id="crop-range">
+                <label class="tools__button tools__button--fill" for="fill-range">Заливка</label>
+                <input class="tools__range" type="range" min="0" max="100" name="fill" id="fill-range">
+                <label class="tools__button tools__button--contrast" for="contrast-range">Контрастность</label>
+                <input class="tools__range" type="range" min="0" max="100" name="contrast" id="contrast-range">
+              </div>
+            </fieldset>
+            <fieldset class="upload__submit">
+              <div class="upload__buttons"><!-- против флексбага филдсета -->
+                <button class="upload__button upload__button--submit button button--submit" type="submit">Запостить</button>
+                <button class="upload__button upload__button--reset button button--reset" type="reset">Отмена</button>
+              </div>
+            </fieldset>
+          </div>
         </form>
       </section>
     </main>
@@ -239,5 +259,8 @@
         </a>
       </div>
     </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/tools.js"></script>
   </body>
 </html>

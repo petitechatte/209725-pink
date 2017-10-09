@@ -13,21 +13,11 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
-
-.container {
-  @include container;
+.visually-hidden:not(:focus):not(:active) {
+  @include visuallyhidden;
 }
 
 .button {
@@ -95,7 +85,8 @@ img {
   }
 
   &--confirm {
-    border: none;
+    padding-top: 17px;
+    border-color: $btn-color;
     border-radius: 0;
 
     @include text($medium, $large, 700, $bg-color, uppercase);
@@ -105,6 +96,8 @@ img {
 
   &--confirm:hover,
   &--confirm:focus {
+    border-color: $btn-hover-color;
+
     background-color: $btn-hover-color;
   }
 
@@ -113,10 +106,28 @@ img {
   }
 
   &--confirm:disabled {
+    border-color: $border-color;
+
     background-color: $border-color;
   }
 }
 
 .lead {
   @include text(24px, 1.2, 300);
+}
+
+.container {
+  @include container($mobile);
+}
+
+@media (min-width: $tablet) {
+  .container {
+    @include container($tablet);
+  }
+}
+
+@media (min-width: $desktop) {
+  .container {
+    @include container($desktop, 0 10px);
+  }
 }

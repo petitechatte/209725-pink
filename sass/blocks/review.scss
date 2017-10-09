@@ -1,5 +1,5 @@
 .review {
-  @include container;
+  @include container($mobile);
   min-height: 380px;
   padding-top: 45px;
 
@@ -8,10 +8,50 @@
   @include outline(green);
 }
 
-.review__blockqoute {
+.review__blockquote {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+
+  @include outline(purple);
 }
 
 .review__author {
   @include text($medium, $x-large, 700, $contrast-color);
+}
+
+.review__biography {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .review {
+    @include container($tablet);
+    min-height: 400px;
+  }
+
+  .review__author {
+    order: 1;
+  }
+
+  .review__biography {
+    display: block;
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop) {
+  .review {
+    @include container($desktop, 0 10px);
+    min-height: 500px;
+  }
+
+  .review__blockquote {
+    width: 820px;
+    margin: 0 auto;
+  }
+
+  .review__toggles {
+    display: none;
+  }
 }

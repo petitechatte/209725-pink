@@ -1,19 +1,20 @@
-.page-intro__wrapper {
-  height: 395px;
+.page-intro {
+  min-height: 170px - 35px;
+  padding-top: 35px;
+  border-top: 1px solid transparent; // против выпадения отступа
+  border-bottom: 1px solid transparent; // против выпадения отступа
 
   color: $bg-color;
 
-  background-color: $base-color;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: repeat;
-  background-position: center bottom;
+  &--index {
+    position: relative;
+
+    padding: 0;
+  }
 }
 
 .page-intro__demonstration {
   display: flex;
-  width: 320px;
-  height: 100%;
-  margin: 0 auto;
 
   @include outline(blue);
 }
@@ -23,12 +24,102 @@
   margin-right: auto;
 }
 
-.page-intro__wrapper--inner {
-  height: 170px;
-  padding-top: 35px;
+.page-intro__title {
+  @include container($mobile);
+  @include text($large, 1.2, 300, $bg-color);
 }
 
-.page-intro__title {
-  @include container;
-  @include text($large, 1.2, 300, $bg-color);
+.page-intro__content {
+  position: relative;
+  z-index: 1;
+
+  color: $bg-color;
+
+  background-color: $dark-color;
+
+  @include outline(green);
+}
+
+@media (max-width: $mobile-max-width) { // в потоке
+  .page-intro__demonstration {
+    @include container($mobile, 0 0);
+    height: 395px;
+  }
+
+  .page-intro__content {
+    @include container($mobile);
+    min-height: 270px - 28;
+    padding-top: 28px;
+  }
+}
+
+@media (min-width: $tablet) {  // появляется многослойность
+  .page-intro {
+    min-height: 330px - 83;
+    padding-top: 83px;
+
+    &--index {
+      @include container($tablet);
+
+      min-height: 618px;
+    }
+  }
+
+  .page-intro__demonstration {
+    position: absolute;
+
+    width: $tablet - 20px * 2;
+    height: 618px;
+  }
+
+  .page-intro__image {
+    width: 470px;  // временно
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .page-intro__content {
+    width: 300px;
+    margin-top: 102px;
+    padding: 0;
+
+    background-color: transparent;
+  }
+
+  .page-intro__title {
+    @include container($tablet);
+    min-height: 100px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-intro {
+    @include container($desktop, 0 10px);
+    min-height: 285px;
+    padding-top: 75px;
+
+    &--index {
+      min-height: 742px;
+      padding-top: 0;
+    }
+  }
+
+  .page-intro__demonstration {
+    width: $desktop - 10px * 2;
+    height: 742px;
+    margin: 0;
+  }
+
+  .page-intro__image {
+    width: 555px; // временно
+    margin-right: 43px;
+  }
+
+  .page-intro__content {
+    margin-top: 125px;
+  }
+
+  .page-intro__title {
+    width: 800px;
+  }
 }

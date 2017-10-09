@@ -1,11 +1,11 @@
 .features {
   background-color: $light-color;
 
-  @include outline(red);
+  @include outline(green);
 }
 
 .features__header {
-  min-height: 250px;
+  min-height: 250px - 45;
   padding-top: 45px;
 
   background-color: $bg-color;
@@ -15,7 +15,7 @@
 
 .features__list {
   @include list-reset;
-  @include container;
+  @include container($mobile);
   min-height: 475px;
   margin-top: 50px;
   margin-bottom: 40px;
@@ -33,4 +33,110 @@
   @include container;
   height: 277px;
   overflow: hidden;
+}
+
+@media (max-width: $mobile-max-width) {
+  .features__image {
+    &--1,
+    &--2 {
+      @include visuallyhidden;
+    }
+  }
+
+  .features__duration {
+    @include visuallyhidden;
+  }
+}
+
+@media (min-width: $tablet) {
+  .features {
+    @include container($tablet);
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 725px;
+  }
+
+  .features__header {
+    min-height: 240px - 60;
+    padding-top: 60px;
+  }
+
+  .features__wrapper {
+    width: $tablet - 20px * 2;
+  }
+
+  .features__list {
+    min-height: 481px;
+    margin: 0;
+    padding: 0;
+    padding-top: 77px;
+    order: 1;
+  }
+
+  .features__example {
+    width: 300px;
+    height: 481px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .features__image {
+    width: 268px; // временно
+  }
+
+  .features__duration {
+    width: 300px;
+    min-height: 400px;
+    margin: 0;
+    padding-right: 10px;
+    padding-left: 310px;
+    order: 2;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features {
+    @include container($desktop, 0 10px);
+  }
+
+  .features__header {
+    min-height: 323px - 80;
+    padding-top: 80px;
+  }
+
+  .features__wrapper {
+    width: $desktop - 10px * 2;
+  }
+
+  .features__list {
+    @include container($desktop);
+    display: flex;
+    justify-content: space-between;
+    min-height: 326px;
+    padding: 0;
+  }
+
+  .features__item {
+    width: 300px;
+
+    @include outline(green);
+  }
+
+  .features__example {
+    width: $desktop - 10px * 2;
+    height: 301px;
+  }
+
+  .features__image {
+    width: 200px; // временно
+    margin: 0 50px; // !уточнить
+  }
+
+  .features__duration {
+    width: $desktop - 10px * 2;
+    min-height: 413px;
+    padding-left: 370px;
+  }
 }

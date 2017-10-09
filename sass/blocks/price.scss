@@ -1,16 +1,17 @@
 .price {
+  width: $mobile;
+  margin: 0 auto;
   padding-top: 70px;
   background-color: $light-color;
+
 
   @include outline(red);
 }
 
 .price__table {
-  width: 280px * 3 - 2 * 4;
-  min-height: 280px;
-  margin: 0 auto;
+  width: 280px * 4;
+  height: 280px;
   border-collapse: collapse;
-  transform: translateX(-33.33%);
 
   text-align: left;
 
@@ -36,6 +37,7 @@
 }
 
 .price__cell {
+  width: 25%;
   border: 2px solid $border-color;
 
   text-transform: uppercase;
@@ -47,5 +49,63 @@
 
 .price__toggles {
   @include container;
+  display: none;
   height: 100px;
+}
+
+@media (max-width: $mobile-max-width) {
+  .price__slider {
+    @include container($mobile, 0);
+    overflow-x: hidden;
+  }
+
+  .price__table {
+    margin-left: -280px - 260px;
+  }
+
+  .price__slider--no-js .price__table {
+    margin-left: -280px;
+  }
+
+  .price__toggles {
+    display: block;
+  }
+
+  .price__slider--no-js {
+    overflow-x: auto;
+  }
+
+  .price__slider--no-js + .price__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  .price {
+    @include container($tablet);
+    padding-top: 37px;
+    padding-bottom: 68px;
+  }
+
+  .price__table {
+    width: $tablet - 20px * 2;
+    height: 220px;
+  }
+
+  .price__label {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .price {
+    @include container($desktop, 0 10px);
+    padding-top: 65px;
+    padding-bottom: 95px;
+  }
+
+  .price__table {
+    width: $desktop - 10px * 2;
+    height: 280px;
+  }
 }
