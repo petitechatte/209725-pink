@@ -1,0 +1,38 @@
+.effect__wrapper {
+  width: 310px;
+  margin: 0 auto;
+  padding-top: 63px;
+  padding-bottom: 97px;
+  padding-right: 20px;
+  padding-left: 330px;
+}
+
+.effect__title {
+  padding: 0;
+
+  @include text($x-large, 36px, 700, $contrast-color);
+}
+
+.effect__link {
+  display: block;
+  margin-top: 5px;
+
+  color: $accent-color;
+}
+
+@media (min-width: $desktop) {
+  .effect__wrapper {
+    width: 573px;
+    padding-top: 35px;
+    padding-left: 377px;
+    padding-right: 10px;
+  }
+
+  .effect__title {
+    margin-bottom: 22px;
+  }
+
+  .effect__link {
+    margin-top: 30px;
+  }
+}
