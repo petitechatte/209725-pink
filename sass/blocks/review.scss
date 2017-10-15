@@ -1,19 +1,14 @@
 .review {
   @include container($mobile);
-  min-height: 380px;
-  padding-top: 45px;
+  padding-top: 40px;
 
   background-color: $bg-color;
-
-  @include outline(green);
 }
 
 .review__blockquote {
   display: flex;
   flex-direction: column;
   margin: 0;
-
-  @include outline(purple);
 }
 
 .review__author {
@@ -27,28 +22,54 @@
 @media (min-width: $tablet) {
   .review {
     @include container($tablet);
-    min-height: 400px;
   }
 
   .review__author {
     order: 1;
+    margin-bottom: 0;
+
+    font-size: 20px;
   }
 
   .review__biography {
     display: block;
     order: 2;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .review__text {
+    margin-top: 25px;
+    margin-bottom: 35px;
+
+    font-size: $medium;
   }
 }
 
 @media (min-width: $desktop) {
   .review {
+    position: relative;
+
     @include container($desktop, 0 10px);
-    min-height: 500px;
+    padding-top: 160px;
   }
 
   .review__blockquote {
-    width: 820px;
+    width: 820px - 70 * 2;
     margin: 0 auto;
+    padding: 0 70px;
+
+    font-size: $medium;
+  }
+
+  .review__quote {
+    @include visuallyhidden;
+  }
+
+  .review__author {
+    margin-bottom: 3px;
+
+    font-size: $large;
   }
 
   .review__toggles {

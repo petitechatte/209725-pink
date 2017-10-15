@@ -12,7 +12,30 @@
 
 .slider__toggles {
   @include list-reset;
-  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.slider__toggle {
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: 0 10px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+
+  background-color: $base-color;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &--active {
+    background-color: $bg-color;
+    box-shadow: 0 0 0 3px $base-color;
+    opacity: 1;
+  }
 }
 
 .slider__button {
@@ -20,7 +43,27 @@
 }
 
 @media (min-width: $desktop) {
+  .slider__toggles {
+    display: none;
+  }
+
   .slider__button {
+    position: absolute;
+    top: 210px;
+
     display: block;
+    width: 45px;
+    height: 45px;
+    border: none;
+
+    background-color: transparent;
+
+    &--previous {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
   }
 }
