@@ -5,12 +5,17 @@
 }
 
 .features__header {
-  min-height: 250px - 45;
-  padding-top: 45px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 1px;
 
   background-color: $bg-color;
 
   @include outline(blue);
+}
+
+.features__wrapper {
+  @include container($mobile);
 }
 
 .features__list {
@@ -50,19 +55,17 @@
 
 @media (min-width: $tablet) {
   .features {
-    @include container($tablet);
     display: flex;
     flex-wrap: wrap;
-    min-height: 725px;
   }
 
   .features__header {
-    min-height: 240px - 60;
-    padding-top: 60px;
+    padding-top: 45px;
+    padding-bottom: 50px;
   }
 
   .features__wrapper {
-    width: $tablet - 20px * 2;
+    @include container($tablet);
   }
 
   .features__list {
@@ -97,17 +100,13 @@
 }
 
 @media (min-width: $desktop) {
-  .features {
-    @include container($desktop, 0 10px);
-  }
-
   .features__header {
-    min-height: 323px - 80;
-    padding-top: 80px;
+    padding-top: 65px;
+    padding-bottom: 77px;
   }
 
   .features__wrapper {
-    width: $desktop - 10px * 2;
+    @include container($desktop, 0 10px);
   }
 
   .features__list {
