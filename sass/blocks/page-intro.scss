@@ -15,8 +15,6 @@
 
 .page-intro__demonstration {
   display: flex;
-
-  @include outline(blue);
 }
 
 .page-intro__image {
@@ -34,16 +32,16 @@
   z-index: 1;
 
   color: $bg-color;
-
-  background-color: $dark-color;
-
-  @include outline(green);
 }
 
 @media (max-width: $mobile-max-width) { // в потоке
   .page-intro__demonstration {
     @include container($mobile, 0 0);
     height: 395px;
+  }
+
+  .page-intro__wrapper {
+    background-color: $dark-color;
   }
 
   .page-intro__content {
