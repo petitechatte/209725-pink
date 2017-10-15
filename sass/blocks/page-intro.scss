@@ -48,8 +48,8 @@
 
   .page-intro__content {
     @include container($mobile);
-    min-height: 270px - 28;
     padding-top: 28px;
+    padding-bottom: 28px;
   }
 }
 
@@ -59,17 +59,20 @@
     padding-top: 83px;
 
     &--index {
-      @include container($tablet);
+      position: relative;
 
-      min-height: 618px;
+      @include container($tablet);
+      padding-top: 90px;
+      padding-bottom: 110px;
     }
   }
 
   .page-intro__demonstration {
     position: absolute;
+    bottom: 0;
 
     width: $tablet - 20px * 2;
-    height: 618px;
+    height: 546px;
   }
 
   .page-intro__image {
@@ -80,7 +83,7 @@
 
   .page-intro__content {
     width: 300px;
-    margin-top: 102px;
+    min-height: 400px;
     padding: 0;
 
     background-color: transparent;
@@ -95,12 +98,11 @@
 @media (min-width: $desktop) {
   .page-intro {
     @include container($desktop, 0 10px);
-    min-height: 285px;
     padding-top: 75px;
 
     &--index {
-      min-height: 742px;
       padding-top: 0;
+      padding-bottom: 120px;
     }
   }
 
@@ -116,7 +118,7 @@
   }
 
   .page-intro__content {
-    margin-top: 125px;
+    margin-top: 105px;
   }
 
   .page-intro__title {

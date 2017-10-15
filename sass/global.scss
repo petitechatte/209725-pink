@@ -23,7 +23,8 @@ img {
 .button {
   display: inline-block;
   width: 280px;
-  padding: 16px 30px;
+  padding: 14px 20px;
+  padding-bottom: 16px;
   border: 3px solid $base-color;
   border-radius: 55px;
   box-sizing: border-box;
@@ -124,10 +125,19 @@ img {
   .container {
     @include container($tablet);
   }
+
+  .button {
+    width: 300px;
+  }
 }
 
 @media (min-width: $desktop) {
   .container {
     @include container($desktop, 0 10px);
+  }
+
+  .button {
+    font-size: 21px;
+    line-height: 1;
   }
 }
