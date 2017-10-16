@@ -1,6 +1,5 @@
 .page-footer {
   @include container($mobile);
-  min-height: 284px;
   padding: 40px 20px;
 
   &--index {
@@ -12,13 +11,11 @@
   text-decoration: none;
 }
 
-
 @media (min-width: $tablet) {
   .page-footer {
     @include container($tablet);
     display: flex;
     justify-content: space-between;
-    min-height: 128px;
     padding: 36px 20px;
 
     &--index {
@@ -28,27 +25,24 @@
 
   .page-footer__logo {
     width: 150px;
-
-    @include outline(green);
   }
 
   .page-footer__socials {
     min-width: 200px;
-
-    @include outline(green);
   }
 
   .page-footer__copyright {
     width: 150px;
-
-    @include outline(green);
   }
 }
 
 @media (min-width: $desktop) {
   .page-footer {
     @include container($desktop, 0 10px);
-    min-height: 197px;
     padding: 70px 10px;
+  }
+
+  .page-footer__copyright {
+    width: 150px;
   }
 }
