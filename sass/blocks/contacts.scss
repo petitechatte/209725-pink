@@ -1,18 +1,11 @@
-.contacts {
-  @include outline(red);
-}
-
 .contacts__address {
   @include container($mobile);
-  min-height: 415px;
-  padding-bottom: 45px;
+  padding-bottom: 13px;
 }
 
 .contacts__intro {
   margin: 0;
-  padding: 45px 0;
-
-  @include outline(green);
+  padding: 40px 0;
 }
 
 .contacts__list {
@@ -22,7 +15,7 @@
 }
 
 .contacts__item {
-  @include outline(green);
+  margin-bottom: 25px;
 }
 
 .contacts__title {
@@ -35,9 +28,16 @@
   display: block;
 
   @include text($large, 1.2, 300, $accent-color);
+
+  &--address {
+    padding-top: 5px;
+  }
 }
 
 .contacts__mail {
+  display: inline-block;
+  padding-top: 5px;
+
   color: inherit;
   text-decoration: none;
 
@@ -63,19 +63,19 @@
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: cover; //временно
-
-  @include outline(blue);
 }
 
 @media (min-width: $tablet) {
   .contacts__address {
-    @include container($tablet);
-    min-height: 405px;
+    @include container($tablet, 0 8px);
+    padding-bottom: 30px;
   }
 
   .contacts__intro {
-    min-height: 110px - 45;
+    padding-top: 45px;
     padding-bottom: 0;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 
   .contacts__list {
@@ -86,7 +86,18 @@
 
   .contacts__item {
     width: 50%;
-    margin-top: 55px;
+    margin-top: 45px;
+    margin-bottom: 0;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .contacts__title {
+    margin-bottom: 5px;
+  }
+
+  .contacts__info--address {
+    padding-top: 2px;
   }
 
   .contacts__map {
@@ -96,14 +107,13 @@
 
 @media (min-width: $desktop) {
   .contacts__address {
-    @include container($desktop, 0 10px);
-    min-height: 365px;
+    @include container($desktop, 0 20px);
+    padding-bottom: 25px;
   }
 
   .contacts__intro {
-    min-height: 245px - 145;
-    padding-top: 75px;
-    padding-bottom: 70px;
+    padding-top: 62px;
+    padding-bottom: 60px;
   }
 
   .contacts__list {
@@ -113,6 +123,22 @@
   .contacts__item {
     width: 287px;
     margin-top: 0;
+
+    &--write {
+      order: 1;
+    }
+  }
+
+  .contacts__title {
+    margin-bottom: 24px;
+  }
+
+  .contacts__info {
+    padding-top: 0;
+  }
+
+  .contacts__mail {
+    padding-top: 0;
   }
 
   .contacts__map {
