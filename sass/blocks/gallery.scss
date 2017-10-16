@@ -51,9 +51,12 @@
   }
 
   .gallery__intro {
-    min-height: 228px - 95 - 75;
-    padding-top: 95px;
+    padding-top: 92px;
     padding-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    font-size: $medium;
   }
 
   .gallery__list {
@@ -89,12 +92,9 @@
   }
 
   .gallery__intro {
-    width: 800px;
-    min-height: 242px - 95 - 87;
+    width: 600px;
     margin: 0 auto;
-    padding-bottom: 87px;
-
-    @include outline(green);
+    padding-bottom: 90px;
   }
 
   .gallery__item {
