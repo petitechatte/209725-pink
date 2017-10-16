@@ -55,6 +55,9 @@
 }
 
 .contacts__map {
+  position: relative;
+
+  min-width: 320px;
   height: 200px;
   margin: 0 auto;
 
@@ -63,6 +66,16 @@
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: cover; //временно
+}
+
+.contacts__svg {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+}
+
+.contacts__mask {
+  fill: $bg-color;
 }
 
 @media (min-width: $tablet) {
