@@ -1,5 +1,6 @@
 .price {
   padding-top: 112px;
+  padding-bottom: 30px;
 
   background-color: $light-color;
   background-image: linear-gradient(176deg, $bg-color 10%, $light-color 10%);
@@ -90,7 +91,7 @@
 }
 
 .price__toggles {
-  @include container;
+  @include container($mobile);
   margin-top: 20px;
 }
 
@@ -131,7 +132,6 @@
 
   .price__table {
     width: $tablet - 20px * 2;
-    height: 220px;
     margin: 0 auto;
   }
 
@@ -195,10 +195,11 @@
 
   .price__table {
     width: $desktop - 10px * 2;
-    height: 280px;
   }
 
   .price__cell {
+    padding-top: 13px;
+    padding-bottom: 16px;
     padding-left: 22px;
 
     font-size: $medium;
