@@ -1,5 +1,8 @@
 .post {
-  padding: 25px 17px;
+  padding-top: 7.5px;
+  padding-bottom: 6px;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 .post__comment {
@@ -15,41 +18,88 @@
 }
 
 .post__text {
+  margin-top: -5px;
+  margin-bottom: 0;
+
   @include text($small, $large, 400);
 }
 
 .post__popularity {
-  @include text($x-small, $large, 400, $accent-color, uppercase);
-
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  width: 100%;
+
+  @include text($x-small, $large, 400, $accent-color, uppercase);
+}
+
+.post__heart {
+  fill: $accent-color;
+}
+
+.post__likes {
+  margin-left: 20px;
 }
 
 @media (min-width: $tablet) {
   .post {
-    min-height: 158px - 25 * 2;
+    display: flex;
+    flex-direction: column;
+    min-height: 145px;  // для выравнивания лайков
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 27px;
+    padding-right: 27px;
+    box-sizing: border-box;
+  }
+
+  .post__popularity {
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  .post__appreciate {
+    order: 1;
+    margin-bottom: 0;
+    margin-right: 5px;
+  }
+
+  .post__likes {
+    margin-left: 0;
   }
 
   .gallery__item--panoramic .post {
     position: relative;
 
-    min-height: 122px - 25 * 2;
-  }
-
-  .post__popularity {
-    width: 100%;
+    min-height: 0;
+    padding-bottom: 27px;
   }
 
   .gallery__item--panoramic .post__popularity {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 0;
 
+
+    justify-content: flex-start;
     width: 150px;
+    margin-top: 16px;
   }
 
-  .post__appreciate {
-    order: 1;
+  .gallery__item--panoramic .post__appreciate {
+    margin-left: 18px;;
+  }
+
+  .gallery__item--panoramic .post__likes {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .post {
+    padding-top: 11px;
+  }
+
+  .gallery__item--panoramic .post {
+    padding-bottom: 22px;
   }
 }

@@ -15,14 +15,11 @@
 
 .gallery__item {
   position: relative;
-  min-height: 300px;
   margin-bottom: 20px;
 
   text-align: left;
 
   background-color: $light-color;
-
-  @include outline(green);
 }
 
 .gallery__link {
@@ -74,16 +71,16 @@
 
   .gallery__item {
     width: 300px;
-    min-height: 455px;
 
     &--panoramic {
       width: 100%;
-      min-height: 630px;
+      margin-bottom: 50px;
     }
   }
 
   .gallery__photo {
     width: 300px;
+    height: 300px; //временно
   }
 
   .gallery__photo--panoramic {
@@ -110,8 +107,11 @@
   }
 
   .gallery__item {
-    min-height: 555px;
     margin-bottom: 54px;
+  }
+
+  .gallery__photo {
+    height: 400px; //временно
   }
 
   .gallery__photo--panoramic {
