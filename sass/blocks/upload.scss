@@ -10,7 +10,7 @@
 
 .upload__intro {
   @include container($mobile);
-  margin-top: 54px;
+  margin-top: 40px;
   padding-top: 0;
   padding-bottom: 40px;
 }
@@ -55,8 +55,10 @@
 @media (min-width: $tablet) {
   .upload__intro {
     @include container($tablet);
-    min-height: 125px;
-    margin-top: 67px - 20;
+    margin-top: 46px;
+    padding-bottom: 68px;
+
+    font-size: $medium;
   }
 
   .upload__form {
@@ -95,7 +97,8 @@
 @media (min-width: $desktop) {
   .upload__intro {
     @include container($desktop, 0 10px);
-    margin-top: 62px - 54;
+    margin-top: 5px;
+    padding-bottom: 65px;
   }
 
   .upload__form {
