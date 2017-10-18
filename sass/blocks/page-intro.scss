@@ -1,8 +1,9 @@
 .page-intro {
-  padding-top: 30px;
-  padding-bottom: 80px;
+  min-height: 170px; // одинаковая высота блока независимо от заголовка
+  padding: 30px;
   border-top: 1px solid transparent; // против выпадения отступа
   border-bottom: 1px solid transparent; // против выпадения отступа
+  box-sizing: border-box;
 
   color: $bg-color;
 
@@ -53,8 +54,8 @@
 
 @media (min-width: $tablet) {  // появляется многослойность
   .page-intro {
-    padding-top: 70px;
-    padding-bottom: 136px;
+    min-height: 328px;
+    padding: 70px 0;
 
     &--index {
       position: relative;
@@ -96,8 +97,8 @@
 @media (min-width: $desktop) {
   .page-intro {
     @include container($desktop, 0 10px);
-    padding-top: 65px;
-    padding-bottom: 96px;
+    min-height: 284px;
+    padding: 65px 0;
 
     &--index {
       padding-top: 105px;
@@ -114,5 +115,9 @@
   .page-intro__image {
     width: 555px; // временно
     margin-right: 43px;
+  }
+
+  .page-intro__title {
+    @include container($desktop, 0 70px);
   }
 }
