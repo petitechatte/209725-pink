@@ -1,6 +1,11 @@
 .logo {
   width: 75px;
   height: 22px;
+
+  &--footer {
+    width: 147px;
+    height: 40px;
+  }
 }
 
 @media (min-width: $tablet) {

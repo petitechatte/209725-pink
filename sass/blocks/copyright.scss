@@ -1,23 +1,25 @@
-.copyright {
-  position: relative;
-
-  padding-top: 12px;
-  padding-left: 20px;
-  box-sizing: border-box;
-
-  text-align: left;
-}
-
 .copyright__developer {
-  @include text($small, $medium, 400);
+  margin-right: 18px;
 }
 
-.copyright__link {
-  position: absolute;
-  top: 11px;
-  right: 0;
+@media (min-width: $tablet) {
+  .copyright {
+    position: relative;
 
-  text-decoration: none;
+    text-align: left;
+  }
+
+  .copyright__developer {
+    @include text($small, $medium, 400);
+  }
+
+  .copyright__link {
+    position: absolute;
+    top: 11px;
+    right: 0;
+
+    text-decoration: none;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -26,6 +28,8 @@
   }
 
   .copyright__developer {
+    padding-right: 25px;
+
     font-size: $medium;
   }
 }
