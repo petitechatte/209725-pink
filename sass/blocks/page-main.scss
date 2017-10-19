@@ -33,6 +33,10 @@
     @include container($desktop, 0 10px);
   }
 
+  .page-main__tablet {
+    display: inline-block;
+  }
+
   .page-main__story {
     @include container($desktop, 0 10px);
   }

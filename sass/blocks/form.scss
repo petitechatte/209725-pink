@@ -231,25 +231,30 @@
   }
 
   .form__fieldset {
-    margin-bottom: 55px;
-    padding: 38px 55px;
+    margin-bottom: 52px;
+    padding: 30px 55px;
+  }
+
+  .form__question {
+    line-height: $x-large;
   }
 
   .form__user {
     @include fieldset-reset;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
 
     @include outline(green);
   }
 
   .form__achievements {
     order: 3;
-    margin-bottom: 58px;
+    padding-top: 32px;
     padding-bottom: 10px;
   }
 
   .form__contacts {
     order: 2;
+    margin-bottom: 50px;
     padding-bottom: 0;
   }
 
@@ -261,7 +266,6 @@
   .form__message {
     order: 4;
     margin-bottom: 65px;
-    padding-top: 37px;
     padding-bottom: 24px;
 
     text-align: center;
@@ -278,7 +282,7 @@
 
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   .form__application .form__field {
@@ -303,7 +307,7 @@
 
   .form__contacts .form__label {
     order: 1;
-    margin-top: 6px;
+    margin-top: 7px;
     margin-left: 20px;
   }
 
