@@ -1,7 +1,3 @@
-.upload {
-  background-color: $light-color;
-}
-
 .upload__header {
   background-color: $bg-color;
 }
@@ -16,6 +12,8 @@
 .upload__form {
   @include container($mobile);
   padding-top: 20px;
+
+  background-color: $light-color;
 }
 
 .upload__preview {
@@ -106,9 +104,9 @@
   }
 
   .upload__form {
-    @include container($desktop, 57px 0);
-    padding-left: 90px;
-    padding-right: 70px;
+    @include container(940px, 57px 0);
+    padding-left: 80px;
+    padding-right: 60px;
     padding-bottom: 57px;
   }
 
