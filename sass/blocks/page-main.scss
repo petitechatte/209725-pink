@@ -30,7 +30,9 @@
 
 @media (min-width: $desktop) {
   .page-main__intro {
-    @include container($desktop, 0 10px);
+    @include container($desktop, 0 100px);
+    padding-top: 92px;
+    padding-bottom: 65px;
   }
 
   .page-main__tablet {
@@ -39,5 +41,6 @@
 
   .page-main__story {
     @include container($desktop, 0 10px);
+    margin-bottom: 5px;
   }
 }

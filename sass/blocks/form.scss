@@ -349,6 +349,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 0px;
+
+    @include outline(red);
   }
 
   .form__fieldset {
@@ -356,30 +359,56 @@
   }
 
   .form__user {
-    width: 434px;
-    min-height: 310px;
+    width: 430px;
+    padding-top: 20px;
   }
 
   .form__application {
-    width: 434px;
-    min-height: 310px;
+    width: 430px;
+    padding: 0;
+    padding-top: 35px;
   }
 
-  .form__contacts {
-    min-height: 160px;
+  .form__achievements {
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 15px;
+  }
+
+  .form__message {
+    padding-bottom: 15px;
   }
 
   .form__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  .form__achievements {
-    min-height: 230px;
+  .form__column {
+    display: flex;
+    flex-direction: column;
+    min-width: 210px;
+
+    @include outline(green);
   }
 
-  .form__achievements .form__columns {
-    column-count: 3;
+  .form__input--text {
+    padding-left: 20px;
+  }
+
+  .form__application .form__field {
+    margin-bottom: 38px;
+    margin-left: 77px;
+  }
+
+  .form__achievements .form__field {
+    min-width: 210px;
+  }
+
+  .form__contacts .form__field {
+    width: 376px;
+    margin-bottom: 8px;
   }
 
   .form__text {
@@ -389,5 +418,12 @@
 
   .form__container {
     margin-bottom: 0;
+  }
+
+  .form__send {
+    padding: 13px;
+
+    font-size: $medium;
+    line-height: $x-large;
   }
 }
