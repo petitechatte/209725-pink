@@ -1,6 +1,7 @@
 .page-main__intro {
   @include container($mobile);
-  padding: 46px 20px;
+  padding-top: 46px;
+  padding-bottom: 35px;
 }
 
 @media (min-width: $tablet) {

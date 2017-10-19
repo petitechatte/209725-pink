@@ -3,6 +3,8 @@
 }
 
 .form__question {
+  padding: 0 30px;
+
   @include text($small, $medium, 400, $accent-color, uppercase);
   text-align: center;
 }
@@ -11,18 +13,104 @@
   margin-top: 0;
 }
 
+.form__achievements .form__field {
+  margin-bottom: 37px;
+}
+
+.form__application .form__field {
+  margin-top: 4px;
+  margin-bottom: 40px;
+}
+
 .form__label {
   @include text($medium, $large, 400);
 
   &--text {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding-left: 24px;
+
     @include text($small, $large, 400, $accent-color, uppercase);
     text-align: left;
+    vertical-align: middle;
   }
+
+  &--checkbox {
+    position: relative;
+
+    display: block;
+    padding-top: 5px;
+  }
+
+  &--checkbox::before {
+    content: "";
+
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-right: 25px;
+    border: 2px solid $border-color;
+
+    vertical-align: middle;
+
+    background-color: $bg-color;
+    cursor: pointer;
+  }
+
+  &--radio::before {
+    content: "";
+
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 35px;
+    border: 10px solid $bg-color;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px $border-color;
+
+    vertical-align: middle;
+
+    background-color: $bg-color;
+    cursor: pointer;
+  }
+}
+
+.form__checkbox {
+  @include visuallyhidden;
+}
+
+.form__svg {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+
+  cursor: pointer;
+}
+
+.form__checked {
+  fill: $bg-color;
+}
+
+.form__checkbox:checked + .form__label--checkbox .form__checked {
+  fill: $accent-color;
+}
+
+.form__radio {
+  @include visuallyhidden;
+}
+
+.form__radio:checked + .form__label--radio::before {
+  background-color: $accent-color;
 }
 
 .form__input {
   &--text {
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 14px 20px;
+    padding-bottom: 15px;
     border: 2px solid $border-color;
+    box-sizing: border-box;
 
     @include text($medium, $x-large, 400, $base-color);
     @include placeholder;
@@ -42,7 +130,8 @@
 .form__text {
   width: 280px;
   height: 200px;
-  margin-bottom: 48px;
+  margin-bottom: 18px;
+  padding: 15px 20px;
   border: 2px solid $border-color;
   box-sizing: border-box;
   resize: none;
@@ -64,6 +153,8 @@
 .form__comment {
   margin-top: 36px;
   margin-bottom: 15px;
+
+  text-align: center;
 }
 
 .form__require {
@@ -81,22 +172,21 @@
     @include fieldset-reset;
     @include container($mobile);
     padding-top: 110px;
+    padding-bottom: 22px;
   }
 
   .form__user {
-    min-height: 370px;
     padding-top: 0;
   }
 
   .form__achievements {
-    min-height: 603px - 110;
+    padding-bottom: 5px;
 
     background-color: $light-color;
   }
 
   .form__contacts {
-    min-height: 287px - 35;
-    padding-top: 35px;
+    padding-top: 32px;
   }
 
   .form__contacts .form__question {
@@ -104,15 +194,19 @@
   }
 
   .form__application {
-    min-height: 339px - 110;
+    padding-bottom: 0;
 
     background-color: $light-color;
+  }
+
+  .form__message {
+    padding-top: 72px;
   }
 
   .form__question {
     display: block;
     width: 280px; // выравнивание однострочной легенды
-    padding-top: 35px;
+    padding-top: 38px;
     padding-bottom: 14px;
 
     &--positioned {
