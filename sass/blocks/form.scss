@@ -233,6 +233,7 @@
   .form__fieldset {
     margin-bottom: 52px;
     padding: 30px 55px;
+    border: 2px solid $border-color;
   }
 
   .form__question {
@@ -242,8 +243,6 @@
   .form__user {
     @include fieldset-reset;
     margin-bottom: 3px;
-
-    @include outline(green);
   }
 
   .form__achievements {
@@ -323,7 +322,6 @@
   }
 
   .form__container {
-    @include outline(green);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -350,8 +348,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 0px;
-
-    @include outline(red);
   }
 
   .form__fieldset {
@@ -389,8 +385,6 @@
     display: flex;
     flex-direction: column;
     min-width: 210px;
-
-    @include outline(green);
   }
 
   .form__input--text {
