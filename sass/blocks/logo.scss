@@ -8,6 +8,19 @@
   }
 }
 
+.main-nav__home:hover .logo__color,
+.main-nav__home:focus .logo__color {
+  fill: $accent-color;
+}
+
+.main-nav__home:active {
+  opacity: 0.3;
+}
+
+.main-nav__home:active .logo__color {
+  fill: $bg-color;
+}
+
 @media (min-width: $tablet) {
   .logo {
     width: 147px;
