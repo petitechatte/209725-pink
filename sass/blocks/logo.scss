@@ -13,8 +13,16 @@
   fill: $accent-color;
 }
 
+.main-nav__home--inactive:hover .logo__color {
+  fill: $bg-color;
+}
+
 .main-nav__home:active {
   opacity: 0.3;
+}
+
+.main-nav__home--inactive:active {
+  opacity: 1;
 }
 
 .main-nav__home:active .logo__color {
