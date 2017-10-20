@@ -18,6 +18,11 @@
   background-color: transparent;
   background-repeat: no-repeat;
 
+  &:hover,
+  &:focus {
+    opacity: 0.4;
+  }
+
   &--itunes {
     background-image: url("../img/logo-apple.svg");
     background-position: center 1px;

@@ -57,7 +57,14 @@
   .tools__button {
     opacity: 0.3;
 
-    &--active {
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &--active,
+    &--active:hover,
+    &-active:focus  {
       opacity: 1;
     }
   }
@@ -111,6 +118,11 @@
 
       background-color: #dddfe0;
     }
+  }
+
+  .tools__button:hover .tools__svg,
+  .tools__button:focus .tools__svg {
+    opacity: 0.5;
   }
 
   .tools__svg {
