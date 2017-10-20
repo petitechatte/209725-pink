@@ -317,5 +317,21 @@
 
     <script src="js/menu.js"></script>
     <script src="js/table-slider.js"></script>
+    <script>
+      function initMap() {
+        var pink = {lat: 60, lng: 30};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: pink;
+        });
+        var marker = new google.maps.Marker({
+          position: pink,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAenrnaIEmOTC1yP9pqdbDcf81MIy5PhaU&callback=initMap">
+    </script>
   </body>
 </html>
