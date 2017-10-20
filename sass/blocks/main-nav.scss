@@ -54,6 +54,8 @@
   &--active,
   &--active:hover,
   &--active:active {
+    border-bottom: 2px solid $bg-color;
+
     color: $bg-color;
     opacity: 1;
   }
