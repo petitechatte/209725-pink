@@ -82,7 +82,7 @@
     cursor: pointer;
   }
 
-  &--radio:hover::before  {
+  &--radio:hover::before {
     box-shadow: 0 0 0 2px $base-color;
   }
 
@@ -323,7 +323,7 @@
       margin-right: 25px;
     }
 
-    &--checkbox:before {
+    &--checkbox::before {
       margin-right: 15px;
     }
   }
@@ -376,7 +376,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .form__fieldset {

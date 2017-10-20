@@ -148,7 +148,7 @@
 @media (min-width: $desktop) {
   .main-nav {
     @include text($medium, $medium, 400, $bg-color, none);
-}
+  }
 
   .main-nav__container {
     @include container($desktop, 0 10px);
@@ -166,7 +166,6 @@
     justify-content: flex-end;
     align-items: center;
     width: 790px;
-
   }
 
   .main-nav__item {
