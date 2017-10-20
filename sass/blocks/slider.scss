@@ -35,7 +35,17 @@
     background-color: $bg-color;
     box-shadow: 0 0 0 3px $base-color;
     opacity: 1;
+    cursor: default;
   }
+}
+
+.slider__toggle:hover,
+.slider__toggle:focus {
+  opacity: 0.6;
+}
+
+.slider__toggle:active {
+  opacity: 0.1;
 }
 
 .slider__button {
