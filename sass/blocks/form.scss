@@ -310,10 +310,15 @@
     margin-left: 20px;
   }
 
-  .form__input--icon {
-    position: relative;
+  .form__icon {
+    position: absolute;
+    top: 2px;
+    right: 2px;
 
-    border-right-width: 64px;
+    width: 59px;
+    height: 59px;
+
+    background-color: $border-color;
   }
 
   .form__text {
