@@ -9,24 +9,18 @@
 }
 
 .main-nav__home:hover .logo__color,
-.main-nav__home:focus .logo__color {
+.main-nav__home:focus .logo__color,
+.page-footer__home:hover .logo__color,
+.page-footer__home:focus .logo__color {
   fill: $accent-color;
-}
-
-.main-nav__home--inactive:hover .logo__color {
-  fill: $bg-color;
-}
-
-.main-nav__home:active {
-  opacity: 0.3;
-}
-
-.main-nav__home--inactive:active {
-  opacity: 1;
 }
 
 .main-nav__home:active .logo__color {
   fill: $bg-color;
+}
+
+.page-footer__home:active .logo__color {
+  fill: $base-color;
 }
 
 @media (min-width: $tablet) {

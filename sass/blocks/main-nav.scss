@@ -22,6 +22,14 @@
   text-decoration: none;
 }
 
+.main-nav__home:active {
+  opacity: 0.3;
+}
+
+.main-nav__home--inactive:active {
+  opacity: 1;
+}
+
 .main-nav__list {
   display: none;
   border-top: 1px solid $contrast-color;
