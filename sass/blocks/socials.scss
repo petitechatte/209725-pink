@@ -14,13 +14,22 @@
   border-color: transparentize($base-color, 0.9);
   border-radius: 50%;
 
-  &--youtube {
-    padding-left: 4px;
+  &:hover,
+  &:focus {
+    border-color: $base-color;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .socials__svg {
   margin: auto;
+}
+
+.socials__link--youtube .socials__svg {
+  padding-left: 4px;
 }
 
 .socials__icon {
