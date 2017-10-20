@@ -24,6 +24,12 @@
   margin-bottom: 12px;
 
   @include text($medium, $large, 700, $contrast-color);
+
+  &--effect {
+    padding: 0;
+
+    @include text($x-large, 36px, 700, $contrast-color);
+  }
 }
 
 .features__description {
@@ -75,11 +81,11 @@
 
   .features__wrapper {
     @include container($tablet);
-  }
 
-  .features__columns {
-    display: flex;
+    &--columns {
+      display: flex;
     flex-wrap: wrap;
+    }
   }
 
   .features__list {
@@ -158,6 +164,10 @@
 
     font-size: $x-large;
     line-height: $x-large;
+
+    &--effect {
+      margin-bottom: 22px;
+    }
   }
 
   .features__description {

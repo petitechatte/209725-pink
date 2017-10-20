@@ -16,6 +16,15 @@
   justify-content: center;
   align-items: center;
   height: 50px;
+
+  &--price {
+    @include container($mobile);
+    margin-top: 20px;
+  }
+}
+
+.price__slider--no-js + .slider__toggles--price {
+  display: none;
 }
 
 .slider__toggle {
@@ -50,6 +59,12 @@
 
 .slider__button {
   display: none;
+}
+
+@media (min-width: $tablet) {
+  .slider__toggles--price {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop) {

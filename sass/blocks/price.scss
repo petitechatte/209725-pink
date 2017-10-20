@@ -90,11 +90,6 @@
   fill: #f25b26;
 }
 
-.price__toggles {
-  @include container($mobile);
-  margin-top: 20px;
-}
-
 @media (max-width: $mobile-max-width) {
   .price__slider {
     @include container($mobile, 0);
@@ -109,16 +104,8 @@
     margin-left: -280px;
   }
 
-  .price__toggles {
-    display: flex;
-  }
-
   .price__slider--no-js {
     overflow-x: auto;
-  }
-
-  .price__slider--no-js + .price__toggles {
-    display: none;
   }
 }
 
@@ -178,10 +165,6 @@
 
   .price__cell--no .price__svg {
     top: 9px;
-  }
-
-  .price__toggles {
-    display: none;
   }
 }
 

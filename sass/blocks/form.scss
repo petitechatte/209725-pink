@@ -11,15 +11,15 @@
 
 .form__field {
   margin-top: 0;
-}
 
-.form__achievements .form__field {
-  margin-bottom: 37px;
-}
+  &--achievements {
+    margin-bottom: 37px;
+  }
 
-.form__application .form__field {
-  margin-top: 4px;
-  margin-bottom: 40px;
+  &--application {
+    margin-top: 4px;
+    margin-bottom: 40px;
+  }
 }
 
 .form__label {
@@ -197,34 +197,30 @@
     @include container($mobile);
     padding-top: 110px;
     padding-bottom: 22px;
-  }
 
-  .form__user {
-    padding-top: 0;
-  }
+    &--user {
+      padding-top: 0;
+    }
 
-  .form__achievements {
-    padding-bottom: 5px;
+    &--achievements {
+      padding-bottom: 5px;
 
-    background-color: $light-color;
-  }
+      background-color: $light-color;
+    }
 
-  .form__contacts {
-    padding-top: 32px;
-  }
+    &--contacts {
+      padding-top: 32px;
+    }
 
-  .form__contacts .form__question {
-    @include visuallyhidden;
-  }
+    &--application {
+      padding-bottom: 0;
 
-  .form__application {
-    padding-bottom: 0;
+      background-color: $light-color;
+    }
 
-    background-color: $light-color;
-  }
-
-  .form__message {
-    padding-top: 72px;
+    &--message {
+      padding-top: 72px;
+    }
   }
 
   .form__question {
@@ -236,6 +232,10 @@
     &--positioned {
       position: absolute;
       top: 0;
+    }
+
+    &--contacts {
+      @include visuallyhidden;
     }
   }
 
@@ -258,58 +258,60 @@
     margin-bottom: 52px;
     padding: 30px 55px;
     border: 2px solid $border-color;
+
+    &--user {
+      @include fieldset-reset;
+      margin-bottom: 3px;
+    }
+
+    &--achievements {
+      order: 3;
+      padding-top: 32px;
+      padding-bottom: 10px;
+    }
+
+    &--contacts {
+      order: 2;
+      margin-bottom: 50px;
+      padding-bottom: 0;
+    }
+
+    &--application {
+      order: 1;
+      padding-bottom: 15px;
+    }
+
+    &--message {
+      order: 4;
+      margin-bottom: 65px;
+      padding-bottom: 24px;
+
+      text-align: center;
+    }
   }
 
   .form__question {
     line-height: $x-large;
   }
 
-  .form__user {
-    @include fieldset-reset;
-    margin-bottom: 3px;
-  }
+  .form__field {
+    &--user {
+      display: flex;
+      align-items: center;
+      margin-bottom: 45px;
+    }
 
-  .form__achievements {
-    order: 3;
-    padding-top: 32px;
-    padding-bottom: 10px;
-  }
+    &--contacts {
+      position: relative;
 
-  .form__contacts {
-    order: 2;
-    margin-bottom: 50px;
-    padding-bottom: 0;
-  }
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
 
-  .form__application {
-    order: 1;
-    padding-bottom: 15px;
-  }
-
-  .form__message {
-    order: 4;
-    margin-bottom: 65px;
-    padding-bottom: 24px;
-
-    text-align: center;
-  }
-
-  .form__user .form__field {
-    display: flex;
-    align-items: center;
-    margin-bottom: 45px;
-  }
-
-  .form__contacts .form__field {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 24px;
-  }
-
-  .form__application .form__field {
-    margin-top: 10px;
+    &--application {
+      margin-top: 10px;
+    }
   }
 
   .form__label {
@@ -319,6 +321,12 @@
       padding-left: 0;
     }
 
+    &--contacts {
+      order: 1;
+      margin-top: 7px;
+      margin-left: 20px;
+    }
+
     &--radio::before {
       margin-right: 25px;
     }
@@ -326,12 +334,6 @@
     &--checkbox::before {
       margin-right: 15px;
     }
-  }
-
-  .form__contacts .form__label {
-    order: 1;
-    margin-top: 7px;
-    margin-left: 20px;
   }
 
   .form__icon {
@@ -381,27 +383,27 @@
 
   .form__fieldset {
     width: 100%;
-  }
 
-  .form__user {
-    width: 430px;
-    padding-top: 20px;
-  }
+    &--user {
+      width: 430px;
+      padding-top: 20px;
+    }
 
-  .form__application {
-    width: 430px;
-    padding: 0;
-    padding-top: 35px;
-  }
+    &--achievements {
+      padding-left: 55px;
+      padding-right: 55px;
+      padding-bottom: 15px;
+    }
 
-  .form__achievements {
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-bottom: 15px;
-  }
+    &--application {
+      width: 430px;
+      padding: 0;
+      padding-top: 35px;
+    }
 
-  .form__message {
-    padding-bottom: 15px;
+    &--message {
+      padding-bottom: 15px;
+    }
   }
 
   .form__wrapper {
@@ -416,22 +418,24 @@
     min-width: 210px;
   }
 
+  .form__field {
+    &--achievements {
+      min-width: 210px;
+    }
+
+    &--contacts {
+      width: 376px;
+      margin-bottom: 8px;
+    }
+
+    &--application {
+      margin-bottom: 38px;
+      margin-left: 77px;
+    }
+  }
+
   .form__input--text {
     padding-left: 20px;
-  }
-
-  .form__application .form__field {
-    margin-bottom: 38px;
-    margin-left: 77px;
-  }
-
-  .form__achievements .form__field {
-    min-width: 210px;
-  }
-
-  .form__contacts .form__field {
-    width: 376px;
-    margin-bottom: 8px;
   }
 
   .form__text {

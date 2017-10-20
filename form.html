@@ -11,7 +11,7 @@
       <nav class="main-nav main-nav--opened">
           <div class="main-nav__container">
             <a class="main-nav__home" href="index.html">
-              <svg class="logo logo-mobile" xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859" viewBox="0 0 74.426 22.859"><g class="logo__color" fill="#FFF"><path d="M0 1.45C0 .74.58.16 1.256.16h7.18c5.087 0 8.436 2.705 8.436 7.148v.064c0 4.86-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.858 0 22.278 0 21.57V1.45zm8.114 10.978c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.918h5.57zM21.73 1.288C21.73.58 22.307 0 22.982 0c.71 0 1.288.58 1.288 1.288V21.57c0 .71-.578 1.29-1.287 1.29-.676 0-1.255-.58-1.255-1.29V1.29zM30.87 1.32c0-.676.58-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256C47.452.58 47.998 0 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.19-1.158 1.19h-.13c-.547 0-.933-.32-1.32-.77L33.35 4.153v17.45c0 .675-.548 1.255-1.256 1.255-.677 0-1.224-.58-1.224-1.257V1.32zM56.3 1.288C56.3.58 56.88 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.33L71.69.452c.29-.257.58-.45.998-.45.676 0 1.224.612 1.224 1.256 0 .354-.16.644-.42.9l-7.983 7.92 8.563 10.562c.225.29.354.547.354.934 0 .676-.58 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.86v4.895c0 .708-.58 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"/></g></svg>
+              <svg class="logo logo--mobile" xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859" viewBox="0 0 74.426 22.859"><g class="logo__color" fill="#FFF"><path d="M0 1.45C0 .74.58.16 1.256.16h7.18c5.087 0 8.436 2.705 8.436 7.148v.064c0 4.86-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.858 0 22.278 0 21.57V1.45zm8.114 10.978c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.918h5.57zM21.73 1.288C21.73.58 22.307 0 22.982 0c.71 0 1.288.58 1.288 1.288V21.57c0 .71-.578 1.29-1.287 1.29-.676 0-1.255-.58-1.255-1.29V1.29zM30.87 1.32c0-.676.58-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256C47.452.58 47.998 0 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.19-1.158 1.19h-.13c-.547 0-.933-.32-1.32-.77L33.35 4.153v17.45c0 .675-.548 1.255-1.256 1.255-.677 0-1.224-.58-1.224-1.257V1.32zM56.3 1.288C56.3.58 56.88 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.33L71.69.452c.29-.257.58-.45.998-.45.676 0 1.224.612 1.224 1.256 0 .354-.16.644-.42.9l-7.983 7.92 8.563 10.562c.225.29.354.547.354.934 0 .676-.58 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.86v4.895c0 .708-.58 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"/></g></svg>
               <span class="visually-hidden">PINK</span>
             </a>
             <ul class="main-nav__list">
@@ -45,33 +45,34 @@
       <span class="page-main__tablet">Пожалуйста, заполните форму ниже:</span>
       </p>
       <form class="page-main__story form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__user form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--user">
           <legend class="visually-hidden">Представьтесь, пожалуйста</legend>
-          <p class="form__field">
+          <p class="form__field form__field--user">
             <label class="form__label form__label--text" for="surname-field">Фамилия</label>
             <input class="form__input form__input--text" type="text" name="surname" placeholder="Укажите фамилию *" id="surname-field" required>
           </p>
-          <p class="form__field">
+          <p class="form__field form__field--user">
             <label class="form__label form__label--text" for="name-field">Имя</label>
             <input class="form__input form__input--text" type="text" name="name" placeholder="Введите ваше имя *" id="name-field" required>
           </p>
-          <p class="form__field">
+          <p class="form__field form__field--user">
             <label class="form__label form__label--text" for="patronymic-field">Отчество</label>
             <input class="form__input form__input--text" type="text" name="patronymic" placeholder="Ну и отчество тоже" id="patronymic-field">
           </p>
         </fieldset>
-        <fieldset class="form__achievements form__fieldset">
+
+        <fieldset class="form__fieldset form__fieldset--achievements">
           <legend class="form__question form__question--positioned">Ваши безбашенные достижения в путешествии</legend>
           <div class="form__wrapper">
             <div class="form__column">
-              <p class="form__field">
+              <p class="form__field form__field--achievements">
                 <input class="form__checkbox" type="checkbox"  name="shark-selfie" id="shark-selfie" checked>
                 <label class="form__label form__label--checkbox" for="shark-selfie">
                   <svg class="form__svg" xmlns="http://www.w3.org/2000/svg" width="21.698" height="16.09" viewBox="-82.357 4.875 21.698 16.09"><path class="form__checked" d="M-60.953 5.167c-.39-.39-1.023-.39-1.414 0L-75.75 18.55l-4.9-4.9c-.39-.39-1.023-.39-1.414 0s-.39 1.024 0 1.415l5.607 5.607c.195.195.45.293.707.293s.512-.098.707-.293l14.09-14c.39-.48.39-1.114 0-1.505z"/></svg>
                   Сделал селфи с акулой
                 </label>
               </p>
-              <p class="form__field">
+              <p class="form__field form__field--achievements">
                 <input class="form__checkbox" type="checkbox" name="get-sunburn" id="get-sunburn" checked>
                 <label class="form__label form__label--checkbox" for="get-sunburn">
                   <svg class="form__svg" xmlns="http://www.w3.org/2000/svg" width="21.698" height="16.09" viewBox="-82.357 4.875 21.698 16.09"><path class="form__checked" d="M-60.953 5.167c-.39-.39-1.023-.39-1.414 0L-75.75 18.55l-4.9-4.9c-.39-.39-1.023-.39-1.414 0s-.39 1.024 0 1.415l5.607 5.607c.195.195.45.293.707.293s.512-.098.707-.293l14.09-14c.39-.48.39-1.114 0-1.505z"/></svg>
@@ -80,14 +81,14 @@
               </p>
             </div>
             <div class="form__column">
-              <p class="form__field">
+              <p class="form__field form__field--achievements">
                 <input class="form__checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
                 <label class="form__label form__label--checkbox" for="chuck-norris">
                   <svg class="form__svg" xmlns="http://www.w3.org/2000/svg" width="21.698" height="16.09" viewBox="-82.357 4.875 21.698 16.09"><path class="form__checked" d="M-60.953 5.167c-.39-.39-1.023-.39-1.414 0L-75.75 18.55l-4.9-4.9c-.39-.39-1.023-.39-1.414 0s-.39 1.024 0 1.415l5.607 5.607c.195.195.45.293.707.293s.512-.098.707-.293l14.09-14c.39-.48.39-1.114 0-1.505z"/></svg>
                   Видел Чака Норриса
                 </label>
               </p>
-              <p class="form__field">
+              <p class="form__field form__field--achievements">
                 <input class="form__checkbox" type="checkbox" name="buy-souvenirs" id="buy-souvenirs">
                 <label class="form__label form__label--checkbox" for="buy-souvenirs">
                   <svg class="form__svg" xmlns="http://www.w3.org/2000/svg" width="21.698" height="16.09" viewBox="-82.357 4.875 21.698 16.09"><path class="form__checked" d="M-60.953 5.167c-.39-.39-1.023-.39-1.414 0L-75.75 18.55l-4.9-4.9c-.39-.39-1.023-.39-1.414 0s-.39 1.024 0 1.415l5.607 5.607c.195.195.45.293.707.293s.512-.098.707-.293l14.09-14c.39-.48.39-1.114 0-1.505z"/></svg>
@@ -96,14 +97,14 @@
               </p>
             </div>
             <div class="form__column">
-              <p class="form__field">
+              <p class="form__field form__field--achievements">
                 <input class="form__checkbox" type="checkbox" name="hold-tower" id="hold-tower" checked>
                 <label class="form__label form__label--checkbox" for="hold-tower">
                   <svg class="form__svg" xmlns="http://www.w3.org/2000/svg" width="21.698" height="16.09" viewBox="-82.357 4.875 21.698 16.09"><path class="form__checked" d="M-60.953 5.167c-.39-.39-1.023-.39-1.414 0L-75.75 18.55l-4.9-4.9c-.39-.39-1.023-.39-1.414 0s-.39 1.024 0 1.415l5.607 5.607c.195.195.45.293.707.293s.512-.098.707-.293l14.09-14c.39-.48.39-1.114 0-1.505z"/></svg>
                   Удержал башню
                 </label>
               </p>
-              <p class="form__field">
+              <p class="form__field form__field--achievements">
                 <input class="form__checkbox" type="checkbox" name="smash-hotel" id="smash-hotel">
                 <label class="form__label form__label--checkbox" for="smash-hotel">
                   <svg class="form__svg" xmlns="http://www.w3.org/2000/svg" width="21.698" height="16.09" viewBox="-82.357 4.875 21.698 16.09"><path class="form__checked" d="M-60.953 5.167c-.39-.39-1.023-.39-1.414 0L-75.75 18.55l-4.9-4.9c-.39-.39-1.023-.39-1.414 0s-.39 1.024 0 1.415l5.607 5.607c.195.195.45.293.707.293s.512-.098.707-.293l14.09-14c.39-.48.39-1.114 0-1.505z"/></svg>
@@ -113,42 +114,45 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="form__contacts form__fieldset">
-          <legend class="form__question">Контактная информация</legend>
+
+        <fieldset class="form__fieldset form__fieldset--contacts">
+          <legend class="form__question form__question--contacts">Контактная информация</legend>
           <div class="form__wrapper"><!-- против флексбага филдсета -->
-            <p class="form__field">
-              <label class="form__label form__label--text" for="phone-field">Номер телефона</label>
+            <p class="form__field form__field--contacts">
+              <label class="form__label form__label--text form__label--contacts" for="phone-field">Номер телефона</label>
               <input class="form__input form__input--text form__input--icon" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
               <span class="form__icon form__icon--phone"></span>
             </p>
-            <p class="form__field">
-              <label class="form__label form__label--text" for="email-field">Адрес почты</label>
+            <p class="form__field form__field--contacts">
+              <label class="form__label form__label--text form__label--contacts" for="email-field">Адрес почты</label>
               <input class="form__input form__input--text form__input--icon" type="email" name="email" id="email-field" placeholder="Введите почту *" required>
               <span class="form__icon form__icon--email"></span>
             </p>
           </div>
         </fieldset>
-        <fieldset class="form__application form__fieldset">
+
+        <fieldset class="form__fieldset form__fieldset--application">
           <legend class="form__question form__question--positioned">С каким приложением путешествовали?</legend>
-          <p class="form__field">
+          <p class="form__field form__field--application">
             <input class="form__radio" type="radio" name="app" value="ios" id="ios-radio" checked>
             <label class="form__label form__label--radio" for="ios-radio">Pink для iOS</label>
           </p>
-          <p class="form__field">
+          <p class="form__field form__field--application">
             <input class="form__radio" type="radio" name="app" value="android" id="android-radio">
             <label class="form__label form__label--radio" for="android-radio">Pink на Android</label>
           </p>
-          <p class="form__field">
+          <p class="form__field form__field--application">
             <input class="form__radio" type="radio" name="app" value="windows" id="windows-radio">
             <label class="form__label form__label--radio" for="windows-radio">Windows Phone</label>
           </p>
         </fieldset>
-        <fieldset class="form__message form__fieldset">
+
+        <fieldset class="form__fieldset form__fieldset--message">
           <legend class="form__question form__question--positioned">Опишите  свои эмоции</legend>
-          <label class="visually-hidden" for="review-field">История вашего путешествия
-          </label>
+          <label class="visually-hidden" for="review-field">История вашего путешествия</label>
           <textarea class="form__text" name="review" id="review-field" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
+
         <div class="form__container">
           <button class="form__send button button--confirm" type="submit">Отправить форму</button>
           <p class="form__comment">
