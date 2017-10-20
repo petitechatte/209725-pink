@@ -2,6 +2,19 @@
   margin-right: 18px;
 }
 
+.copyright__icon {
+  fill: $accent-color;
+}
+
+.copyright__link:hover .copyright__icon,
+.copyright__link:focus .copyright__icon {
+  fill: $base-color;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet) {
   .copyright {
     position: relative;
