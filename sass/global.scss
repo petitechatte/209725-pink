@@ -23,7 +23,8 @@ img {
 .button {
   display: inline-block;
   width: 280px;
-  padding: 16px 30px;
+  padding: 14px 20px;
+  padding-bottom: 16px;
   border: 3px solid $base-color;
   border-radius: 55px;
   box-sizing: border-box;
@@ -85,11 +86,11 @@ img {
   }
 
   &--confirm {
-    padding-top: 17px;
+    padding: 13px;
     border-color: $btn-color;
     border-radius: 0;
 
-    @include text($medium, $large, 700, $bg-color, uppercase);
+    @include text($medium, $x-large, 700, $bg-color, uppercase);
 
     background-color: $btn-color;
   }
@@ -113,6 +114,8 @@ img {
 }
 
 .lead {
+  margin: 30px 0;
+
   @include text(24px, 1.2, 300);
 }
 
@@ -124,10 +127,34 @@ img {
   .container {
     @include container($tablet);
   }
+
+  .button {
+    width: 300px;
+  }
+
+  .lead {
+    margin: 0;
+
+    font-size: 40px;
+  }
 }
 
 @media (min-width: $desktop) {
   .container {
     @include container($desktop, 0 10px);
+  }
+
+  .button {
+    font-size: 21px;
+    line-height: 1;
+
+    &--confirm {
+      font-size: $medium;
+      line-height: $x-large;
+    }
+  }
+
+  .lead {
+    font-size: 50px;
   }
 }

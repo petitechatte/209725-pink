@@ -15,14 +15,11 @@
 
 .gallery__item {
   position: relative;
-  min-height: 300px;
   margin-bottom: 20px;
 
   text-align: left;
 
   background-color: $light-color;
-
-  @include outline(green);
 }
 
 .gallery__link {
@@ -35,14 +32,21 @@
   margin: 0 -20px;
 }
 
-.gallery__label--panoramic {
+.gallery__label {
   position: absolute;
   top: 0;
   right: 0;
 
-  @include text($x-small, $large, 700, $bg-color, uppercase);
+  min-width: 140px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 
-  background-color: $accent-color;
+  @include text($x-small, $large, 700, $bg-color, uppercase);
+  text-align: center;
+
+  &--panoramic {
+    background-color: $accent-color;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -51,9 +55,12 @@
   }
 
   .gallery__intro {
-    min-height: 228px - 95 - 75;
-    padding-top: 95px;
+    padding-top: 92px;
     padding-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    font-size: $medium;
   }
 
   .gallery__list {
@@ -64,22 +71,27 @@
 
   .gallery__item {
     width: 300px;
-    min-height: 455px;
 
     &--panoramic {
       width: 100%;
-      min-height: 630px;
+      margin-bottom: 50px;
     }
   }
 
   .gallery__photo {
     width: 300px;
+    height: 300px; //временно
   }
 
   .gallery__photo--panoramic {
     max-width: $tablet;
     width: $tablet;
+    height: 509px; // временно
     margin: 0 -20px;
+  }
+
+  .gallery__label {
+    top: 58px;
   }
 }
 
@@ -89,22 +101,27 @@
   }
 
   .gallery__intro {
-    width: 800px;
-    min-height: 242px - 95 - 87;
+    width: 600px;
     margin: 0 auto;
-    padding-bottom: 87px;
-
-    @include outline(green);
+    padding-bottom: 89px;
   }
 
   .gallery__item {
-    min-height: 555px;
     margin-bottom: 54px;
+  }
+
+  .gallery__photo {
+    height: 400px; //временно
   }
 
   .gallery__photo--panoramic {
     max-width: none;
     width: 1200px;
+    height: 506px; // временно
     margin: 0 -130px;
+  }
+
+  .gallery__label {
+    top: 53px;
   }
 }

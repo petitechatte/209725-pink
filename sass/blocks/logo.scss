@@ -1,0 +1,31 @@
+.logo {
+  width: 75px;
+  height: 22px;
+
+  &--footer {
+    width: 147px;
+    height: 40px;
+  }
+}
+
+.main-nav__home:hover .logo__color,
+.main-nav__home:focus .logo__color,
+.page-footer__home:hover .logo__color,
+.page-footer__home:focus .logo__color {
+  fill: $accent-color;
+}
+
+.main-nav__home:active .logo__color {
+  fill: $bg-color;
+}
+
+.page-footer__home:active .logo__color {
+  fill: $base-color;
+}
+
+@media (min-width: $tablet) {
+  .logo {
+    width: 147px;
+    height: 40px;
+  }
+}

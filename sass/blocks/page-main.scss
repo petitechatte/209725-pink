@@ -1,16 +1,26 @@
-.page-main {
-  @include outline(red);
-}
+@media (max-width: $mobile-max-width) {
+  .page-main__intro {
+    @include container($mobile);
+    padding-top: 46px;
+    padding-bottom: 35px;
+  }
 
-.page-main__intro {
-  @include container($mobile);
-  padding: 46px 20px;
+  .page-main__tablet {
+    @include visuallyhidden;
+  }
 }
 
 @media (min-width: $tablet) {
   .page-main__intro {
-    @include container($tablet);
-    min-height: 253px;
+    @include container($tablet, 0 65px);
+    padding-top: 92px;
+    padding-bottom: 70px;
+
+    font-size: $medium;
+  }
+
+  .page-main__tablet {
+    display: block;
   }
 
   .page-main__story {
@@ -20,11 +30,17 @@
 
 @media (min-width: $desktop) {
   .page-main__intro {
-    @include container($desktop, 0 10px);
-    min-height: 220px;
+    @include container($desktop, 0 100px);
+    padding-top: 92px;
+    padding-bottom: 65px;
+  }
+
+  .page-main__tablet {
+    display: inline-block;
   }
 
   .page-main__story {
     @include container($desktop, 0 10px);
+    margin-bottom: 5px;
   }
 }

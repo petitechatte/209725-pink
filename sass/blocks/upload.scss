@@ -1,16 +1,10 @@
-.upload {
-  background-color: $light-color;
-
-  @include outline(red);
-}
-
 .upload__header {
   background-color: $bg-color;
 }
 
 .upload__intro {
   @include container($mobile);
-  margin-top: 54px;
+  margin-top: 40px;
   padding-top: 0;
   padding-bottom: 40px;
 }
@@ -18,11 +12,12 @@
 .upload__form {
   @include container($mobile);
   padding-top: 20px;
+
+  background-color: $light-color;
 }
 
 .upload__preview {
   @include fieldset-reset;
-  @include outline(green);
 }
 
 .upload__image {
@@ -32,20 +27,14 @@
 
 .upload__edit {
   @include fieldset-reset;
-  min-height: 161px - 42 -28;
   padding-top: 42px;
-  padding-bottom: 28px;
   border-bottom: 1px solid transparentize($base-color, 0.9);
-
-  @include outline(green);
 }
 
 .upload__submit {
   @include fieldset-reset;
   padding-top: 38px;
-  padding-bottom: 41px;
-
-  @include outline(green);
+  padding-bottom: 42px;
 }
 
 .upload__button--submit {
@@ -55,15 +44,16 @@
 @media (min-width: $tablet) {
   .upload__intro {
     @include container($tablet);
-    min-height: 125px;
-    margin-top: 67px - 20;
+    margin-top: 46px;
+    padding-bottom: 68px;
+
+    font-size: $medium;
   }
 
   .upload__form {
     @include container($tablet);
     display: flex;
     justify-content: space-between;
-    min-height: 400px;
     padding-top: 57px;
     padding-bottom: 54px;
   }
@@ -83,25 +73,41 @@
     width: 300px;
   }
 
+  .upload__edit {
+    padding: 0;
+    border: none;
+  }
+
   .upload__submit {
     padding: 0;
   }
 
+  .upload__button {
+    width: 260px;
+    margin-left: 15px;
+  }
+
   .upload__button--submit {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
   }
 }
 
 @media (min-width: $desktop) {
+  .upload {
+    margin-bottom: 30px;
+  }
+
   .upload__intro {
     @include container($desktop, 0 10px);
-    margin-top: 62px - 54;
+    margin-top: 5px;
+    padding-bottom: 65px;
   }
 
   .upload__form {
-    @include container($desktop, 57px 0);
-    padding-left: 90px;
-    padding-right: 70px;
+    @include container(940px, 57px 0);
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-bottom: 57px;
   }
 
   .upload__column {
@@ -116,6 +122,10 @@
 
   .upload__button {
     width: 183px;
+    margin: 0;
+
+    font-size: $medium;
+    line-height: $medium;
   }
 
   .upload__button--submit {

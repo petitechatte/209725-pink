@@ -1,8 +1,9 @@
 .page-intro {
-  min-height: 170px - 35px;
-  padding-top: 35px;
+  min-height: 170px; // одинаковая высота блока независимо от заголовка
+  padding: 30px;
   border-top: 1px solid transparent; // против выпадения отступа
   border-bottom: 1px solid transparent; // против выпадения отступа
+  box-sizing: border-box;
 
   color: $bg-color;
 
@@ -15,8 +16,6 @@
 
 .page-intro__demonstration {
   display: flex;
-
-  @include outline(blue);
 }
 
 .page-intro__image {
@@ -34,10 +33,6 @@
   z-index: 1;
 
   color: $bg-color;
-
-  background-color: $dark-color;
-
-  @include outline(green);
 }
 
 @media (max-width: $mobile-max-width) { // в потоке
@@ -46,30 +41,37 @@
     height: 395px;
   }
 
+  .page-intro__wrapper {
+    background-color: $dark-color;
+  }
+
   .page-intro__content {
     @include container($mobile);
-    min-height: 270px - 28;
     padding-top: 28px;
+    padding-bottom: 28px;
   }
 }
 
 @media (min-width: $tablet) {  // появляется многослойность
   .page-intro {
-    min-height: 330px - 83;
-    padding-top: 83px;
+    min-height: 328px;
+    padding: 70px 0;
 
     &--index {
-      @include container($tablet);
+      position: relative;
 
-      min-height: 618px;
+      @include container($tablet);
+      padding-top: 90px;
+      padding-bottom: 110px;
     }
   }
 
   .page-intro__demonstration {
     position: absolute;
+    bottom: 0;
 
     width: $tablet - 20px * 2;
-    height: 618px;
+    height: 546px;
   }
 
   .page-intro__image {
@@ -80,7 +82,6 @@
 
   .page-intro__content {
     width: 300px;
-    margin-top: 102px;
     padding: 0;
 
     background-color: transparent;
@@ -88,19 +89,19 @@
 
   .page-intro__title {
     @include container($tablet);
-    min-height: 100px;
+
+    font-size: 50px;
   }
 }
 
 @media (min-width: $desktop) {
   .page-intro {
-    @include container($desktop, 0 10px);
-    min-height: 285px;
-    padding-top: 75px;
+    @include container($desktop, 65px 10px);
+    min-height: 284px;
 
     &--index {
-      min-height: 742px;
-      padding-top: 0;
+      padding-top: 105px;
+      padding-bottom: 120px;
     }
   }
 
@@ -115,11 +116,7 @@
     margin-right: 43px;
   }
 
-  .page-intro__content {
-    margin-top: 125px;
-  }
-
   .page-intro__title {
-    width: 800px;
+    @include container(820px, 0 0);
   }
 }
