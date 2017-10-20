@@ -86,11 +86,11 @@ img {
   }
 
   &--confirm {
-    padding-top: 17px;
+    padding: 13px;
     border-color: $btn-color;
     border-radius: 0;
 
-    @include text($medium, $large, 700, $bg-color, uppercase);
+    @include text($medium, $x-large, 700, $bg-color, uppercase);
 
     background-color: $btn-color;
   }
@@ -147,6 +147,11 @@ img {
   .button {
     font-size: 21px;
     line-height: 1;
+
+    &--confirm {
+      font-size: $medium;
+      line-height: $x-large;
+    }
   }
 
   .lead {
