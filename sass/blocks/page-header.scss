@@ -3,8 +3,13 @@
 
   background-color: $base-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: repeat-x;  // временно
-  background-position: center top;  // !уточнить позднее
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 700px 462px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 @media (max-width: $tablet-max-width) { // выпадающее меню
