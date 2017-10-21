@@ -27,6 +27,11 @@
   border: none;
 }
 
+@mixin normalize {
+  margin: 1em 0;
+  padding: 0 1em;
+}
+
 @mixin text($font-size, $line-height, $font-weight, $color: $base-color,  $text-transform: none) {
   font-size: $font-size;
   line-height: $line-height;

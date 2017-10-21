@@ -20,6 +20,7 @@
 }
 
 .features__title {
+  @include normalize;
   margin-top: 31px;
   margin-bottom: 12px;
 
