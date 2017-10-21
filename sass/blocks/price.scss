@@ -72,6 +72,7 @@
   background-image: url("../img/hit@1x.png"), url("../img/bg-hit.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: 12px 12px, 0 0;
+  background-size: 26px 27px, 74px 73px;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/hit@2x.png"), url("../img/bg-hit.svg");
@@ -155,6 +156,7 @@
   .price__flag {
     background-image: url("../img/hit@1x.png"), url("../img/bg-hit-tablet.svg");
     background-position: 7px 7px, 1px 0;
+    background-size: 26px 27px, 61px 61px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/hit@2x.png"), url("../img/bg-hit-tablet.svg");
@@ -207,6 +209,7 @@
   .price__flag {
     background-image: url("../img/hit@1x.png"), url("../img/bg-hit.svg");
     background-position: 12px 12px, 1px 1px;
+    background-size: 26px 27px, 74px 73px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/hit@2x.png"), url("../img/bg-hit.svg");
