@@ -1,5 +1,5 @@
 .price {
-  padding-top: 112px;
+  padding-top: 113px;
   padding-bottom: 30px;
 
   background-color: $light-color;
@@ -62,14 +62,18 @@
 .price__flag {
   position: absolute;
   top: 0;
-  left: -2px;
+  left: -1px;
 
   width: 74px;
   height: 74px;
 
-  background-image: url("../img/hit.png"), url("../img/bg-hit.svg");
+  background-image: url("../img/hit@1x.png"), url("../img/bg-hit.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: 12px 12px, 0 0;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/hit@2x.png"), url("../img/bg-hit.svg");
+  }
 }
 
 .price__svg {
