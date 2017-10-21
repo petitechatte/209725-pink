@@ -55,12 +55,10 @@
 }
 
 .contacts__map {
-  position: relative;
-
+  display: flex;
   min-width: 320px;
   height: 200px;
   margin: 0 auto;
-  border-top: 1px solid transparent;
 
   background-color: $light-color;
   background-image: url("../img/bg-map-mobile@1x.png");
@@ -70,15 +68,19 @@
 }
 
 .contacts__marker {
-  display: block;
-  width: 15px;
-  height: 15px;
-  margin: 0 auto;
-  margin-top: 95px;
-  border: 10px solid $bg-color;
-  border-radius: 50%;
+  display: none;
 
-  background-color: $accent-color;
+  &--no-js {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    margin-top: 95px;
+    border: 10px solid $bg-color;
+    border-radius: 50%;
+
+    background-color: $accent-color;
+  }
 }
 
 .contacts__mask {
