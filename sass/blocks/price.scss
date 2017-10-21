@@ -47,6 +47,7 @@
     padding-bottom: 21px;
     padding-left: 0;
     border-top: none;
+    border-bottom-color: $base-color;
 
     text-align: center;
   }
@@ -54,6 +55,7 @@
   &--empty {
     border-top: none;
     border-left: none;
+    border-right-color: $base-color;
 
     background-color: $light-color;
   }
@@ -203,8 +205,12 @@
   }
 
   .price__flag {
-    background-image: url("../img/hit.png"), url("../img/bg-hit.svg");
-    background-position: 12px 12px, 0 0;
+    background-image: url("../img/hit@1x.png"), url("../img/bg-hit.svg");
+    background-position: 12px 12px, 1px 1px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/hit@2x.png"), url("../img/bg-hit.svg");
+    }
   }
 
   .price__tariff {
