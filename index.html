@@ -99,9 +99,13 @@
             </li>
           </ul>
           <div class="features__example">
+
             <img class="features__image features__image--1" width="157" height="320" src="img/iphone-screen-mobile@1x.png" alt="Фотография мусоросборников">
             <img class="features__image features__image--2" width="157" height="320" src="img/iphone-screen-mobile@1x.png" alt="Применение к фото фильтра приложения">
-            <img class="features__image features__image--3" width="157" height="320" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Применение к фото фильтра, текста и смайла">
+            <picture class="features__picture">
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+              <img class="features__image features__image--3" width="157" height="320" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Применение к фото фильтра, текста и смайла">
+            </picture>
           </div>
         </div>
         <section class="features__duration effect">
@@ -109,6 +113,8 @@
             <h3 class="features__title features__title--effect">Эффект на&nbsp;24&nbsp;часа!</h3>
             <p class="features__description">Британские ученые провели исследования и&nbsp;доказали,<br class="features__desktop-break"> что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
             <a class="effect__link" href="#">Узнать больше об&nbsp;исследовании</a>
+            <svg class="effect__svg effect__svg--outer" xmlns="http://www.w3.org/2000/svg" width="298" height="345.097" viewBox="0 0 298 345.097"><path fill="#dedede" class="effect__icon effect__icon--outer" d="M264.568 102.055l5.355-5.355c7.717-7.717 9.124-18.938 3.126-24.935-5.998-5.997-17.218-4.59-24.935 3.127l-5.386 5.385c-20.962-16.985-46.62-28.402-74.73-31.98v-9.583h7.658c10.914 0 19.843-8.71 19.843-19.357S186.574 0 175.66 0H122.34C111.43 0 102.5 8.71 102.5 19.357s8.93 19.357 19.842 19.357H130v9.583C56.68 57.63 0 120.244 0 196.097c0 82.29 66.71 149 149 149s149-66.71 149-149c0-35.663-12.535-68.394-33.432-94.042zM149 306.265c-60.844 0-110.167-49.324-110.167-110.168S88.156 85.93 149 85.93c60.843 0 110.167 49.323 110.167 110.167S209.843 306.264 149 306.264z"/></svg>
+            <svg class="effect__svg effect__svg--inner" xmlns="http://www.w3.org/2000/svg" width="253" height="253" viewBox="22.5 69.048 253 253"><path fill="#d22856" d="M149 69.048c-69.864 0-126.5 56.636-126.5 126.5s56.636 126.5 126.5 126.5 126.5-56.636 126.5-126.5c0-69.863-56.636-126.5-126.5-126.5zm0 237.216c-60.844 0-110.167-49.323-110.167-110.167S88.156 85.93 149 85.93c60.843 0 110.167 49.323 110.167 110.167S209.843 306.264 149 306.264z"/></svg>
           </div>
         </section>
       </section>

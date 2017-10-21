@@ -1,17 +1,49 @@
 .effect__wrapper {
+  position: relative;
+
   width: 310px;
   margin: 0 auto;
   padding-top: 63px;
   padding-bottom: 97px;
   padding-right: 20px;
   padding-left: 330px;
+
+  &::after {
+    content: "24";
+    position: absolute;
+    top: 135px;
+    left: 85px;
+
+    display: block;
+    width: 150px;
+    height: 150px;
+
+    @include text(96px, 149.47px, 700, $accent-color);
+  }
 }
 
 .effect__link {
   display: block;
-  margin-top: 5px;
+  margin-top: 8px;
 
   color: $accent-color;
+}
+
+.effect__svg {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+
+  width: 238px;
+  height: 276px;
+
+  &--inner {
+    top: 114px;
+    left: 39px;
+
+    width: 202px;
+    height: 202px;
+  }
 }
 
 @media (min-width: $desktop) {
