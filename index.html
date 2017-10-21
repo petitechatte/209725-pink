@@ -92,7 +92,7 @@
             </li>
             <li class="features__item">
               <h3 class="features__title">Меняет мир вокруг</h3>
-              <p class="features__description">Сделайте снимок и&nbsp;украсьте его смайликом или текстовой подписью, чтобы<br class="features__tablet-break"> усилить эффект</p>
+              <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="features__tablet-break"> усилить эффект</p>
             </li>
             <li class="features__item">
               <h3 class="features__title">Заводит новых друзей</h3>
@@ -100,10 +100,16 @@
             </li>
           </ul>
           <div class="features__example">
-
-            <img class="features__image features__image--1" width="157" height="320" src="img/iphone-screen-mobile@1x.png" alt="Фотография мусоросборников">
-            <img class="features__image features__image--2" width="157" height="320" src="img/iphone-screen-mobile@1x.png" alt="Применение к фото фильтра приложения">
             <picture class="features__picture">
+             <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+              <img class="features__image features__image--1" width="292" height="302" src="" alt="Фотография мусоросборников">
+            </picture>
+            <picture class="features__picture">
+             <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+              <img class="features__image features__image--2" width="292" height="302" src="" alt="Применение к фото фильтра приложения">
+            </picture>
+            <picture class="features__picture">
+              <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
               <img class="features__image features__image--3" width="157" height="320" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Применение к фото фильтра, текста и смайла">
             </picture>
