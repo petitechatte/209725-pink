@@ -1,6 +1,11 @@
 .logo {
+  display: none;
   width: 75px;
   height: 22px;
+
+  &--mobile {
+    display: block;
+  }
 
   &--footer {
     width: 147px;
@@ -27,5 +32,13 @@
   .logo {
     width: 147px;
     height: 40px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
   }
 }
