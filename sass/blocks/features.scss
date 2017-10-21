@@ -23,7 +23,7 @@
   margin: 0;
   margin-top: 31px;
   margin-bottom: 12px;
-  padding: 0;
+  padding: 0 1em;
 
   @include text($medium, $large, 700, $contrast-color);
 
