@@ -82,6 +82,7 @@
     border: none;
 
     background-color: transparent;
+    opacity: 0.3;
 
     &--previous {
       left: 0;
@@ -90,5 +91,18 @@
     &--next {
       right: 0;
     }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .slider__arrow {
+    fill: $base-color;
   }
 }
