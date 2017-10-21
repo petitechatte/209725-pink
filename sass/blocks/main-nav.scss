@@ -62,8 +62,6 @@
   &--active,
   &--active:hover,
   &--active:active {
-    border-bottom: 2px solid $bg-color;
-
     color: $bg-color;
     opacity: 1;
   }
@@ -71,13 +69,11 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 0;
-  right: 20px;
+  top: 21px;
+  right: 19px;
 
   display: none;
-  margin-left: 50px;
-  margin-top: 21px;
-  margin-bottom: 20px;
+  padding: 0;
   border: none;
 
   background-color: transparent;
@@ -174,7 +170,13 @@
     border: none;
   }
 
-  .main-nav__link:active {
-    color: $bg-color;
+  .main-nav__link {
+    &--active {
+      border-bottom: 2px solid $bg-color;
+    }
+
+    &:active {
+      color: $bg-color;
+    }
   }
 }
