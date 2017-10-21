@@ -18,9 +18,16 @@
   display: flex;
 }
 
-.page-intro__image {
+.page-intro__picture {
   margin-top: auto;
   margin-right: auto;
+
+  line-height: 0;
+}
+
+.page-intro__image {
+  width: 258px;
+  height: 286px;
 }
 
 .page-intro__title {
@@ -61,23 +68,30 @@
       position: relative;
 
       @include container($tablet);
-      padding-top: 90px;
-      padding-bottom: 110px;
+      padding-top: 73px;
+      padding-bottom: 107px;
     }
   }
 
   .page-intro__demonstration {
     position: absolute;
-    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 
-    width: $tablet - 20px * 2;
+    @include container($tablet, 0 0);
     height: 545px;
   }
 
+  .page-intro__picture {
+    margin: 0;
+  }
+
   .page-intro__image {
-    width: 470px;  // временно
-    margin-left: auto;
-    margin-right: 0;
+    min-width: 700px;
+    width: 700px;
+    height: 545px;
+    margin: 0 -20px;
   }
 
   .page-intro__content {

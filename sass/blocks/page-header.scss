@@ -4,7 +4,7 @@
   background-color: $base-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   background-size: 700px 462px;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -20,9 +20,11 @@
 
 @media (min-width: $tablet) {
   .page-header {
-    &--index {
-      background-repeat: repeat;  // временно
-      background-position: center; // !уточнить позднее
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 1200px 729px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 }
