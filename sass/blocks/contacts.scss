@@ -193,11 +193,12 @@
   }
 
   .contacts__item {
-    width: 287px;
+    width: 280px;
     margin-top: 0;
 
     &--write {
       order: 1;
+      padding: 0;
     }
   }
 
@@ -210,7 +211,7 @@
   }
 
   .contacts__mail {
-    padding-top: 0;
+    padding-top: 2px;
   }
 
   .contacts__map {
