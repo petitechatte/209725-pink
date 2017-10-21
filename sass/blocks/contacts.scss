@@ -60,6 +60,7 @@
   min-width: 320px;
   height: 200px;
   margin: 0 auto;
+  border-top: 1px solid transparent;
 
   background-color: $light-color;
   background-image: url("../img/bg-map-mobile@1x.png");
@@ -68,10 +69,16 @@
   background-size: cover; //временно
 }
 
-.contacts__svg {
-  width: 100%;
-  min-width: 320px;
-  height: auto;
+.contacts__marker {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+  margin-top: 95px;
+  border: 10px solid $bg-color;
+  border-radius: 50%;
+
+  background-color: $accent-color;
 }
 
 .contacts__mask {
