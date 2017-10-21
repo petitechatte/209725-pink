@@ -75,13 +75,14 @@
 
 @media (min-width: $desktop) {
   .download__slogan {
+    margin-top: 10px;
     margin-bottom: 52px;
 
     @include text(50px, 1.2, 300, $bg-color);
   }
 
   .download__list {
-    margin-top: 65px;
+    margin-top: 63px;
     margin-bottom: 53px;
   }
 }
