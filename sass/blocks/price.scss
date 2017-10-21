@@ -151,8 +151,12 @@
   }
 
   .price__flag {
-    background-image: url("../img/hit.png"), url("../img/bg-hit-tablet.svg");
-    background-position: 7px 7px, 2px 2px;
+    background-image: url("../img/hit@1x.png"), url("../img/bg-hit-tablet.svg");
+    background-position: 7px 7px, 1px 0;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/hit@2x.png"), url("../img/bg-hit-tablet.svg");
+    }
   }
 
   .price__label {
