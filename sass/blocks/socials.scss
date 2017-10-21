@@ -2,14 +2,14 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .socials__link {
   display: flex;
   width: 45px;
   height: 45px;
-  margin-top: 3px;
-  margin-left: 13px;
+  margin: 0 6px;
   border: 3px solid $base-color;
   border-color: transparentize($base-color, 0.9);
   border-radius: 50%;
@@ -26,10 +26,14 @@
 
 .socials__svg {
   margin: auto;
-}
 
-.socials__link--youtube .socials__svg {
-  padding-left: 4px;
+  &--twitter {
+    margin-top: 16px;
+  }
+
+  &--youtube {
+    padding-left: 4px;
+  }
 }
 
 .socials__icon {
