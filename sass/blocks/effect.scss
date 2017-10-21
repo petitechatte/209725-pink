@@ -53,9 +53,33 @@
     padding-left: 377px;
     padding-right: 10px;
     padding-bottom: 115px;
+
+    &::after {
+      top: 113px;
+      left: 90px;
+
+      font-size: 120px;
+      line-height: 186,84px;
+    }
   }
 
   .effect__link {
     margin-top: 30px;
+  }
+
+  .effect__svg {
+    top: 0;
+    left: 10px;
+
+    width: 300px;
+    height: 344px;
+
+    &--inner {
+      top: 68px;
+      left: 33px;
+
+      width: 253px;
+      height: 253px;
+    }
   }
 }
