@@ -23,7 +23,7 @@
   margin: 0;
   margin-top: 31px;
   margin-bottom: 12px;
-  padding: 0 1em;
+  padding: 0;
 
   @include text($medium, $large, 700, $contrast-color);
 
@@ -77,8 +77,8 @@
   }
 
   .features__header {
-    padding-top: 45px;
-    padding-bottom: 50px;
+    padding-top: 48px;
+    padding-bottom: 47px;
   }
 
   .features__wrapper {
@@ -92,7 +92,7 @@
 
   .features__list {
     width: 310px;
-    padding-top: 36px;
+    padding-top: 40px;
     padding-left: 10px;
     order: 1;
 
@@ -101,6 +101,7 @@
 
   .features__title {
     margin-top: 35px;
+    padding-right: 20px;
   }
 
   .features__tablet-break {
@@ -109,7 +110,7 @@
 
   .features__example {
     width: 300px;
-    height: 481px;
+    height: 485px;
     margin: 0;
     padding: 0;
   }
@@ -117,7 +118,7 @@
   .features__image {
     width: 268px; // временно
     margin: 0;
-    margin-top: 2px;
+    margin-top: 5px;
   }
 
   .features__duration {
