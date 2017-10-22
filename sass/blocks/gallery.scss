@@ -85,12 +85,12 @@
 
   .gallery__photo {
     width: 300px;
-  }
 
-  .gallery__photo--panoramic {
-    max-width: none;
-    width: 700px;
-    margin: 0 -20px;
+    &--panoramic {
+      max-width: none;
+      width: 700px;
+      margin-left: -40px;
+    }
   }
 
   .gallery__label {
