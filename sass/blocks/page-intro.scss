@@ -31,7 +31,7 @@
 }
 
 .page-intro__title {
-  @include container($mobile, 0 0);
+  @include container($mobile, 0 10px);
   @include text($large, 1.2, 300, $bg-color);
 }
 
