@@ -248,6 +248,10 @@
   .form__container {
     @include container($mobile);
   }
+
+  .form__icon {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet) {

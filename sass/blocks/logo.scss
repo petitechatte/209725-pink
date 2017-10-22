@@ -1,70 +1,100 @@
 .logo {
-  display: none;
-  width: 75px;
-  height: 22px;
+  display: block;
 
-  &--mobile {
-    display: block;
+  &--header {
+    width: 147px;
+    height: 40px;
   }
 
-  &--simple {
-    display: block;
+  &--footer {
     width: 147px;
     height: 40px;
     margin: 0 auto;
   }
 }
 
-.main-nav__home:hover .logo__color,
-.main-nav__home:focus .logo__color,
-.page-footer__home:hover .logo__color,
-.page-footer__home:focus .logo__color {
+.logo__glasses {
+  display: none;
+}
+
+.logo__sparks {
+  display: none;
+}
+
+.logo__point {
+  display: none;
+}
+
+.logo--header .logo__glasses--full {
+  display: none;
+}
+
+.main-nav__home:hover .logo__pink,
+.main-nav__home:focus .logo__pink,
+.main-nav__home:hover .logo__glasses,
+.main-nav__home:focus .logo__glasses,
+.main-nav__home:hover .logo__glasses--full,
+.main-nav__home:focus .logo__glasses--full,
+.page-footer__home:hover .logo__pink,
+.page-footer__home:focus .logo__pink,
+.page-footer__home:hover .logo__sparks,
+.page-footer__home:focus .logo__sparks {
   fill: $accent-color;
 }
 
-.main-nav__home:active .logo__color {
+.main-nav__home:active .logo__pink,
+.main-nav__home:active .logo__glasses,
+.main-nav__home:active .logo__glasses--full {
   fill: $bg-color;
 }
 
-.page-footer__home:active .logo__color {
+.page-footer__home:active .logo__pink,
+.page-footer__home:active .logo__sparks {
+  fill: $base-color;
+}
+
+.main-nav__home--inactive:hover .logo__pink,
+.main-nav__home--inactive:focus .logo__pink,
+.main-nav__home--inactive:hover .logo__glasses,
+.main-nav__home--inactive:focus .logo__glasses,
+.main-nav__home--inactive:hover .logo__glasses--full,
+.main-nav__home--inactive:focus .logo__glasses--full {
+  fill: $bg-color;
+}
+
+.page-footer__home--inactive:hover .logo__pink,
+.page-footer__home--inactive:focus .logo__pink,
+.page-footer__home--inactive:hover .logo__sparks,
+.page-footer__home--inactive:focus .logo__sparks {
   fill: $base-color;
 }
 
 @media (min-width: $tablet) {
-  .logo {
-    width: 147px;
-    height: 40px;
+  .logo--header .logo__glasses--full {
+    display: block;
 
-    &--mobile {
-      display: none;
-    }
+    fill: $bg-color;
+  }
 
-    &--tablet {
-      display: block;
-    }
+  .logo__glasses--full {
+    display: block;
   }
 }
 
 @media (min-width: $desktop) {
-  .logo {
-    &--footer {
-      display: none;
-    }
+  .logo .logo__glasses--full {
+    display: none;
+  }
 
-    &--tablet {
-      display: none;
-    }
+  .logo__glasses {
+    display: block;
+  }
 
-    &--desktop {
-      display: block;
-    }
+  .logo__point {
+    display: block;
+  }
 
-    &--simple {
-      display: none;
-    }
-
-    &--smart {
-      display: block;
-    }
+  .logo__sparks {
+    display: block;
   }
 }
