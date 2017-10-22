@@ -26,10 +26,15 @@
   text-decoration: none;
 }
 
-.gallery__photo--panoramic {
-  max-width: $mobile;
-  width: $mobile;
-  margin: 0 -20px;
+.gallery__photo {
+  width: 300px;
+  height: auto;
+
+  &--panoramic {
+    max-width: $mobile;
+    width: $mobile;
+    margin: 0 -20px;
+  }
 }
 
 .gallery__label {
@@ -80,13 +85,11 @@
 
   .gallery__photo {
     width: 300px;
-    height: 300px; //временно
   }
 
   .gallery__photo--panoramic {
-    max-width: $tablet;
-    width: $tablet;
-    height: 509px; // временно
+    max-width: none;
+    width: 700px;
     margin: 0 -20px;
   }
 
