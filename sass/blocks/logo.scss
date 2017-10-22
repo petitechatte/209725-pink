@@ -7,7 +7,7 @@
     display: block;
   }
 
-  &--footer {
+  &--simple {
     display: block;
     width: 147px;
     height: 40px;
@@ -46,11 +46,23 @@
 
 @media (min-width: $desktop) {
   .logo {
+    &--footer {
+      display: none;
+    }
+
     &--tablet {
       display: none;
     }
 
     &--desktop {
+      display: block;
+    }
+
+    &--simple {
+      display: none;
+    }
+
+    &--smart {
       display: block;
     }
   }
