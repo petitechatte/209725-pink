@@ -125,6 +125,12 @@ img {
   @include container($mobile);
 }
 
+@media (min-width: $mobile) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 @media (min-width: $tablet) {
   .container {
     @include container($tablet);
