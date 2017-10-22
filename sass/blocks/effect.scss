@@ -1,23 +1,49 @@
 .effect__wrapper {
+  position: relative;
+
   width: 310px;
   margin: 0 auto;
   padding-top: 63px;
   padding-bottom: 97px;
   padding-right: 20px;
   padding-left: 330px;
-}
 
-.effect__title {
-  padding: 0;
+  &::after {
+    content: "24";
+    position: absolute;
+    top: 135px;
+    left: 85px;
 
-  @include text($x-large, 36px, 700, $contrast-color);
+    display: block;
+    width: 150px;
+    height: 150px;
+
+    @include text(96px, 149.47px, 700, $accent-color);
+  }
 }
 
 .effect__link {
   display: block;
-  margin-top: 5px;
+  margin-top: 8px;
 
   color: $accent-color;
+}
+
+.effect__svg {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+
+  width: 238px;
+  height: 276px;
+
+  &--inner {
+    top: 114px;
+    left: 39px;
+
+    width: 202px;
+    height: 202px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -27,13 +53,33 @@
     padding-left: 377px;
     padding-right: 10px;
     padding-bottom: 115px;
-  }
 
-  .effect__title {
-    margin-bottom: 22px;
+    &::after {
+      top: 95px;
+      left: 90px;
+
+      font-size: 120px;
+      line-height: 186.84px;
+    }
   }
 
   .effect__link {
     margin-top: 30px;
+  }
+
+  .effect__svg {
+    top: 0;
+    left: 10px;
+
+    width: 300px;
+    height: 344px;
+
+    &--inner {
+      top: 68px;
+      left: 33px;
+
+      width: 253px;
+      height: 253px;
+    }
   }
 }

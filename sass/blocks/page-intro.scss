@@ -1,6 +1,6 @@
 .page-intro {
   min-height: 170px; // одинаковая высота блока независимо от заголовка
-  padding: 30px;
+  padding: 30px 0;
   border-top: 1px solid transparent; // против выпадения отступа
   border-bottom: 1px solid transparent; // против выпадения отступа
   box-sizing: border-box;
@@ -18,13 +18,20 @@
   display: flex;
 }
 
-.page-intro__image {
+.page-intro__picture {
   margin-top: auto;
   margin-right: auto;
+
+  line-height: 0;
+}
+
+.page-intro__image {
+  width: 258px;
+  height: 286px;
 }
 
 .page-intro__title {
-  @include container($mobile);
+  @include container($mobile, 0 10px);
   @include text($large, 1.2, 300, $bg-color);
 }
 
@@ -54,30 +61,39 @@
 
 @media (min-width: $tablet) {  // появляется многослойность
   .page-intro {
-    min-height: 328px;
+    min-height: 328px; // одинаковая высота блока независимо от заголовка
     padding: 70px 0;
+    border: none;
+    overflow: hidden;
 
     &--index {
       position: relative;
 
       @include container($tablet);
-      padding-top: 90px;
-      padding-bottom: 110px;
+      padding-top: 73px;
+      padding-bottom: 107px;
     }
   }
 
   .page-intro__demonstration {
     position: absolute;
-    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 
-    width: $tablet - 20px * 2;
-    height: 546px;
+    @include container($tablet, 0 0);
+    height: 545px;
+  }
+
+  .page-intro__picture {
+    margin: 0;
   }
 
   .page-intro__image {
-    width: 470px;  // временно
-    margin-left: auto;
-    margin-right: 0;
+    min-width: 700px;
+    width: 700px;
+    height: 545px;
+    margin: 0 -20px;
   }
 
   .page-intro__content {
@@ -100,20 +116,22 @@
     min-height: 284px;
 
     &--index {
-      padding-top: 105px;
-      padding-bottom: 120px;
+      padding-top: 99px;
+      padding-bottom: 122px;
     }
   }
 
   .page-intro__demonstration {
-    width: $desktop - 10px * 2;
-    height: 742px;
-    margin: 0;
+    width: 1050px;
+    height: 645px;
+    margin: 0 auto;
   }
 
   .page-intro__image {
-    width: 555px; // временно
-    margin-right: 43px;
+    min-width: 1050px;
+    width: 1050px;
+    height: 645px;
+    margin-left: 26px;
   }
 
   .page-intro__title {

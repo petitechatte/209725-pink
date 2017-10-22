@@ -19,6 +19,15 @@
   display: none;
 }
 
+.review__text {
+  margin: 14px 0;
+  padding: 0;
+}
+
+.review__svg {
+  display: none;
+}
+
 @media (min-width: $tablet) {
   .review {
     @include container($tablet);
@@ -72,7 +81,13 @@
     font-size: $large;
   }
 
-  .review__toggles {
-    display: none;
+  .review__svg {
+    position: absolute;
+    top: 73px;
+    right: 0;
+    left: 0;
+
+    display: block;
+    margin: 0 auto;
   }
 }

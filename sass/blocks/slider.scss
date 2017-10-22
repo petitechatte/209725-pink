@@ -16,6 +16,15 @@
   justify-content: center;
   align-items: center;
   height: 50px;
+
+  &--price {
+    @include container($mobile);
+    margin-top: 20px;
+  }
+}
+
+.price__slider--no-js + .slider__toggles--price {
+  display: none;
 }
 
 .slider__toggle {
@@ -52,6 +61,12 @@
   display: none;
 }
 
+@media (min-width: $tablet) {
+  .slider__toggles--price {
+    display: none;
+  }
+}
+
 @media (min-width: $desktop) {
   .slider__toggles {
     display: none;
@@ -67,6 +82,7 @@
     border: none;
 
     background-color: transparent;
+    opacity: 0.3;
 
     &--previous {
       left: 0;
@@ -75,5 +91,18 @@
     &--next {
       right: 0;
     }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .slider__arrow {
+    fill: $base-color;
   }
 }

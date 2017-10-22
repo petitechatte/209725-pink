@@ -26,10 +26,15 @@
   text-decoration: none;
 }
 
-.gallery__photo--panoramic {
-  max-width: $mobile;
-  width: $mobile;
-  margin: 0 -20px;
+.gallery__photo {
+  width: 300px;
+  height: auto;
+
+  &--panoramic {
+    max-width: $mobile;
+    width: $mobile;
+    margin: 0 -20px;
+  }
 }
 
 .gallery__label {
@@ -57,8 +62,8 @@
   .gallery__intro {
     padding-top: 92px;
     padding-bottom: 75px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
 
     font-size: $medium;
   }
@@ -80,14 +85,12 @@
 
   .gallery__photo {
     width: 300px;
-    height: 300px; //временно
-  }
 
-  .gallery__photo--panoramic {
-    max-width: $tablet;
-    width: $tablet;
-    height: 509px; // временно
-    margin: 0 -20px;
+    &--panoramic {
+      max-width: none;
+      width: 700px;
+      margin-left: -40px;
+    }
   }
 
   .gallery__label {
