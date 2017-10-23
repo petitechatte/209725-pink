@@ -206,7 +206,7 @@
       </div>
     </footer>
 
-    <div class="modal">
+    <div class="modal modal--error">
       <strong class="modal__warning">Что-то пошло не так!</strong>
       <p class="modal__message">Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить.</p>
       <p class="modal__wrapper">
@@ -224,5 +224,8 @@
 
     <script src="js/picturefill.min.js"></script>
     <script src="js/menu.js"></script>
+    <script>
+      var form = document.querySelector(.form);
+    </script>
   </body>
 </html>
