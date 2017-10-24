@@ -339,6 +339,23 @@
     <script src="js/menu.js"></script>
     <script src="js/table-slider.js"></script>
     <script src="js/map.js"></script>
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A252750b762360762045d77162d1de330da0ba5591bdbf78cad69f036ebd1ad44&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true&id=map"></script>
+<!--    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A252750b762360762045d77162d1de330da0ba5591bdbf78cad69f036ebd1ad44&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true&id=map"></script>-->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script>
+      ymaps.ready(init);
+
+      function init() {
+        var yandexMap = new ymaps.Map("map", {
+          center: [59.93863106, 30.32305450],
+          zoom: 16
+        });
+
+        var myPlacemark = new ymaps.Placemark([59.93863106, 30.32305450], {         hintContent: "Pink",
+          balloonContent: "ул. Большая Конюшенная, 19/8"
+        });
+
+        yandexMap.geoObjects.add(myPlacemark);
+      };
+    </script>
   </body>
 </html>
