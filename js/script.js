@@ -38,12 +38,12 @@ if (mapBox && mapMarker) {
 
   function init() {
     var yandexMap = new ymaps.Map("map", {
-      center: [59.9386, 30.3231],
+      center: [59.93915, 30.3232],
       zoom: 16,
       controls: []
     });
 
-    var myPlacemark = new ymaps.Placemark([59.9386, 30.32310], {         hintContent: "Pink",
+    var myPlacemark = new ymaps.Placemark([59.9386, 30.3231], {         hintContent: "Pink",
       balloonContent: "ул. Большая Конюшенная, 19/8"
     }, {
       iconLayout: "default#image",
