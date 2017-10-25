@@ -39,6 +39,10 @@
         <h1 class="visually-hidden">Pink &mdash; приложение для обработки фотографий</h1>
         <div class="page-intro__demonstration">
           <picture class="page-intro__picture">
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
+
             <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
             <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
             <img class="page-intro__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="Приложение Pink на iPhone 5">
@@ -99,14 +103,20 @@
           </ul>
           <div class="features__example">
             <picture class="features__picture">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
               <img class="features__image features__image--1" width="292" height="302" src="#" alt="Фотография мусоросборников">
             </picture>
             <picture class="features__picture">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
               <img class="features__image features__image--2" width="292" height="302" src="#" alt="Применение к фото фильтра приложения">
             </picture>
             <picture class="features__picture">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-screen-3-mobile@1x.webp 1x, img/iphone-screen-3-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
               <img class="features__image features__image--3" width="157" height="320" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Применение к фото фильтра, текста и смайла">
@@ -339,7 +349,6 @@
     <script src="js/menu.js"></script>
     <script src="js/table-slider.js"></script>
     <script src="js/map.js"></script>
-<!--    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A252750b762360762045d77162d1de330da0ba5591bdbf78cad69f036ebd1ad44&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true&id=map"></script>-->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script>
       ymaps.ready(init);
