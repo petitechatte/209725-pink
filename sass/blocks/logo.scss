@@ -2,14 +2,22 @@
   display: block;
 
   &--header {
-    width: 147px;
-    height: 40px;
+    width: 74px;
+    height: 23px;
   }
 
   &--footer {
     width: 147px;
     height: 40px;
     margin: 0 auto;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
   }
 }
 
@@ -70,6 +78,22 @@
 }
 
 @media (min-width: $tablet) {
+  .logo {
+    &--header {
+      width: 147px;
+      height: 40px;
+    }
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+
   .logo--header .logo__glasses--full {
     display: block;
 
@@ -82,6 +106,16 @@
 }
 
 @media (min-width: $desktop) {
+  .logo {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
   .logo .logo__glasses--full {
     display: none;
   }
