@@ -107,6 +107,8 @@
 
   .main-nav__svg {
     display: none;
+
+    fill: $bg-color;
   }
 
   .main-nav__toggle--open .main-nav__svg--open {
@@ -118,13 +120,17 @@
   }
 }
 
-.main-nav__toggle:hover .main-nav__icon,
-.main-nav__toggle:focus .main-nav__icon {
+.main-nav__toggle:hover .main-nav__svg,
+.main-nav__toggle:focus .main-nav__svg {
   fill: $accent-color;
 }
 
 .main-nav__toggle:active {
   opacity: 0.3;
+}
+
+.main-nav__toggle:active .main-nav__svg {
+  fill: $bg-color;
 }
 
 @media (min-width: $tablet) {
