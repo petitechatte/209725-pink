@@ -17,20 +17,6 @@
   }
 }
 
-.logo__svg {
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
-
-  &--mobile {
-    display: block;
-  }
-}
-
 .main-nav__home:hover .logo,
 .main-nav__home:focus .logo,
 .page-footer__home:hover .logo,
