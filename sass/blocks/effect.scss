@@ -37,12 +37,18 @@
   width: 238px;
   height: 276px;
 
+  &--outer {
+    fill: #dedede;
+  }
+
   &--inner {
     top: 114px;
     left: 39px;
 
     width: 202px;
     height: 202px;
+
+    fill: $accent-color;
   }
 }
 

@@ -27,6 +27,8 @@
 .socials__svg {
   margin: auto;
 
+  fill: $accent-color;
+
   &--twitter {
     margin-top: 16px;
   }
@@ -34,8 +36,4 @@
   &--youtube {
     padding-left: 4px;
   }
-}
-
-.socials__icon {
-  fill: $accent-color;
 }

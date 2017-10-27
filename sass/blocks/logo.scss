@@ -4,12 +4,16 @@
   &--header {
     width: 74px;
     height: 23px;
+
+    fill: $bg-color;
   }
 
   &--footer {
     width: 147px;
     height: 40px;
     margin: 0 auto;
+
+    fill: $base-color;
   }
 
   &--tablet {
@@ -19,62 +23,42 @@
   &--desktop {
     display: none;
   }
+
+  &--mobile {
+    display: block;
+  }
 }
 
-.logo__glasses {
-  display: none;
-}
-
-.logo__sparks {
-  display: none;
-}
-
-.logo__point {
-  display: none;
-}
-
-.logo--header .logo__glasses--full {
-  display: none;
-}
-
-.main-nav__home:hover .logo__pink,
-.main-nav__home:focus .logo__pink,
-.main-nav__home:hover .logo__glasses,
-.main-nav__home:focus .logo__glasses,
-.main-nav__home:hover .logo__glasses--full,
-.main-nav__home:focus .logo__glasses--full,
-.page-footer__home:hover .logo__pink,
-.page-footer__home:focus .logo__pink,
-.page-footer__home:hover .logo__sparks,
-.page-footer__home:focus .logo__sparks {
+.main-nav__home:hover .logo,
+.main-nav__home:focus .logo,
+.page-footer__home:hover .logo,
+.page-footer__home:focus .logo {
   fill: $accent-color;
 }
 
-.main-nav__home:active .logo__pink,
-.main-nav__home:active .logo__glasses,
-.main-nav__home:active .logo__glasses--full {
+.main-nav__home:active .logo--header {
+  fill: $bg-color;
+  opacity: 0.3;
+}
+
+.page-footer__home:active .logo {
+  fill: $base-color;
+  opacity: 0.3;
+}
+
+.main-nav__home--inactive:hover .logo,
+.main-nav__home--inactive:focus .logo {
   fill: $bg-color;
 }
 
-.page-footer__home:active .logo__pink,
-.page-footer__home:active .logo__sparks {
+.page-footer__home--inactive:hover .logo,
+.page-footer__home--inactive:focus .logo {
   fill: $base-color;
 }
 
-.main-nav__home--inactive:hover .logo__pink,
-.main-nav__home--inactive:focus .logo__pink,
-.main-nav__home--inactive:hover .logo__glasses,
-.main-nav__home--inactive:focus .logo__glasses,
-.main-nav__home--inactive:hover .logo__glasses--full,
-.main-nav__home--inactive:focus .logo__glasses--full {
-  fill: $bg-color;
-}
-
-.page-footer__home--inactive:hover .logo__pink,
-.page-footer__home--inactive:focus .logo__pink,
-.page-footer__home--inactive:hover .logo__sparks,
-.page-footer__home--inactive:focus .logo__sparks {
-  fill: $base-color;
+.main-nav__home--inactive:active .logo,
+.page-footer__home--inactive:active .logo {
+  opacity: 1;
 }
 
 @media (min-width: $tablet) {
@@ -93,16 +77,6 @@
     }
   }
 
-
-  .logo--header .logo__glasses--full {
-    display: block;
-
-    fill: $bg-color;
-  }
-
-  .logo__glasses--full {
-    display: block;
-  }
 }
 
 @media (min-width: $desktop) {
@@ -114,21 +88,5 @@
     &--desktop {
       display: block;
     }
-  }
-
-  .logo .logo__glasses--full {
-    display: none;
-  }
-
-  .logo__glasses {
-    display: block;
-  }
-
-  .logo__point {
-    display: block;
-  }
-
-  .logo__sparks {
-    display: block;
   }
 }

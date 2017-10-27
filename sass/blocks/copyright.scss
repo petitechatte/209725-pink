@@ -2,12 +2,12 @@
   margin-right: 18px;
 }
 
-.copyright__icon {
+.copyright__svg {
   fill: $accent-color;
 }
 
-.copyright__link:hover .copyright__icon,
-.copyright__link:focus .copyright__icon {
+.copyright__link:hover .copyright__svg,
+.copyright__link:focus .copyright__svg {
   fill: $base-color;
 }
 
