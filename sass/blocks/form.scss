@@ -103,9 +103,7 @@
   left: 10px;
 
   cursor: pointer;
-}
 
-.form__checked {
   fill: $bg-color;
 }
 
@@ -113,7 +111,7 @@
   border-color: $base-color;
 }
 
-.form__checkbox:checked + .form__label--checkbox .form__checked {
+.form__checkbox:checked + .form__label--checkbox .form__svg {
   fill: $accent-color;
 }
 
@@ -362,6 +360,8 @@
 
     display: block;
     margin: auto;
+
+    fill: $accent-color;
   }
 
   .form__text {

@@ -69,11 +69,11 @@
     }
   }
 
-  .tools__icon {
+  .tools__svg {
     fill: $base-color;
   }
 
-  .tools__button--active .tools__icon {
+  .tools__button--active .tools__svg {
     fill: $accent-color;
   }
 
@@ -123,12 +123,15 @@
   .tools__button:hover .tools__svg,
   .tools__button:focus .tools__svg {
     opacity: 0.5;
+    fill: $base-color;
   }
 
   .tools__svg {
     position: absolute;
 
     margin: 0;
+
+    fill: $accent-color;
 
     &--crop {
       top: 9px;
@@ -153,10 +156,6 @@
       width: 16px;
       height: 16px;
     }
-  }
-
-  .tools__icon {
-    fill: $accent-color;
   }
 
   .tools__custom {
