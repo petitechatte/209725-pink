@@ -15,18 +15,6 @@
 
     fill: $base-color;
   }
-
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
-
-  &--mobile {
-    display: block;
-  }
 }
 
 .main-nav__home:hover .logo,
@@ -61,13 +49,29 @@
   opacity: 1;
 }
 
+.logo__svg {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  &--mobile {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet) {
   .logo {
     &--header {
       width: 147px;
       height: 40px;
     }
+  }
 
+  .logo__svg {
     &--mobile {
       display: none;
     }
@@ -76,11 +80,10 @@
       display: block;
     }
   }
-
 }
 
 @media (min-width: $desktop) {
-  .logo {
+  .logo__svg {
     &--tablet {
       display: none;
     }
