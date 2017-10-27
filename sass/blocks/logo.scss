@@ -15,7 +15,9 @@
 
     fill: $base-color;
   }
+}
 
+.logo__svg {
   &--tablet {
     display: none;
   }
@@ -67,7 +69,9 @@
       width: 147px;
       height: 40px;
     }
+  }
 
+  .logo__svg {
     &--mobile {
       display: none;
     }
@@ -76,11 +80,10 @@
       display: block;
     }
   }
-
 }
 
 @media (min-width: $desktop) {
-  .logo {
+  .logo__svg {
     &--tablet {
       display: none;
     }
